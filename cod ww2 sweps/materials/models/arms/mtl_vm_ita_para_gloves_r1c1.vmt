@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/arms/mtl_vm_ita_para_gloves_r1c1"
+"$bumpmap" "models/arms/gloves_normal"
+	"$phongexponenttexture"           "models\arms\gloves_exp"
+                  "$ambientoccltexture"                "models\arms\gloves_ao"
+
+	"$phong" 		             "1"
+	"$phongboost" 	             "0.05"
+	"$phongtint"	             "[1 1 1]"
+	"$phongexponent"  	             "10"
+	"$phongfresnelranges" 	             "[1 1 1]"
+	"$phongalbedotint" 	             "1"
+                  "$halflambert"                            "1"
+                  "$ambientocclusion"                   "1"
+                  "$ambientocclcolor"                   "[1 1 1]"
+
+	"$envmap" 					"env_cubemap"
+	"$envmapfresnel" 				".5"
+	"$envmaptint" 				"[0.005 0.005 0.005]"
+	"$normalmapalphaenvmapmask" 	"1"
+
+}
