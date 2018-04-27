@@ -59,7 +59,7 @@ SWEP.PistolSprintSway = false
 
 SWEP.DisableIronsights = false
 
-
+SWEP.EmptySoundPrimary = "Dryfire_lmg"
 
 SWEP.Sequences = {
 	idle = "idle",

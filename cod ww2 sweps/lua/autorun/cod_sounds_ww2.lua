@@ -94,28 +94,28 @@ sound.Add({
 sound.Add({
 	name = 			"Rifle_Raise1",			// <-- Sound Name That gets called for
 	channel = 		CHAN_USER_BASE +10,
-	volume = 		1.0,
+	volume = 		0.5,
 	sound = 			"universal/rifle_raise1.wav"	// <-- Sound Path
 })
 
 sound.Add({
 	name = 			"Rifle_Raise2",			
 	channel = 		CHAN_STATIC,
-	volume = 		1.0,
+	volume = 		0.5,
 	sound = 			"universal/rifle_raise2.wav"	
 })
 
 sound.Add({
 	name = 			"Rifle_Lower1",			
 	channel = 		CHAN_STATIC,
-	volume = 		1.0,
+	volume = 		0.5,
 	sound = 			"universal/rifle_lower1.wav"	
 })
 
 sound.Add({
 	name = 			"Rifle_Lower2",			
 	channel = 		CHAN_STATIC,
-	volume = 		1.0,
+	volume = 		0.5,
 	sound = 			"universal/rifle_lower2.wav"	
 })
 
@@ -138,4 +138,39 @@ sound.Add({
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
 	sound = 			"universal/holster.wav"	
+})
+
+sound.Add({
+	name = 			"Dryfire_Pistol",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/dryfire_pistol.wav"	
+})
+
+sound.Add({
+	name = 			"Dryfire_AR",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/dryfire_ar.wav"	
+})
+
+sound.Add({
+	name = 			"Dryfire_LMG",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/dryfire_lmg.wav"	
+})
+
+sound.Add({
+	name = 			"Dryfire_SG",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/dryfire_sg.wav"	
+})
+
+sound.Add({
+	name = 			"Dryfire_Sniper",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/dryfire_sniper.wav"	
 })

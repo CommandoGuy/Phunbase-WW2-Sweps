@@ -58,7 +58,7 @@ SWEP.NearWallAng = Vector(0, 0, 0)
 SWEP.PistolSprintSway = false
 
 SWEP.DisableIronsights = false
-
+SWEP.EmptySoundPrimary = "Dryfire_Sniper"
 
 
 SWEP.Sequences = {

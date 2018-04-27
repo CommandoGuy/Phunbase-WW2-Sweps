@@ -85,7 +85,7 @@ SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 1.7
 SWEP.ReloadTime = 2
-
+SWEP.EmptySoundPrimary = "Dryfire_Pistol"
 SWEP.HolsterAnimSpeed = -1
 SWEP.HolsterAnimStartCyc = 1
 SWEP.FlashlightAttachmentName = "1"
