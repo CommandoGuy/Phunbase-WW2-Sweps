@@ -22,17 +22,17 @@ SWEP.ScriptedEntityType = "phunbase_weapon_hl2"
 
 // weapon specific variables
 SWEP.Primary.Ammo = "smg1"
-SWEP.Primary.ClipSize = 12
+SWEP.Primary.ClipSize = 10
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = false
-SWEP.Primary.Damage = 40
-SWEP.Primary.Delay = 0.122
+SWEP.Primary.Damage = 56
+SWEP.Primary.Delay = 0.233
 SWEP.Primary.Force = 5
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 
 // Recoil variables
-SWEP.Recoil	= 1
+SWEP.Recoil	= 2
 SWEP.Spread	= 0.1
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
