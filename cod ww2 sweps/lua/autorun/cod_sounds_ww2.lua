@@ -1,3 +1,94 @@
+
+
+--universal---------------------------------------------------------------
+
+sound.Add({
+	name = 			"Rifle_Raise1",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		0.5,
+	sound = 			"universal/rifle_raise1.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"Rifle_Raise2",			
+	channel = 		CHAN_STATIC,
+	volume = 		0.5,
+	sound = 			"universal/rifle_raise2.wav"	
+})
+
+sound.Add({
+	name = 			"Rifle_Lower1",			
+	channel = 		CHAN_STATIC,
+	volume = 		0.5,
+	sound = 			"universal/rifle_lower1.wav"	
+})
+
+sound.Add({
+	name = 			"Rifle_Lower2",			
+	channel = 		CHAN_STATIC,
+	volume = 		0.5,
+	sound = 			"universal/rifle_lower2.wav"	
+})
+
+sound.Add({
+	name = 			"Rifle_Lower3",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/sprint1.wav"	
+})
+
+sound.Add({
+	name = 			"Draw",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/draw.wav"	
+})
+
+sound.Add({
+	name = 			"Holster",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/holster.wav"	
+})
+
+sound.Add({
+	name = 			"Dryfire_Pistol",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/dryfire_pistol.wav"	
+})
+
+sound.Add({
+	name = 			"Dryfire_AR",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/dryfire_ar.wav"	
+})
+
+sound.Add({
+	name = 			"Dryfire_LMG",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/dryfire_lmg.wav"	
+})
+
+sound.Add({
+	name = 			"Dryfire_SG",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/dryfire_sg.wav"	
+})
+
+sound.Add({
+	name = 			"Dryfire_Sniper",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/dryfire_sniper.wav"	
+})
+
+
+
+
 --fg42---------------------------------------------------------------
 
 sound.Add({
@@ -89,88 +180,46 @@ sound.Add({
 })
 
 
---universal---------------------------------------------------------------
+--svt---------------------------------------------------------------
 
 sound.Add({
-	name = 			"Rifle_Raise1",			// <-- Sound Name That gets called for
+	name = 			"SVT_Single",			// <-- Sound Name That gets called for
 	channel = 		CHAN_USER_BASE +10,
-	volume = 		0.5,
-	sound = 			"universal/rifle_raise1.wav"	// <-- Sound Path
+	volume = 		1.0,
+	sound = 			"weapons/svt/fire.wav"	// <-- Sound Path
 })
 
 sound.Add({
-	name = 			"Rifle_Raise2",			
-	channel = 		CHAN_STATIC,
-	volume = 		0.5,
-	sound = 			"universal/rifle_raise2.wav"	
-})
-
-sound.Add({
-	name = 			"Rifle_Lower1",			
-	channel = 		CHAN_STATIC,
-	volume = 		0.5,
-	sound = 			"universal/rifle_lower1.wav"	
-})
-
-sound.Add({
-	name = 			"Rifle_Lower2",			
-	channel = 		CHAN_STATIC,
-	volume = 		0.5,
-	sound = 			"universal/rifle_lower2.wav"	
-})
-
-sound.Add({
-	name = 			"Rifle_Lower3",			
+	name = 			"SVT_Magout",			
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"universal/sprint1.wav"	
+	sound = 			"weapons/svt/magout.wav"	
 })
 
 sound.Add({
-	name = 			"Draw",			
+	name = 			"SVT_MagoutEmpty",			
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"universal/draw.wav"	
+	sound = 			"weapons/svt/magoutE.wav"	
 })
 
 sound.Add({
-	name = 			"Holster",			
+	name = 			"SVT_Magin",			
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"universal/holster.wav"	
+	sound = 			"weapons/svt/magin.wav"	
 })
 
 sound.Add({
-	name = 			"Dryfire_Pistol",			
+	name = 			"SVT_MaginEmpty",			
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"universal/dryfire_pistol.wav"	
+	sound = 			"weapons/svt/maginE.wav"	
 })
 
 sound.Add({
-	name = 			"Dryfire_AR",			
+	name = 			"SVT_Bolt",			
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"universal/dryfire_ar.wav"	
-})
-
-sound.Add({
-	name = 			"Dryfire_LMG",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"universal/dryfire_lmg.wav"	
-})
-
-sound.Add({
-	name = 			"Dryfire_SG",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"universal/dryfire_sg.wav"	
-})
-
-sound.Add({
-	name = 			"Dryfire_Sniper",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"universal/dryfire_sniper.wav"	
+	sound = 			"weapons/svt/bolt.wav"	
 })
