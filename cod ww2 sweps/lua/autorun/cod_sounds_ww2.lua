@@ -185,7 +185,7 @@ sound.Add({
 sound.Add({
 	name = 			"SVT_Single",			// <-- Sound Name That gets called for
 	channel = 		CHAN_USER_BASE +10,
-	volume = 		1.0,
+	volume = 		0.75,
 	sound = 			"weapons/svt/fire.wav"	// <-- Sound Path
 })
 
@@ -222,4 +222,41 @@ sound.Add({
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
 	sound = 			"weapons/svt/bolt.wav"	
+})
+
+--svt---------------------------------------------------------------
+
+sound.Add({
+	name = 			"enfield_single",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1,
+	sound = 			"weapons/enfield/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"enfield_magin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/enfield/magin.wav"	
+})
+
+sound.Add({
+	name = 			"enfield_ping",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/enfield/ping.wav"	
+})
+
+sound.Add({
+	name = 			"enfield_boltforward",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/enfield/boltforward.wav"	
+})
+
+sound.Add({
+	name = 			"enfield_boltback",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/enfield/boltbackward.wav"	
 })
