@@ -116,11 +116,11 @@ SWEP.Sounds = {
 	},
 	reload = {
 		{time = 0, sound = "Rifle_Raise1"},
-		{time = 2.48, sound = "Rifle_Lower2"}
+		{time = 1.75, sound = "Rifle_Lower2"}
 	},
 		reload_empty = {
 		{time = 0, sound = "Rifle_Raise1"},
-		{time = 3.2, sound = "Rifle_Lower2"}
+		{time = 2.35, sound = "Rifle_Lower2"}
 	},
 	sprint_in = {
 		{time = 0, sound = "Rifle_Lower2"},
