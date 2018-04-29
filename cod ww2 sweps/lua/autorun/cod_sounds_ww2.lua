@@ -260,3 +260,33 @@ sound.Add({
 	volume = 		1.0,
 	sound = 			"weapons/enfield/boltbackward.wav"	
 })
+
+--svt---------------------------------------------------------------
+
+sound.Add({
+	name = 			"MP40_Single",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1,
+	sound = 			"weapons/MP40/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"MP40_Magin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/MP40/magin.wav"	
+})
+
+sound.Add({
+	name = 			"MP40_Magout",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/MP40/magout.wav"	
+})
+
+sound.Add({
+	name = 			"MP40_Bolt",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/MP40/bolt.wav"	
+})

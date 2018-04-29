@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/codww2/weapons/ger_mp40/ger_mp40_strap_s"
+	"$bumpmap" "models/codww2/weapons/ger_mp40/ger_mp40_strap_n"
+                "$color2""[0.0 0.0 0.0]"
+                "$additive""1"
+                "$ambientocclusion" 1
+                "$ambientoccltexture" "models/codww2/weapons/ger_mp40/ger_mp40_strap_a"	
+	
+	"$phong" "1"
+	"$phongexponent"				"10"
+	"$phongboost"					"10"
+
+	"$phongalbedotint" 1
+	"$phongexponenttexture" "models\codww2\common\exponent"
+
+	"$phongfresnelranges"			"[1 1.05 1.25]"
+}

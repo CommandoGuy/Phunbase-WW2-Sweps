@@ -84,7 +84,7 @@ SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 3
 SWEP.ReloadTime_Empty = 4
-
+SWEP.FlashlightAttachmentName = "1"
 SWEP.HolsterAnimSpeed = -1
 SWEP.HolsterAnimStartCyc = 1
 
@@ -105,9 +105,9 @@ SWEP.MuzzleEffect = { "PistolGlow", "btb_vm_small", "muzzle_fire_pistol", "muzzl
 
 SWEP.FireSound = "FG42_Single"
 
-SWEP.NormalFlashlight = true // enables the HL2 flashlight
-SWEP.CustomFlashlight = false // enables a ProjectedTexture flashlight, you should disable the Normal one
-SWEP.InstantFlashlight = false // whether turning the flashlight on/off is instant or it has a 0.5 second delay
+SWEP.NormalFlashlight = false // enables the HL2 flashlight
+SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
+SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instant or it has a 0.5 second delay
 
 
 SWEP.Secondary.Ammo = ""
