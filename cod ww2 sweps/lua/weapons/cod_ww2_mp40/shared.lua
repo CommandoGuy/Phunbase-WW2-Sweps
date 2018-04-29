@@ -114,6 +114,12 @@ SWEP.Secondary.DefaultClip = -1
 SWEP.Secondary.Automatic = true
 
 SWEP.Sounds = {
+	draw = {
+		{time = 0, sound = "Rifle_Raise2", callback = function(self) end}
+	},
+	holster = {
+		{time = 0, sound = "Rifle_Lower1", callback = function(self) end}
+	},
 	reload = {
 		{time = 0, sound = "Rifle_Raise1"},
 		{time = 1, sound = "Rifle_Lower3"},

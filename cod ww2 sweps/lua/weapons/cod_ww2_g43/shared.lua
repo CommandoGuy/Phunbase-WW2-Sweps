@@ -111,7 +111,10 @@ SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instan
 
 SWEP.Sounds = {
 	draw = {
-		{time = 0, sound = "Draw1", callback = function(self) end}
+		{time = 0, sound = "Rifle_Raise2", callback = function(self) end}
+	},
+	holster = {
+		{time = 0, sound = "Rifle_Lower1", callback = function(self) end}
 	},
 	reload = {
 		{time = 0, sound = "Rifle_Raise1"},
