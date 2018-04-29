@@ -51,8 +51,8 @@ SWEP.SprintAng = Vector(0, 0, 0)
 SWEP.HolsterPos = Vector(0,0,20)
 SWEP.HolsterAng = Vector(0,0,0)
 
-SWEP.NearWallPos = Vector(0, -10, 0)
-SWEP.NearWallAng = Vector(0, 0, 0)
+SWEP.NearWallPos = Vector(-0.429, -8.035, -9.005)
+SWEP.NearWallAng = Vector(28.318, 26.918, -14.25)
 
 SWEP.PistolSprintSway = false
 
@@ -120,7 +120,7 @@ SWEP.Sounds = {
 	},
 	reload = {
 		{time = 0, sound = "Rifle_Raise1"},
-		{time = 2.8, sound = "Rifle_Lower2"}
+		{time = 2.8, sound = "Rifle_Lower2"},
 	},
 		reload_empty = {
 		{time = 0, sound = "Rifle_Raise1"},
