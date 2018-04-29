@@ -18,7 +18,6 @@ SWEP.ReloadHoldType = "smg"
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
 
-SWEP.ScriptedEntityType = "phunbase_weapon_hl2"
 
 // weapon specific variables
 SWEP.Primary.Ammo = "smg1"
@@ -87,8 +86,6 @@ SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 3.45
 SWEP.ReloadTime_Empty = 3.45
 SWEP.FlashlightAttachmentName = "1"
-SWEP.HolsterAnimSpeed = -1
-SWEP.HolsterAnimStartCyc = 1
 
 SWEP.ViewModelMovementScale = 1
 
@@ -103,7 +100,7 @@ SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
 SWEP.ShellEjectVelocity = 0
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = { "PistolGlow", "btb_vm_small", "muzzle_fire_pistol", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = { "PistolGlow", "btb_vm_large", "muzzle_fire_pistol", "muzzle_sparks_pistol", "btb_vm_overheat"}
 
 SWEP.FireSound = "enfield_Single"
 

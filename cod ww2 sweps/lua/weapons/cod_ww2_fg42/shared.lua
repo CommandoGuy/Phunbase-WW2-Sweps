@@ -18,7 +18,6 @@ SWEP.ReloadHoldType = "smg"
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
 
-SWEP.ScriptedEntityType = "phunbase_weapon_hl2"
 
 // weapon specific variables
 SWEP.Primary.Ammo = "smg1"
@@ -85,8 +84,6 @@ SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 3
 SWEP.ReloadTime_Empty = 4
 SWEP.FlashlightAttachmentName = "1"
-SWEP.HolsterAnimSpeed = -1
-SWEP.HolsterAnimStartCyc = 1
 
 SWEP.ViewModelMovementScale = 1
 

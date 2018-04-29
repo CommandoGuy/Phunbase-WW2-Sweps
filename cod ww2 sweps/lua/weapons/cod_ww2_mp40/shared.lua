@@ -18,7 +18,6 @@ SWEP.ReloadHoldType = "smg"
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
 
-SWEP.ScriptedEntityType = "phunbase_weapon_hl2"
 
 // weapon specific variables
 SWEP.Primary.Ammo = "smg1"
@@ -79,19 +78,17 @@ SWEP.Sequences = {
 	sprint_end = "sprint_out", 
 }
 
-SWEP.UseIronTransitionAnims = false 
+SWEP.UseIronTransitionAnims = false
 SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 1.5
 SWEP.ReloadTime_Empty = 2
 
-SWEP.HolsterAnimSpeed = -1
-SWEP.HolsterAnimStartCyc = 1
 
 SWEP.ViewModelMovementScale = 1
 
 // shell-related stuff
-SWEP.ShellVelocity = {X = -50, Y = 0, Z = 10}
+SWEP.ShellVelocity = {X = -100, Y = 0, Z = -30}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
 SWEP.ShellViewAngleAlign = {Forward = 200, Right = 0	, Up = 0}
 SWEP.ShellAttachmentName = "2"
