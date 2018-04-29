@@ -79,7 +79,7 @@ SWEP.Sequences = {
 	sprint_end = "sprint_out", 
 }
 
-
+SWEP.UseIronTransitionAnims = false 
 SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 1.5
