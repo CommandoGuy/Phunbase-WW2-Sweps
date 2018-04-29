@@ -99,7 +99,7 @@ SWEP.ShellModel = "models/phunbase/shells/9x19mm.mdl"
 SWEP.ShellEjectVelocity = 0
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = { "PistolGlow", "btb_vm_small", "muzzle_fire_pistol", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = { "PistolGlow", "btb_vm_small", "muzzle_fire_pistol", "muzzle_sparks_pistol", "pistol_muzzlelong_thin"}
 
 SWEP.FireSound = "P38_Single"
 
