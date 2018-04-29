@@ -58,7 +58,8 @@ SWEP.PistolSprintSway = false
 
 SWEP.DisableIronsights = false
 
-SWEP.EmptySoundPrimary = "Dryfire_lmg"
+SWEP.FlashlightAttachmentName = "1"
+SWEP.EmptySoundPrimary = "Dryfire_pistol"
 
 SWEP.Sequences = {
 	idle = "idle",
