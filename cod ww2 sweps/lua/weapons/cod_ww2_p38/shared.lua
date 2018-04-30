@@ -18,7 +18,7 @@ SWEP.ReloadHoldType = "smg"
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
 
-
+SWEP.NoSprintVMMovement = true
 // weapon specific variables
 SWEP.Primary.Ammo = "pistol"
 SWEP.Primary.ClipSize = 8
