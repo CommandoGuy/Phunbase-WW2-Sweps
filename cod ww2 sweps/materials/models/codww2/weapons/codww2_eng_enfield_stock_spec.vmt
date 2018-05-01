@@ -1,15 +1,15 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models/codww2/weapons/eng_enfield/stock_s"
-	"$bumpmap" "models/codww2/weapons/eng_enfield/stock_n"
+	"$basetexture" "models/codww2/weapons/eng_enfield/eng_enfield_stock_s"
+	"$bumpmap" "models/codww2/weapons/eng_enfield/eng_enfield_stock_n"
                 "$color2""[0.0 0.0 0.0]"
                 "$additive""1"
                 "$ambientocclusion" 1
-                "$ambientoccltexture" "models/codww2/weapons/eng_enfield/stock_a"	
+                "$ambientoccltexture" "models/codww2/weapons/eng_enfield/eng_enfield_stock_a"	
 	
 	"$phong" "1"
 	"$phongexponent"				"10"
-	"$phongboost"					"0.5"
+	"$phongboost"					"10"
 
 	"$phongalbedotint" 1
 	"$phongexponenttexture" "models\codww2\common\exponent"
