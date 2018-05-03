@@ -1,3 +1,5 @@
+-----SHELLS--------------------------------------------------------
+PHUNBASE:addRegularSound("WW2_SHELL_BRASS", {"universal/shell_bounce1.wav", "universal/shell_bounce2.wav", "universal/shell_bounce3.wav", "universal/shell_bounce4.wav", "universal/shell_bounce5.wav", "universal/shell_bounce3.wav"})
 
 
 --universal---------------------------------------------------------------
@@ -86,6 +88,18 @@ sound.Add({
 	sound = 			"universal/dryfire_sniper.wav"	
 })
 
+
+sound.Add({
+	name = 			"ShellBounce_WW2",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"universal/shell_bounce1.wav",	
+	sound = 			"universal/shell_bounce2.wav",	
+	sound = 			"universal/shell_bounce3.wav",	
+	sound = 			"universal/shell_bounce4.wav",
+	sound = 			"universal/shell_bounce5.wav",
+	sound = 			"universal/shell_bounce6.wav"		
+})
 
 
 
