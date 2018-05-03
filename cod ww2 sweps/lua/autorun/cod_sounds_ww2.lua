@@ -1,7 +1,3 @@
------SHELLS--------------------------------------------------------
-
-PHUNBASE:addRegularSound("WW2_SHELL_BRASS", {"universal/shell_bounce1.wav", "universal/shell_bounce2.wav", "universal/shell_bounce3.wav", "universal/shell_bounce4.wav", "universal/shell_bounce5.wav", "universal/shell_bounce3.wav"})
-
 
 --universal---------------------------------------------------------------
 
