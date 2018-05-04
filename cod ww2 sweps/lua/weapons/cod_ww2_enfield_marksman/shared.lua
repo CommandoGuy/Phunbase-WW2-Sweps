@@ -7,14 +7,13 @@ SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 60
 SWEP.AimViewModelFOV = 54
-SWEP.ViewModel = "models/weapons/enfield_scoped.mdl"
+SWEP.ViewModel = "models/weapons/enfield.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
 SWEP.HoldType = "smg"
 SWEP.SprintHoldType = "passive"
 SWEP.CrouchHoldType = "smg"
 SWEP.ReloadHoldType = "smg"
-SWEP.ShellSound = "WW2_SHELL_BRASS"
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
 
@@ -42,7 +41,7 @@ SWEP.SpreadAdd_Iron	= 0.2
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-4.090, -2.618, 0.676)
+SWEP.IronsightPos = Vector(-4.385, -4.434, 0.467)
 SWEP.IronsightAng = Vector(0.038, 0.000, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
@@ -58,6 +57,10 @@ SWEP.PistolSprintSway = false
 
 SWEP.DisableIronsights = false
 SWEP.EmptySoundPrimary = "Dryfire_Sniper"
+
+SWEP.VElements = {
+	["scope"] = { model = "models/codww2/weapons/lee-enfield smle no,4 mk,i scope.mdl", bone = "tag_weapon", pos = Vector(0,0,0), angle = Angle(0, 0, 0), size =Vector(1, 1, 1), active = true }
+}
 
 
 SWEP.Sequences = {
@@ -91,8 +94,8 @@ SWEP.FlashlightAttachmentName = "1"
 
 SWEP.RTScope_Enabled = true
 SWEP.RTScope_Zoom = 7.25
-SWEP.RTScope_Align = Angle(0,0,-90)
-SWEP.RTScope_Reticle = Material("phunbase/reticles/scope_crosshair_simple")
+SWEP.RTScope_Align = Angle(0,0,0)
+SWEP.RTScope_Material = Material("models/codww2/weapons/codww2_gen_optics_hip")
 SWEP.RTScope_DrawIris = true
 SWEP.RTScope_DrawParallax = true
 
@@ -114,6 +117,7 @@ SWEP.MuzzleAttachmentName = "1"
 SWEP.MuzzleEffect = { "PistolGlow", "btb_vm_large", "muzzle_fire_rifle", "muzzle_sparks_rifle", "muzzle_sparks_rifle","muzzle_sparks_rifle", "muzzle_sparks_rifle", "revolver_smoke"}
 
 SWEP.FireSound = "enfield_Single"
+
 
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
 SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one

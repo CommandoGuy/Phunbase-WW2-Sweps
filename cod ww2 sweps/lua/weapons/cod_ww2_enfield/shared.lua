@@ -14,7 +14,6 @@ SWEP.HoldType = "smg"
 SWEP.SprintHoldType = "passive"
 SWEP.CrouchHoldType = "smg"
 SWEP.ReloadHoldType = "smg"
-SWEP.ShellSound = "WW2_SHELL_BRASS"
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
 
