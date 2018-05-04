@@ -4,12 +4,13 @@ $modelname "enfield.mdl"
 
 $bodygroup "studio"
 {
-	studio "enfield.smd"
+	studio "enfield_spec.smd"
 }
+
 
 $bodygroup "studio"
 {
-	studio "enfield_spec.smd"
+	studio "enfield_arms.smd"
 }
 
 

@@ -7,7 +7,7 @@
                 "$ambientocclusion" 1
                 "$ambientoccltexture" "models/codww2/weapons/ger_gewehr43/ger_gewehr43_stock_a"	
 	
-	"$phong" "0"
+	"$phong" "1"
 	"$phongexponent"				"10"
 	"$phongboost"					"10"
 
