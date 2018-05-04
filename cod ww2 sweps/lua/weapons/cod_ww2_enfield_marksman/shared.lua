@@ -42,8 +42,8 @@ SWEP.SpreadAdd_Iron	= 0.2
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-4.393, -5.022, 1.363)
-SWEP.IronsightAng = Vector(0.000, 0.013, 0.000)
+SWEP.IronsightPos = Vector(-4.090, -2.618, 0.676)
+SWEP.IronsightAng = Vector(0.038, 0.000, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -87,6 +87,18 @@ SWEP.ReloadTime = 3.45
 SWEP.ReloadTime_Empty = 3.45
 SWEP.FlashlightAttachmentName = "1"
 
+
+
+SWEP.RTScope_Enabled = true
+SWEP.RTScope_Zoom = 7.25
+SWEP.RTScope_Align = Angle(0,0,-90)
+SWEP.RTScope_Reticle = Material("phunbase/reticles/scope_crosshair_simple")
+SWEP.RTScope_DrawIris = true
+SWEP.RTScope_DrawParallax = true
+
+SWEP.MouseSensitivityHip = 1
+SWEP.MouseSensitivityIron = 0.25
+
 SWEP.ViewModelMovementScale = 1
 
 // shell-related stuff
@@ -98,7 +110,6 @@ SWEP.ShellDelay = 0.7
 SWEP.ShellScale = 1
 SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
 SWEP.ShellEjectVelocity = 0
-
 SWEP.MuzzleAttachmentName = "1"
 SWEP.MuzzleEffect = { "PistolGlow", "btb_vm_large", "muzzle_fire_rifle", "muzzle_sparks_rifle", "muzzle_sparks_rifle","muzzle_sparks_rifle", "muzzle_sparks_rifle", "revolver_smoke"}
 
