@@ -1,4 +1,4 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models/weapons/p38/black"
+	"$basetexture" "models/weapons/p38/mtl_ger_p38_barrel_base"
 }
