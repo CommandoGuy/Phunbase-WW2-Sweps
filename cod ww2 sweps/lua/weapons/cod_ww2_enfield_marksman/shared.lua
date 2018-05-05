@@ -41,7 +41,7 @@ SWEP.SpreadAdd_Iron	= 0.2
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-4.385, -4.434, 0.467)
+SWEP.IronsightPos = Vector(-4.385, -4.434, 0.59)
 SWEP.IronsightAng = Vector(0.038, 0.000, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
@@ -59,9 +59,8 @@ SWEP.DisableIronsights = false
 SWEP.EmptySoundPrimary = "Dryfire_Sniper"
 
 SWEP.VElements = {
-	["scope"] = { model = "models/codww2/weapons/lee-enfield smle no,4 mk,i scope.mdl", bone = "tag_weapon", pos = Vector(0,0,0), angle = Angle(0, 0, 0), size =Vector(1, 1, 1), active = true }
+	["enfield_scope"] = {model = "models/codww2/weapons/enfield_scope.mdl", pos = Vector(0,0,0), angle = Angle(0, 0, 0), size =Vector(1, 1, 1), bonemerge = true, active = true}
 }
-
 
 SWEP.Sequences = {
 	idle = "idle",
@@ -90,12 +89,9 @@ SWEP.ReloadTime = 3.45
 SWEP.ReloadTime_Empty = 3.45
 SWEP.FlashlightAttachmentName = "1"
 
-
-
 SWEP.RTScope_Enabled = true
 SWEP.RTScope_Zoom = 7.25
-SWEP.RTScope_Align = Angle(0,0,0)
-SWEP.RTScope_Material = Material("models/codww2/weapons/codww2_gen_optics_hip")
+SWEP.RTScope_Reticle = Material("phunbase/reticles/mosin_crosshair")
 SWEP.RTScope_DrawIris = true
 SWEP.RTScope_DrawParallax = true
 
@@ -122,6 +118,8 @@ SWEP.FireSound = "enfield_Single"
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
 SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
 SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instant or it has a 0.5 second delay
+
+SWEP.FireMoveMod_Iron = 0.5
 
 SWEP.Sounds = {
 	draw = {
