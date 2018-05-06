@@ -25,7 +25,7 @@ SWEP.Primary.ClipSize = 32
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = true
 SWEP.Primary.Damage = 25
-SWEP.Primary.Delay = 0.109
+SWEP.Primary.Delay = 0.09
 SWEP.Primary.Force = 5
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
@@ -83,6 +83,7 @@ SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 1.5
 SWEP.ReloadTime_Empty = 2
+
 
 
 SWEP.ViewModelMovementScale = 1
