@@ -235,7 +235,7 @@ sound.Add({
 	sound = 			"weapons/svt/bolt.wav"	
 })
 
---svt---------------------------------------------------------------
+--enfield---------------------------------------------------------------
 
 sound.Add({
 	name = 			"enfield_single",			// <-- Sound Name That gets called for
@@ -302,7 +302,7 @@ sound.Add({
 	sound = 			"weapons/MP40/bolt.wav"	
 })
 
---mp40---------------------------------------------------------------
+--trench---------------------------------------------------------------
 
 sound.Add({
 	name = 			"Trench_Fire",			// <-- Sound Name That gets called for
@@ -330,4 +330,34 @@ sound.Add({
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
 	sound = 			"weapons/trench/pumpforward.wav"	
+})
+
+--c96---------------------------------------------------------------
+
+sound.Add({
+	name = 			"C96_Single",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1,
+	sound = 			"weapons/c96/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"C96_Magout",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/c96/magout.wav"	
+})
+
+sound.Add({
+	name = 			"C96_Magin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/c96/magin.wav"	
+})
+
+sound.Add({
+	name = 			"C96_Boltrelease",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/c96/bolt.wav"	
 })
