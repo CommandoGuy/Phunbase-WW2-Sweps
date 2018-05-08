@@ -12,7 +12,7 @@
 	"$phongboost"					"2"
 
 	"$phongalbedotint" 1
-	"$phongexponenttexture" "models/codww2/common/exponent"
+	"$phongexponenttexture" "models/codww2/weapons/usa_trenchgun/receiver_exp"
 
 	"$phongfresnelranges"			"[1 1.05 1.25]"
 }

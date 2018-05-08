@@ -9,10 +9,10 @@
 	
 	"$phong" "1"
 	"$phongexponent"				"10"
-	"$phongboost"					"2"
+	"$phongboost"					"0.5"
 
 	"$phongalbedotint" 1
-	"$phongexponenttexture" "models/codww2/common/exponent"
+	"$phongexponenttexture" "models/codww2/weapons/usa_trenchgun/mag_exp"
 
 	"$phongfresnelranges"			"[1 1.05 1.25]"
 }
