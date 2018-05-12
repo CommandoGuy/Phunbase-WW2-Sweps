@@ -361,3 +361,102 @@ sound.Add({
 	volume = 		1.0,
 	sound = 			"weapons/c96/bolt.wav"	
 })
+
+--sawedoff---------------------------------------------------------------
+
+sound.Add({
+	name = 			"sawedoff_single",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1,
+	sound = 			"weapons/sawedoff/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"sawedoff_open",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/sawedoff/open.wav"	
+})
+
+sound.Add({
+	name = 			"sawedoff_shellsE",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/sawedoff/eject2.wav"	
+})
+
+sound.Add({
+	name = 			"sawedoff_shells",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/sawedoff/eject1.wav"	
+})
+
+sound.Add({
+	name = 			"sawedoff_shellin1",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/sawedoff/insert1.wav"	
+})
+
+
+sound.Add({
+	name = 			"sawedoff_shellin2",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/sawedoff/insert2.wav"	
+})
+
+
+sound.Add({
+	name = 			"sawedoff_close",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/sawedoff/close.wav"	
+})
+
+
+
+--m1911---------------------------------------------------------------
+
+sound.Add({
+	name = 			"m1911_fire",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/m1911/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"m1911_clipout2",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m1911/magout.wav"	
+})
+
+sound.Add({
+	name = 			"m1911_clipin1",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m1911/magin.wav"	
+})
+
+sound.Add({
+	name = 			"m1911_clipin2",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m1911/magin.wav"	
+})
+
+sound.Add({
+	name = 			"m1911_slide1",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m1911/slideforward.wav"	
+})
+
+sound.Add({
+	name = 			"m1911_slide2",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m1911/slideforward.wav"	
+})
