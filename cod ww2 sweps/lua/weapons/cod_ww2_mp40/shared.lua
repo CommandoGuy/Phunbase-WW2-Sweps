@@ -31,7 +31,7 @@ SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 
 // Recoil variables
-SWEP.Recoil	= 0.2
+SWEP.Recoil	= 1
 SWEP.Spread	= 0.1
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
@@ -139,3 +139,13 @@ SWEP.Sounds = {
 		{time = 0, sound = "Rifle_Raise1"},
 	},
 }
+
+ // RECOIL
+SWEP.FireMoveMod = 1
+SWEP.FireMoveMod_Iron = 0
+SWEP.LuaViewmodelRecoil = true
+SWEP.FullAimViewmodelRecoil = false
+SWEP.LuaVMRecoilIntensity = 2
+SWEP.LuaVMRecoilLowerSpeed = 0.1
+SWEP.LuaVMRecoilMod = 5 -- modifier of overall intensity for the code based recoil
+SWEP.LuaVMRecoilAxisMod = {vert = 0.1, hor = 0.1, roll = 0.25, forward = 0.25, pitch = 0.025} -- modifier for intensity of the recoil on varying axes

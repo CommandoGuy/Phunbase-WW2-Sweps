@@ -460,3 +460,41 @@ sound.Add({
 	volume = 		1.0,
 	sound = 			"weapons/m1911/slideforward.wav"	
 })
+
+
+--m1911---------------------------------------------------------------
+
+sound.Add({
+	name = 			"Volk_fire",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/volk/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"Volk_Magin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/volk/magin.wav"	
+})
+
+sound.Add({
+	name = 			"Volk_Magout",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/volk/magout.wav"	
+})
+
+sound.Add({
+	name = 			"Volk_Barrelback",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/volk/barrelback.wav"	
+})
+
+sound.Add({
+	name = 			"Volk_Barrelforward",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/volk/barrelforward.wav"	
+})

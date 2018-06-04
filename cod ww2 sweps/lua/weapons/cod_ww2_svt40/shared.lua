@@ -136,3 +136,13 @@ SWEP.Secondary.Delay = 0
 SWEP.Secondary.ClipSize = -1
 SWEP.Secondary.DefaultClip = -1
 SWEP.Secondary.Automatic = true
+
+ // RECOIL
+SWEP.FireMoveMod = 1
+SWEP.FireMoveMod_Iron = 0
+SWEP.LuaViewmodelRecoil = true
+SWEP.FullAimViewmodelRecoil = false
+SWEP.LuaVMRecoilIntensity = 2
+SWEP.LuaVMRecoilLowerSpeed = 0.1
+SWEP.LuaVMRecoilMod = 5 -- modifier of overall intensity for the code based recoil
+SWEP.LuaVMRecoilAxisMod = {vert = 0.1, hor = 0.1, roll = 0.1, forward = 0.1, pitch = 0.05} -- modifier for intensity of the recoil on varying axes

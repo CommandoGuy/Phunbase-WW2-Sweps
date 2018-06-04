@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/volkssturmgewehr/receiver_spec"
+     "$bumpmap" "models/weapons/volkssturmgewehr/receiver_normal"
+      "$color2""[0.04 0.04 0.04]"
+      "$additive""1"
+      "$ambientocclusion" "1"
+      "$ambientocclcolor" "[1 1 1]"
+     "$ambientoccltexture" "models/weapons/volkssturmgewehr/receiver_ao"
+$phongexponenttexture "models/weapons/volkssturmgewehr/receiver_exp"	
+
+      "$phong" "1"
+"$phongtint"	             "[1 1 1]"
+      "$phongexponent"				"50"
+      "$phongboost"					"0.5"
+
+      "$phongalbedotint" 1
+
+      "$phongfresnelranges"			"[0.9 1 1.35]"
+      "$envmap" "env_cubemap"
+      "$envmaptint" "[ 0.009 0.009 0.009 ]"
+      "$envmapfresnel" "60"
+	"$normalmapalphaenvmapmask" 	"1"
+}
+
