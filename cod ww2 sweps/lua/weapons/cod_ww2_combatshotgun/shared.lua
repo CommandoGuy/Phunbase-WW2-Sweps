@@ -66,7 +66,7 @@ SWEP.Sequences = {
 	fire = "fire",
 	fire_last = "fire",
 	fire_iron = "fire",
-	fire_iron_last = "fire",
+	fire_iron_last = "fire", 
 	reload = "reload",
 	deploy = "draw",
 	holster = "holster",
@@ -83,7 +83,7 @@ SWEP.Sequences = {
 
 SWEP.Sounds = {
 	fire = {
-		{time = 0, sound = "", callback = function(wep) wep:PlayVMSequence("reload_shell_pump") end},
+		{time = 0.1, sound = "", callback = function(wep) wep:PlayVMSequence("reload_shell_pump") end}, 
 	},
 	draw = {
 		{time = 0, sound = "Rifle_Raise2", callback = function(self) end}
@@ -106,18 +106,18 @@ SWEP.ReloadTime = 1.5
 SWEP.ViewModelMovementScale = 0.8
 
 // shell-related stuff
-SWEP.ShellVelocity = {X = -150, Y = 0, Z = -30}
+SWEP.ShellVelocity = {X = 100, Y = 0, Z = 100}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 200, Right = 0	, Up = 0}
+SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.45
-SWEP.ShellScale = 1
+SWEP.ShellScale = 0.5
 SWEP.ShellModel = "models/phunbase/shells/12g_bird_open.mdl"
 SWEP.ShellSound = "PB_SHELLIMPACT_SHOTGUN"
 SWEP.ShellEjectVelocity = 10
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_large", "muzzle_fire_pistol", "muzzle_sparks_pistol", "muzzle_sparks_pistol", "muzzle_sparks_pistol", "sshot_smoke"}
+SWEP.MuzzleEffect = {"PistolGlow", "weapon_muzzle_flash_autoshotgun", "muzzle_fire_pistol", "muzzle_sparks_pistol", "barrel_smoke"}
 
 SWEP.FireSound = "Trench_Fire"
 

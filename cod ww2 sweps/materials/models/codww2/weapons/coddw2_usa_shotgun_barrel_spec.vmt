@@ -1,18 +1,24 @@
 "VertexlitGeneric"
-{
-	"$basetexture" "models/codww2/weapons/usa_trenchgun/barrel_s"
-	"$bumpmap" "models/codww2/weapons/usa_trenchgun/barrel_n"
-                "$color2""[0.0 0.0 0.0]"
-                "$additive""1"
-                "$ambientocclusion" 1
-                "$ambientoccltexture" "models/codww2/weapons/usa_trenchgun/barrel_a"	
-	
-	"$phong" "1"
-	"$phongexponent"				"10"
-	"$phongboost"					"2"
+{	
 
-	"$phongalbedotint" 1
-	"$phongexponenttexture" "models/codww2/weapons/usa_trenchgun/barrel_exp"
+"$basetexture" "models/weapons/shotgun/barrel_s"
+"$bumpmap" "models/codww2/weapons/usa_trenchgun/receiver_n"
+      "$color2""[0.04 0.04 0.04]"
+      "$additive""1"
+      "$ambientocclusion" "1"
+      "$ambientocclcolor" "[1 1 1]"
+      "$ambientoccltexture" "models/codww2/weapons/usa_trenchgun/receiver_a"	
 
-	"$phongfresnelranges"			"[1 1.05 1.25]"
+      "$phong" "1"
+      "$phongexponent"				"50"
+      "$phongboost"					"1"
+
+      "$phongalbedotint" 1
+
+      "$phongfresnelranges"			"[0.9 1 1.35]"
+      "$envmap" "env_cubemap"
+      "$envmaptint" "[ 0.009 0.009 0.009 ]"
+      "$envmapfresnel" "60"
 }
+
+

@@ -59,7 +59,7 @@ SWEP.PistolSprintSway = false
 SWEP.DisableIronsights = false
 SWEP.FlashlightAttachmentName = "1"
 SWEP.EmptySoundPrimary = "Dryfire_pistol"
-
+SWEP.FireModes = {"auto", "semi"}
 SWEP.Sequences = {
 	idle = "idle",
 	idle_empty = "idle",
@@ -89,9 +89,9 @@ SWEP.ReloadTime_Empty = 2
 SWEP.ViewModelMovementScale = 1
 
 // shell-related stuff
-SWEP.ShellVelocity = {X = -100, Y = 0, Z = -30}
+SWEP.ShellVelocity = {X = 100, Y = 100, Z = 300}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 200, Right = 0	, Up = 0}
+SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0	, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.01
 SWEP.ShellScale = 1
@@ -100,7 +100,7 @@ SWEP.ShellEjectVelocity = 0
 
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = { "PistolGlow", "btb_vm_small", "muzzle_fire_rifle", "muzzle_sparks_rifle", "muzzle_sparks_rifle","muzzle_sparks_rifle", "muzzle_sparks_rifle", "pistol_muzzlelong_thin"}
+SWEP.MuzzleEffect = {"PistolGlow", "weapon_muzzle_flash_smg", "muzzle_fire_pistol", "muzzle_sparks_pistol", "barrel_smoke"}
 
 SWEP.FireSound = "MP40_Single"
 
@@ -115,30 +115,6 @@ SWEP.Secondary.ClipSize = -1
 SWEP.Secondary.DefaultClip = -1
 SWEP.Secondary.Automatic = true
 
-SWEP.Sounds = {
-	draw = {
-		{time = 0, sound = "Rifle_Raise2", callback = function(self) end}
-	},
-	holster = {
-		{time = 0, sound = "Rifle_Lower1", callback = function(self) end}
-	},
-	reload = {
-		{time = 0, sound = "Rifle_Raise1"},
-		{time = 1, sound = "Rifle_Lower3"},
-		{time = 2.2, sound = "Rifle_Lower2"},
-	},
-		reload_empty = {
-		{time = 0, sound = "Rifle_Raise1"},
-		{time = 1.5, sound = "Rifle_Lower3"},
-		{time = 3.55, sound = "Rifle_Lower2"}
-	},
-	sprint_in = {
-		{time = 0, sound = "Rifle_Lower2"},
-	},
-	sprint_out = {
-		{time = 0, sound = "Rifle_Raise1"},
-	},
-}
 
  // RECOIL
 SWEP.FireMoveMod = 1

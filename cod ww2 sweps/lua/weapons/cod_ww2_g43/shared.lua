@@ -91,9 +91,9 @@ SWEP.FlashlightAttachmentName = "1"
 SWEP.ViewModelMovementScale = 1
 
 // shell-related stuff
-SWEP.ShellVelocity = {X = 60, Y = 0, Z = -40}
+SWEP.ShellVelocity = {X = 0, Y = 100, Z = 50}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 50, Right = 0, Up = 0}
+SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.01
 SWEP.ShellScale = 1
@@ -101,7 +101,7 @@ SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
 SWEP.ShellEjectVelocity = 0
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = { "PistolGlow", "btb_vm_small", "muzzle_fire_rifle", "muzzle_sparks_rifle", "muzzle_sparks_rifle","muzzle_sparks_rifle", "muzzle_sparks_rifle", "pistol_muzzlelong_thin"}
+SWEP.MuzzleEffect = {"PistolGlow", "weapon_muzzle_flash_huntingrifle", "muzzle_fire_pistol", "muzzle_sparks_pistol", "barrel_smoke"}
 
 SWEP.FireSound = "G43_Single"
 

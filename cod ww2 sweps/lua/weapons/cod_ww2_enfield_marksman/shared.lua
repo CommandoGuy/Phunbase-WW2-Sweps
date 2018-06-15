@@ -38,10 +38,10 @@ SWEP.SpreadVel_Iron = 0.9
 SWEP.SpreadAdd = 0.3
 SWEP.SpreadAdd_Iron	= 0.2
 
-SWEP.BasePos = Vector(0,0,0)
-SWEP.BaseAng = Vector(0,0,0)
+SWEP.BasePos = Vector(0.000, 0.000, 0.000)
+SWEP.BaseAng = Vector(0.000, 0.000, 2.243)
 
-SWEP.IronsightPos = Vector(-4.385, -4.434, 0.59)
+SWEP.IronsightPos = Vector(-4.119, -2.104, 1.145)
 SWEP.IronsightAng = Vector(0.038, 0.000, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
@@ -58,9 +58,14 @@ SWEP.PistolSprintSway = false
 SWEP.DisableIronsights = false
 SWEP.EmptySoundPrimary = "Dryfire_Sniper"
 
+--SWEP.VElements = {
+	--["enfield_scope"] = {model = "models/codww2/weapons/enfield_scope.mdl", pos = Vector(0,0,0), angle = Angle(0, 0, 0), size =Vector(1, 1, 1), bonemerge = true, active = true}
+--}
+
 SWEP.VElements = {
-	["enfield_scope"] = {model = "models/codww2/weapons/enfield_scope.mdl", pos = Vector(0,0,0), angle = Angle(0, 0, 0), size =Vector(1, 1, 1), bonemerge = true, active = true}
+	["scope"] = { type = "Model", model = "models/attachments/a_optic_enfield_7x.mdl", bone = "j_gun", rel = "", pos = Vector(-1.477, -0.281, 5.091), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", active = true, skin = 0, bodygroup = {} }
 }
+
 
 SWEP.Sequences = {
 	idle = "idle",
@@ -92,6 +97,8 @@ SWEP.FlashlightAttachmentName = "1"
 SWEP.RTScope_Enabled = true
 SWEP.RTScope_Zoom = 7.25
 SWEP.RTScope_Reticle = Material("models/codww2/reticles/enfield_reticle")
+SWEP.RTScope_Material = Material("models/weapons/optics/lense_rt") 
+SWEP.RTScope_Align = Angle(0,0,0)
 SWEP.RTScope_DrawIris = true
 SWEP.RTScope_DrawParallax = true
 
@@ -99,18 +106,18 @@ SWEP.MouseSensitivityHip = 1
 SWEP.MouseSensitivityIron = 0.25
 
 SWEP.ViewModelMovementScale = 1
-
+SWEP.EnableCustomization = true
 // shell-related stuff
-SWEP.ShellVelocity = {X = 60, Y = 0, Z = 0}
+SWEP.ShellVelocity = {X = 0, Y = 100, Z = 50}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 50, Right = 0, Up = 0}
+SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.7
 SWEP.ShellScale = 1
 SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
 SWEP.ShellEjectVelocity = 0
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = { "PistolGlow", "btb_vm_small", "muzzle_fire_rifle", "muzzle_sparks_rifle", "muzzle_sparks_rifle","muzzle_sparks_rifle", "muzzle_sparks_rifle", "pistol_muzzlelong_thin"}
+SWEP.MuzzleEffect = {"PistolGlow", "weapon_muzzle_flash_huntingrifle", "muzzle_fire_pistol", "muzzle_sparks_pistol", "barrel_smoke"}
 
 SWEP.FireSound = "enfield_Single"
 

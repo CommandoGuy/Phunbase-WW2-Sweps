@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/mas38/mtl_fra_mas38_clip_base"
+     "$bumpmap" "models/weapons/mas38/mag_normal"
+      "$color""[0.04 0.04 0.04]"
+$phongexponenttexture "models/weapons/mas38/mag_exp"	
+
+      "$phong" "1"
+"$phongtint"	             "[1 1 1]"
+      "$phongexponent"				"50"
+      "$phongboost"					"1"
+
+      "$phongalbedotint" 1
+
+      "$phongfresnelranges"			"[1 1.35]"
+}

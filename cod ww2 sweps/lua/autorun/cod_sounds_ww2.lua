@@ -98,6 +98,42 @@ sound.Add({
 	sound = 			"universal/shell_bounce6.wav"		
 })
 
+sound.Add({
+	name = 			"Thompson_StartReload",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/thompson/StartReload.wav"	
+})
+
+sound.Add({
+	name = 			"Thompson_EndReload",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/thompson/endReload.wav"	
+})
+
+sound.Add({
+	name = 			"Thompson_MagTransition",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/thompson/MagTransition.wav"	
+})
+
+sound.Add({
+	name = 			"Thompson_Draw",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/thompson/Draw.wav"	
+})
+
+sound.Add({
+	name = 			"Thompson_AfterMagIn",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/thompson/AfterMagIn.wav"	
+})
+
+
 
 
 --fg42---------------------------------------------------------------
@@ -462,7 +498,7 @@ sound.Add({
 })
 
 
---m1911---------------------------------------------------------------
+--volkssturmgewehr---------------------------------------------------------------
 
 sound.Add({
 	name = 			"Volk_fire",			// <-- Sound Name That gets called for
@@ -486,15 +522,174 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"Volk_Barrelback",			
+	name = 			"Volk_Barrel",			
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/volk/barrelback.wav"	
+	sound = 			"weapons/volk/bolt.wav"	
+})
+
+--mas38---------------------------------------------------------------
+
+sound.Add({
+	name = 			"Mas38_Fire",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/mas38/fire.wav"	// <-- Sound Path
 })
 
 sound.Add({
-	name = 			"Volk_Barrelforward",			
+	name = 			"Mas38_Magout",			
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/volk/barrelforward.wav"	
+	sound = 			"weapons/mas38/magout.wav"	
+})
+
+sound.Add({
+	name = 			"Mas38_Magin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/mas38/magin.wav"	
+})
+
+sound.Add({
+	name = 			"Mas38_Bolt",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/mas38/bolt.wav"	
+})
+
+
+--m1carbine---------------------------------------------------------------
+
+sound.Add({
+	name = 			"M1C_Fire",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/m1c/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"M1C_Magout",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m1c/magout.wav"	
+})
+
+sound.Add({
+	name = 			"M1C_Magin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m1c/magin.wav"	
+})
+
+sound.Add({
+	name = 			"M1C_Bolt",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m1c/bolt.wav"	
+})
+
+
+sound.Add({
+	name = 			"M1C_Ping",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m1c/ping.wav"	
+})
+
+--Thompson---------------------------------------------------------------
+
+sound.Add({
+	name = 			"Thompson_Fire",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/thompson/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"Thompson_Magin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/thompson/magout.wav"	
+})
+
+sound.Add({
+	name = 			"Thompson_Magout",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/thompson/magin.wav"	
+})
+
+sound.Add({
+	name = 			"Thompson_Magtap",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/thompson/maghit.wav"	
+})
+
+--M1 Garand---------------------------------------------------------------
+
+sound.Add({
+	name = 			"Garand_Fire",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/garand/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"Garand_Ping",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/garand/ping.wav"	
+})
+
+sound.Add({
+	name = 			"Garand_Boltopen",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/garand/boltback.wav"	
+})
+
+sound.Add({
+	name = 			"Garand_Clipin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/garand/clipin.wav"	
+})
+
+sound.Add({
+	name = 			"Garand_Boltclose",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/garand/boltclose.wav"	
+})
+
+--mp28---------------------------------------------------------------
+
+sound.Add({
+	name = 			"MP28_Fire",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/mp28/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"mp28_magout",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/mp28/magout.wav"	
+})
+
+sound.Add({
+	name = 			"mp28_magin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/mp28/magin.wav"	
+})
+
+sound.Add({
+	name = 			"mp28_bolt",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/mp28/bolt.wav"	
 })

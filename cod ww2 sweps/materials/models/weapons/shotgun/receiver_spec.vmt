@@ -1,0 +1,23 @@
+"VertexlitGeneric"
+{
+           "$basetexture" "models/weapons/shotgun/receiver_spec"
+"$bumpmap" "models/codww2/weapons/usa_trenchgun/receiver_n"
+      "$color2""[0.04 0.04 0.04]"
+      "$additive""1"
+      "$ambientocclusion" "1"
+      "$ambientocclcolor" "[1 1 1]"
+
+      "$ambientoccltexture" "models/codww2/weapons/usa_trenchgun/receiver_a"	
+
+      "$phong" "1"
+      "$phongexponent"				"50"
+      "$phongboost"					"1"
+
+      "$phongalbedotint" 1
+
+      "$phongfresnelranges"			"[0.9 1 1.35]"
+      "$envmap" "env_cubemap"
+      "$envmaptint" "[ .05  .05 .05]"
+      "$envmapfresnel" "60"
+"$envmapmask" "models/weapons/shotgun/receiver_spec" 
+}

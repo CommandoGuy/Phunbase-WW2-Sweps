@@ -1,0 +1,21 @@
+"VertexlitGeneric"
+{
+      "$basetexture" "models/weapons/cod_m82_slate/body/spec"
+      "$bumpmap" "models/weapons/cod_m82_slate/body/normal"
+      "$color2""[0.0 0.0 0.0]"
+      "$additive""1"
+      "$ambientocclusion" 1
+      "$ambientoccltexture" "models/weapons/cod_m82_slate/body/ao"
+
+      "$phong" "1"
+      "$phongexponent"				"40"
+      "$phongboost"					"1"
+
+      "$phongalbedotint" 1
+
+      "$phongfresnelranges"			"[0.9 1 1.35]"
+      "$envmap" "env_cubemap"
+      "$envmaptint" "[ 0.009 0.009 0.009 ]"
+      "$envmapfresnel" "60"
+
+}

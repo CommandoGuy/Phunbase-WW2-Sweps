@@ -19,5 +19,6 @@
 	"$envmapfresnel" 				".5"
 	"$envmaptint" 				"[0.005 0.005 0.005]"
 	"$normalmapalphaenvmapmask" 	"1"
+"$envmapmask" "models/arms/gloves_specular" 
 
 }

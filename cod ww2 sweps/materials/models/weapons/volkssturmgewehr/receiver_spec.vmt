@@ -18,7 +18,7 @@ $phongexponenttexture "models/weapons/volkssturmgewehr/receiver_exp"
 
       "$phongfresnelranges"			"[0.9 1 1.35]"
       "$envmap" "env_cubemap"
-      "$envmaptint" "[ 0.009 0.009 0.009 ]"
+      "$envmaptint" "[ 0.01 0.01 0.01 ]"
       "$envmapfresnel" "60"
 	"$normalmapalphaenvmapmask" 	"1"
 }

@@ -1,0 +1,20 @@
+// Realistic water v1
+// Refraction effects by COREDAMAGE / Original texture by Valve
+// info@coredamage.com
+// My FPSBANANA subs: http://www.fpsbanana.com/members/subs/136342
+
+
+"Refract"
+{
+	"$model" 1
+	"$refractamount" "1.0"
+	"$refracttint" "[1 1 1 50]"
+
+	"$dudvmap" "effects/splashwake1_dudv"
+	"$normalmap" "effects/splashwake1"
+
+	"$surfaceprop" "water"
+	"$bumpframe" "0"
+
+}
+	

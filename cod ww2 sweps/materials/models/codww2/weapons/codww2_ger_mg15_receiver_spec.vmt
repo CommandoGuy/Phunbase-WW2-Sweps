@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/codww2/weapons/ger_mg15/ger_mg15_receiver_s"
+	"$bumpmap" "models/codww2/weapons/ger_mg15/ger_mg15_receiver_n"
+                "$color2""[0.0 0.0 0.0]"
+                "$additive""1"
+                "$ambientocclusion" 1
+                "$ambientoccltexture" "models/codww2/weapons/ger_mg15/ger_mg15_receiver_a"	
+	
+	"$phong" "1"
+	"$phongexponent"				"10"
+	"$phongboost"					"10"
+
+	"$phongalbedotint" 1
+	"$phongexponenttexture" "models/codww2/weapons/ger_mg15/ger_mg15_receiver_exp"
+
+	"$phongfresnelranges"			"[1 1.05 1.25]"
+}

@@ -114,10 +114,9 @@ SWEP.ReloadTime = 2.5
 SWEP.ViewModelMovementScale = 0.8
 
 // shell-related stuff
-SWEP.ShellVelocity = {X = -10, Y = 0, Z = 10}
+SWEP.ShellVelocity = {X = 0, Y = 100, Z = 50}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellAngularVelocity = {Pitch_Min = 0, Pitch_Max = 0, Yaw_Min = 0, Yaw_Max = 0, Roll_Min = 0, Roll_Max = 0}
-SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 90}
+SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 100}
 SWEP.ShellAttachmentName = "1"
 SWEP.ShellDelay = 0.075
 SWEP.ShellScale = 0.6
@@ -125,7 +124,7 @@ SWEP.ShellModel = "models/phunbase/shells/45acp.mdl"
 SWEP.ShellEjectVelocity = 50
 
 SWEP.MuzzleAttachmentName = "muzzle"
-SWEP.MuzzleEffect = {"btb_vm_small", "PistolGlow", "muzzle_lee_simple_pistol", "muzzle_fire_pistol", "muzzle_sparks_pistol", "pistol_muzzlelong_thin"}
+SWEP.MuzzleEffect = {"PistolGlow", "smg_muzzle2", "muzzle_fire_pistol", "muzzle_sparks_pistol" "pistol_muzzlelong_thin"}
 
 SWEP.IsDual = true
 SWEP.MuzzleAttachmentName_L = "muzzle_left"

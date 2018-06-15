@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+	"$basetexture" "trails/smoke"
+	"$texture2" "trails/smoke"
+
+	"$additive" 0
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+	"$translucent" "1"	
+}

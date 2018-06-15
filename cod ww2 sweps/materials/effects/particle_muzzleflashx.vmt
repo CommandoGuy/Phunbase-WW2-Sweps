@@ -1,0 +1,16 @@
+"UnlitGeneric"
+{
+	"$basetexture" "effects/muzzleflashX"
+	"$additive" "2"
+	"$vertexcolor"2
+	"$vertexalpha" "0.5"
+   "Proxies"
+   {
+      "AnimatedTexture"
+      {
+         "animatedtexturevar" "$basetexture"
+         "animatedtextureframenumvar" "$frame"
+         "animatedtextureframerate" 60
+      }
+   }
+}

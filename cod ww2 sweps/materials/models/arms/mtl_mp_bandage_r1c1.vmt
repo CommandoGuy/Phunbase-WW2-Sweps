@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/arms/mtl_mp_bandage_r1c1"
+"$bumpmap" "models/arms/bandage_normal"
+
+"$phong" "1"
+
+"$phongboost" "0.25"
+"$phongexponent" "50"
+"$phongfresnelranges" 	             "[1 1 1]"
+}

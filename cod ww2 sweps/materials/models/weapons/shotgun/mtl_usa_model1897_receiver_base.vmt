@@ -1,4 +1,18 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "models/weapons/shotgun/mtl_usa_model1897_receiver_base"
+
+"$color""[0.04 0.04 0.04]"
+"$phong" "1"
+"$phongtint" "[1 1 1]"
+"$phongexponent" "50"
+"$phongexponenttexture" "models/weapons/m1carbine/spec_reic"
+"$phongboost" "0.5"
+	"$phongfresnelranges"           "[1 1 1]"
+$normalmapalphaenvmapmask 1
+      "$envmap" "env_cubemap"
+      "$envmaptint" "[ 0.1 0.1  0.1 ]"
+      "$envmapfresnel" "60"
+$envmapmask		"models/weapons/shotgun/receiver_spec"
+
 }

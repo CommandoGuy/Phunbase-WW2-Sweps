@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+
+	"$basetexture" "models/weapons/m1911_s/slide"
+	"$bumpmap" "models/weapons/m1911_s/slide_normal"
+	"$envmaptint" "[0.03 0.03 0.03]"
+      	"$envmap" "env_cubemap"
+	
+	"$phong" 	"1"
+	"$phongexponent" 	"15"
+	"$phongboost"	 "1"
+	"$phongfresnelranges" "[0.1 0.4 1]"
+
+}
