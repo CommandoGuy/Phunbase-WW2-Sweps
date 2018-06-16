@@ -9,6 +9,9 @@ SWEP.ViewModelFOV = 60
 SWEP.AimViewModelFOV = 54
 SWEP.ViewModel = "models/weapons/enfield.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
+SWEP.EnableCustomization = true
+SWEP.CustomizationMenuSize = 0.8
+SWEP.CustomizationMenuAttachmentName = "Laser"
 
 SWEP.HoldType = "smg"
 SWEP.SprintHoldType = "passive"
@@ -57,6 +60,23 @@ SWEP.PistolSprintSway = false
 
 SWEP.DisableIronsights = false
 SWEP.EmptySoundPrimary = "Dryfire_Sniper"
+
+local ang0 = Vector()
+
+SWEP.VElements = {
+["call_of_duty_world_war_2_7_times_magnification_marksman_rifle_scope_but_with_a_free_call_of_duty_world_war_2_executable_for_you_to_play_with"] = { type = "Model", model = "models/attachments/a_optic_enfield_7x.mdl", bone = "j_gun", rel = "", pos = Vector(-1.477, -0.281, 5.091),  default = true, angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", active = true, skin = 0, bodygroup = {} },
+["call_of_duty_world_war_2_iron_sight_marksman_rifle_scope_but_with_a_free_call_of_duty_world_war_2_executable_for_you_to_play_with"] = { type = "Model", model = "models/attachments/a_iron_enfield.mdl", bone = "j_gun", rel = "", pos = Vector(-7.678, -2.866, 6.546), angle = Angle(0, 0, -1.744), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", active = true,  skin = 0, bodygroup = {} },	
+}
+
+SWEP.AttachmentIronsights = {
+	["call_of_duty_world_war_2_7_times_magnification_marksman_rifle_scope_but_with_a_free_call_of_duty_world_war_2_executable_for_you_to_play_with"] = {pos = Vector(-2.2509, -1, -0.245), ang = ang0},
+	["call_of_duty_world_war_2_iron_sight_marksman_rifle_scope_but_with_a_free_call_of_duty_world_war_2_executable_for_you_to_play_with"] = {pos = Vector(-4.136, -4.098, 1.584), ang = ang0}
+}
+
+SWEP.Attachments = {
+	[1] = {name = "Optics", attachments = {"call_of_duty_world_war_2_7_times_magnification_marksman_rifle_scope_but_with_a_free_call_of_duty_world_war_2_executable_for_you_to_play_with", "call_of_duty_world_war_2_iron_sight_marksman_rifle_scope_but_with_a_free_call_of_duty_world_war_2_executable_for_you_to_play_with"}},
+}
+
 
 
 SWEP.Sequences = {
