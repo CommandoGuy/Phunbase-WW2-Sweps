@@ -4,7 +4,7 @@ SWEP.PrintName = "M1 Garand"
 SWEP.Category = "PHUNBASE | COD WWII"
 SWEP.Slot = 2
 SWEP.SlotPos = 0
-
+include("garand_sounds.lua")
 SWEP.ViewModelFOV = 60
 SWEP.AimViewModelFOV = 30
 SWEP.ViewModel = "models/weapons/garand.mdl"
@@ -31,7 +31,7 @@ SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 
 // Recoil variables
-SWEP.Recoil	= 5
+SWEP.Recoil	= 1.2
 SWEP.Spread	= 0.1
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
@@ -95,7 +95,7 @@ SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw
 SWEP.ShellViewAngleAlign = {Forward = 0, Right = 350, Up = 90}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.01
-SWEP.ShellScale = 0
+SWEP.ShellScale = 1
 SWEP.ShellModel = "models/phunbase/shells/6_8x43mm.mdl"
 SWEP.ShellEjectVelocity = 50
 
@@ -109,29 +109,12 @@ SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you shoul
 SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instant or it has a 0.5 second delay
 
 SWEP.Sounds = {
-	draw = {
-		{time = 0, sound = "Rifle_Raise2", callback = function(self) end}
-	},
-	holster = {
-		{time = 0, sound = "Rifle_Lower1", callback = function(self) end}
-	},
 	reload = {
-		{time = 0, sound = "Thompson_StartReload"},
+		{time = 0.3, sound = "Thompson_StartReload"},
 		{time = 2.4, sound = "Thompson_EndReload"},
 	},
-	fire = {
-		{time = 0, sound = "", callback = function(wep) wep:_makeParticle("weapon_shell_casing_rifle", wep.ShellAttachmentName) end}, 
-	},
-		fire_last = {
-		{time = 0, sound = "", callback = function(wep) wep:_makeParticle("weapon_shell_casing_rifle", wep.ShellAttachmentName) end}, 
-	},
-		fire_ads = {
-		{time = 0, sound = "", callback = function(wep) wep:_makeParticle("weapon_shell_casing_rifle", wep.ShellAttachmentName) end}, 
-	},
-		fire_ads_last = {
-		{time = 0, sound = "", callback = function(wep) wep:_makeParticle("weapon_shell_casing_rifle", wep.ShellAttachmentName) end}, 
-	},
-		reload_empty = {
+
+	reload_empty = {
 		{time = 0, sound = "Thompson_StartReload"},
 		{time = 2, sound = "Thompson_EndReload"},
 	},
@@ -154,8 +137,8 @@ SWEP.Secondary.Automatic = true
 SWEP.FireMoveMod = 1
 SWEP.FireMoveMod_Iron = 0
 SWEP.LuaViewmodelRecoil = true
-SWEP.FullAimViewmodelRecoil = false
+SWEP.FullAimViewmodelRecoil = true
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 0.1
 SWEP.LuaVMRecoilMod = 7 -- modifier of overall intensity for the code based recoil
-SWEP.LuaVMRecoilAxisMod = {vert = 0.1, hor = 0.1, roll = 0.25, forward = 0.25, pitch = 0.025} -- modifier for intensity of the recoil on varying axes
+SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0, roll = 0, forward = 0.25, pitch = 0} -- modifier for intensity of the recoil on varying axes
