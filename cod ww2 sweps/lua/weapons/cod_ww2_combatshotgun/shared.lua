@@ -45,8 +45,8 @@ SWEP.Secondary.Bullets = 12
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-3.336, -5, 1.230)
-SWEP.IronsightAng = Vector(0.668, 0.000, 0.000)
+SWEP.IronsightPos = Vector(-3.289, -5.000, 0.967)
+SWEP.IronsightAng = Vector(1.083, 0.000, 0.000)
 
 SWEP.SprintPos = Vector(0,0,0)
 SWEP.SprintAng = Vector(0,0,0)
