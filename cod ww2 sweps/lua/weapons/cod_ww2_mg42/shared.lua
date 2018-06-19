@@ -46,6 +46,9 @@ SWEP.BaseAng = Vector(0,0,0)
 SWEP.IronsightPos = Vector(-3.879, 0.000, 1.302)
 SWEP.IronsightAng = Vector(0.372, 0.032, 0.000)
 
+SWEP.CustomizePos = Vector(1.546, 0.000, -1.502)
+SWEP.CustomizeAng = Vector(6.667, 10.892, 0.000)
+
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
 
@@ -108,12 +111,15 @@ SWEP.NormalFlashlight = false // enables the HL2 flashlight
 SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
 SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instant or it has a 0.5 second delay
 
+SWEP.EnableCustomization = true
+SWEP.CustomizationMenuSize = 1.5
+SWEP.CustomizationMenuAttachmentName = "1"
 
-SWEP.Secondary.Ammo = ""
-SWEP.Secondary.Delay = 0
-SWEP.Secondary.ClipSize = -1
-SWEP.Secondary.DefaultClip = -1
-SWEP.Secondary.Automatic = true
+SWEP.Attachments = {
+	[1] = {name = "Finish", attachments = {"Normandy_Camouflage"}},
+}
+
+
 
 
  // RECOIL
@@ -126,12 +132,15 @@ SWEP.LuaVMRecoilLowerSpeed = 0.1
 SWEP.LuaVMRecoilMod = 5 -- modifier of overall intensity for the code based recoil
 SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0, roll = 0, forward = 0.5, pitch = 0} -- modifier for intensity of the recoil on varying axes
 
+SWEP.WhenBulletsShouldChangeCycle = 0.3
+
 function SWEP:AdditionalThink()
     if CLIENT then
         local vm = self.VM
         if vm then
-            local clip = self:Clip1()
-            local bullets = math.Clamp(clip, 0, 16)
+            local howMany = (self.Sequence):find("reload") and (self.Cycle < self.WhenBulletsShouldChangeCycle and self.HadInClip or self:calcAmmoLeft()) or self:Clip1()
+
+            local bullets = math.Clamp(howMany, 0, 16)
             vm:SetBodygroup(1, bullets)
         end
     end
