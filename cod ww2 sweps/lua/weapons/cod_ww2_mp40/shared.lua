@@ -45,6 +45,9 @@ SWEP.BaseAng = Vector(0,0,0)
 SWEP.IronsightPos = Vector(-4.191, -2.986, 1.159)
 SWEP.IronsightAng = Vector(0.400, 0.039, 0.000)
 
+SWEP.CustomizePos = Vector(1.546, 0.000, -1.502)
+SWEP.CustomizeAng = Vector(6.667, 10.892, 0.000)
+
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
 
@@ -84,6 +87,13 @@ SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 1.5
 SWEP.ReloadTime_Empty = 2
 
+SWEP.EnableCustomization = true
+SWEP.CustomizationMenuSize = 1.5
+SWEP.CustomizationMenuAttachmentName = "1"
+
+SWEP.Attachments = {
+	[1] = {name = "Finish", attachments = {"Normandy_Camouflage"}},
+}
 
 
 SWEP.ViewModelMovementScale = 1

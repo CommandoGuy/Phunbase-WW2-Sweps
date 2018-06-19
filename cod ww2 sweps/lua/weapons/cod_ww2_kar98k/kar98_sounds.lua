@@ -1,0 +1,3 @@
+PHUNBASE:addRegularSound("kar98_boltforward", "weapons/kar98/boltopen1.wav","weapons/kar98/boltopen2.wav", "weapons/kar98/boltopen3.wav")
+PHUNBASE:addRegularSound("kar98_boltback", "weapons/kar98/boltclose1.wav","weapons/kar98/boltclose2.wav", "weapons/kar98/boltclose3.wav")
+PHUNBASE:addRegularSound("kar98_magin", "weapons/kar98/clipin1.wav","weapons/kar98/clipin2.wav", "weapons/kar98/clipin3.wav")

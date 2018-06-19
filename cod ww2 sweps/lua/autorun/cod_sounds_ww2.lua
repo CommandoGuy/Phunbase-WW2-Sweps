@@ -795,3 +795,12 @@ sound.Add({
 	volume = 		1.0,
 	sound = 			"weapons/mg42/charge.wav"	
 })
+
+--kar97k---------------------------------------------------------------
+
+sound.Add({
+	name = 			"kar98_single",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1,
+	sound = 			"weapons/kar98/fire.wav"	// <-- Sound Path
+})
