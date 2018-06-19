@@ -689,7 +689,7 @@ sound.Add({
 })
 
 
---mp28---------------------------------------------------------------
+--1935---------------------------------------------------------------
 
 sound.Add({
 	name = 			"MP28_Fire",			// <-- Sound Name That gets called for
@@ -717,4 +717,81 @@ sound.Add({
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
 	sound = 			"weapons/m1935/maghit.wav"	
+})
+
+--bar---------------------------------------------------------------
+
+sound.Add({
+	name = 			"Bar_Fire",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/bar/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"Bar_Magout",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/bar/magout.wav"	
+})
+
+sound.Add({
+	name = 			"Bar_Magin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/bar/magin.wav"	
+})
+
+sound.Add({
+	name = 			"Bar_Charge",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/bar/charge.wav"	
+})
+
+
+--mg42---------------------------------------------------------------
+
+sound.Add({
+	name = 			"MG42_Fire",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/mg42/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"MG42_Open",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/mg42/open.wav"	
+})
+
+sound.Add({
+	name = 			"MG42_Close",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/mg42/close.wav"	
+})
+
+sound.Add({
+	name = 			"MG42_Beltin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/mg42/beltin.wav"	
+})
+
+
+sound.Add({
+	name = 			"MG42_Beltout",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/mg42/beltout.wav"	
+})
+
+
+sound.Add({
+	name = 			"MG42_Charge",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/mg42/charge.wav"	
 })

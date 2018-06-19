@@ -26,6 +26,14 @@ local particlenames = {
 	"weapon_muzzle_flash_assaultrifle",
 	"weapon_muzzle_flash_autoshotgun",
 	"weapon_muzzle_flash_huntingrifle",
+	"weapon_shell_casing_50cal",
+	"barrel_smoke_trail",
+	"muzzleflash_suppressed",
+	"muzzle_bullet_trail_ARb",
+	"muzzle_sparks_bigb",
+	"muzzle_glow_pistol",
+	"muzzle_bullet_trail_shotgun",
+	
 }
 
 for k, v in pairs(particlenames) do

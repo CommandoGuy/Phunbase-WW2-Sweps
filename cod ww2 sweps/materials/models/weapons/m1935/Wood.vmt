@@ -2,9 +2,10 @@
 {
 	"$basetexture" "models/weapons/m1935/mtl_itl_bredapg1935_base"
 	"$bumpmap" "models/weapons/m1935/base_normal"
+"$PhongExponentTexture" "models/weapons/m1935/metal_gloss"
 	"$normalmapalphaenvmapmask" "1"
 	"$phong" 	"1"
-	"$phongexponent" 	"50"
+	"$phongexponent" 	"10"
 	"$phongboost"	 "3"
 	"$phongfresnelranges" "[0.1 0.4 1]"
 

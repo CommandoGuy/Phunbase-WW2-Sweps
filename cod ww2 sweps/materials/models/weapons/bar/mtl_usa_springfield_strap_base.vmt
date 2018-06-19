@@ -1,0 +1,22 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "models/weapons/bar/mtl_usa_springfield_strap_base"
+	"$bumpmap" "models/weapons/bar/strap_normal"
+	"$PhongExponentTexture" "models/weapons/bar/strap_glossmap"
+	
+	"$phong" 					"1"
+	 "$phongexponent" 			"15"
+	"$phongboost" 				"0.5"
+	"$phongfresnelranges" 		"[2 4 6]"
+	"$phongtint" 				"[0.6 0.8 1]"
+	"$phongalbedotint" 			"1"	
+
+	 "$rimlight"     "1"
+	 "$rimlightexponent"   "10" 
+	 "$rimlightboost"   "0.5"
+                  $rimmask 1
+
+	"$halflambert"     "1"
+	"$nocull" "1"
+	"$nodecal" "1"
+}

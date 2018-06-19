@@ -2,14 +2,5 @@
 {
 	"$basetexture" "models/weapons/volkssturmgewehr/mtl_ger_volkssturmgewehr_receiver_base"
      "$bumpmap" "models/weapons/volkssturmgewehr/receiver_normal"
-"$phong"    "1"
-"$phongexponent"    "5"
-"$phongalbedotint"  "1"
-"$phongboost"   "5"
-"$phongfresnelranges"   "[5 7 8]"
-$alphatest "1"
-$allowalphatocoverage "1"
-$alphatestreference ".5"
-"$phongexponenttexture" "models/weapons/volkssturmgewehr/receiver_exp"
 }
 

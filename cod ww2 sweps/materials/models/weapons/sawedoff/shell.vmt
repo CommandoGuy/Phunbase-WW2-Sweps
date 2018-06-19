@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$basetexture ""models/weapons/sawedoff/d"
+	"$bumpmap" "models/weapons/sawedoff/n"
+	"$phongexponenttexture" "models/weapons/sawedoff/e"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 	"1"
+	
+	"$envmaptint"		"[0.02 0.02 0.02]"
+	
+	"$phong" 		"1"
+	"$phongexponent" "20"
+	"$phongboost"		"1"
+	"$phongfresnelranges"	"[1 4 7]"
+	"$phongalbedotint" 	"1"
+	"$halflambert" 		"1"
