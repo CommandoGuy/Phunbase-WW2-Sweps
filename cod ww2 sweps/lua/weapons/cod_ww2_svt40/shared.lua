@@ -108,10 +108,11 @@ SWEP.ShellEjectVelocity = 0
 SWEP.RTScope_Enabled = true
 SWEP.RTScope_Zoom = 7.25
 SWEP.RTScope_Reticle = Material("models/codww2/reticles/enfield_reticle")
-SWEP.RTScope_Material = Material("models/weapons/svt40/lensess") 
+SWEP.RTScope_Material = Material("models/weapons/svt40/lense") 
 SWEP.RTScope_Align = Angle(0,0,0)
 SWEP.RTScope_DrawIris = true
 SWEP.RTScope_DrawParallax = true
+SWEP.IronsightPos = Vector()
 
 
 local ang0 = Vector()
@@ -121,7 +122,7 @@ SWEP.VElements = {
 }
 
 SWEP.AttachmentIronsights = {
-["cod_ww2_svt40_scope"] = {pos = Vector(-4.559, 1.482, 0.013), ang = ang0}
+["cod_ww2_svt40_scope"] = {pos = Vector(-3.521, -2.037, 0.338), ang = ang0}
 }
 
 SWEP.Attachments = {
