@@ -51,6 +51,9 @@ SWEP.SprintAng = Vector(0, 0, 0)
 SWEP.HolsterPos = Vector(0,0,20)
 SWEP.HolsterAng = Vector(0,0,0)
 
+SWEP.CustomizePos = Vector(2.222, -0.780, -2.559) 
+SWEP.CustomizeAng = Vector(12.928, 17.873, 0.000)
+
 SWEP.NearWallPos = Vector(-0.429, -8.035, -9.005)
 SWEP.NearWallAng = Vector(28.318, 26.918, -14.25)
 
@@ -78,6 +81,10 @@ SWEP.Sequences = {
 	sprint_end = "sprint_out", 
 }
 
+SWEP.EnableCustomization = true
+SWEP.CustomizationMenuSize = 0.8
+SWEP.CustomizationMenuAttachmentName = "1"
+
 SWEP.IdleAfterFire = false
 SWEP.UseIronTransitionAnims = false 
 SWEP.DeployTime = 0.75
@@ -85,7 +92,7 @@ SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 2.3
 SWEP.ReloadTime_Empty = 2.8
 SWEP.FlashlightAttachmentName = "1"
-
+SWEP.MouseSensitivityIron = 0.25
 SWEP.ViewModelMovementScale = 1
 
 // shell-related stuff
@@ -97,6 +104,31 @@ SWEP.ShellDelay = 0.01
 SWEP.ShellScale = 1
 SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
 SWEP.ShellEjectVelocity = 0
+
+SWEP.RTScope_Enabled = true
+SWEP.RTScope_Zoom = 7.25
+SWEP.RTScope_Reticle = Material("models/codww2/reticles/enfield_reticle")
+SWEP.RTScope_Material = Material("models/weapons/svt40/lensess") 
+SWEP.RTScope_Align = Angle(0,0,0)
+SWEP.RTScope_DrawIris = true
+SWEP.RTScope_DrawParallax = true
+
+
+local ang0 = Vector()
+
+SWEP.VElements = {
+["cod_ww2_svt40_scope"] = { type = "Model", model = "models/attachments/a_optic_svt40_x4.mdl", bone = "tag_weapon", rel = "", pos = Vector(-12.303, -3.441, 6.896), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+}
+
+SWEP.AttachmentIronsights = {
+["cod_ww2_svt40_scope"] = {pos = Vector(-4.559, 1.482, 0.013), ang = ang0}
+}
+
+SWEP.Attachments = {
+	[1] = {name = "Optics", attachments = {"cod_ww2_svt40_scope"}},
+}
+
+
 
 SWEP.MuzzleAttachmentName = "1"
 SWEP.MuzzleEffect = {"PistolGlow", "weapon_muzzle_flash_huntingrifle", "muzzle_fire_pistol", "muzzle_sparks_pistol", "barrel_smoke"}

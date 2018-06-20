@@ -38,3 +38,8 @@ local att = {}
 att.name = "cod_ww2_k98k_scope"
 att.menuName = "7x Scope"
 PHUNBASE:registerAttachment(att)
+
+local att = {}
+att.name = "cod_ww2_svt40_scope"
+att.menuName = "4x Scope"
+PHUNBASE:registerAttachment(att)
