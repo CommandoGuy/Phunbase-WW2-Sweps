@@ -101,7 +101,7 @@ SWEP.ShellEjectVelocity = 0
 
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "smg_muzzle2", "muzzle_fire_pistol", "muzzle_sparks_pistol""pistol_muzzlelong_thin"}
+SWEP.MuzzleEffect = {"PistolGlow", "smg_muzzle2", "muzzle_fire_pistol", "muzzle_sparks_pistol", "pistol_muzzlelong_thin"}
 
 SWEP.FireSound = "MP40_Single"
 

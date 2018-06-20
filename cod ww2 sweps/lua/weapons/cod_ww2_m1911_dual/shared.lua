@@ -124,7 +124,7 @@ SWEP.ShellModel = "models/phunbase/shells/45acp.mdl"
 SWEP.ShellEjectVelocity = 50
 
 SWEP.MuzzleAttachmentName = "muzzle"
-SWEP.MuzzleEffect = {"PistolGlow", "smg_muzzle2", "muzzle_fire_pistol", "muzzle_sparks_pistol" "pistol_muzzlelong_thin"}
+SWEP.MuzzleEffect = {"PistolGlow", "smg_muzzle2", "muzzle_fire_pistol", "muzzle_sparks_pistol", "pistol_muzzlelong_thin"}
 
 SWEP.IsDual = true
 SWEP.MuzzleAttachmentName_L = "muzzle_left"
