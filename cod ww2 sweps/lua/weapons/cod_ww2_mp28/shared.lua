@@ -98,7 +98,7 @@ SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw
 SWEP.ShellViewAngleAlign = {Forward = 100, Right = 1000	, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0
-SWEP.ShellScale = 0
+SWEP.ShellScale = 1
 SWEP.ShellModel = "models/phunbase/shells/9x19mm.mdl"
 SWEP.ShellEjectVelocity = 0
 
@@ -118,16 +118,6 @@ SWEP.Secondary.Delay = 0
 SWEP.Secondary.ClipSize = -1
 SWEP.Secondary.DefaultClip = -1
 SWEP.Secondary.Automatic = true
-
-SWEP.Sounds = {
-	fire = {
-		{time = 0, sound = "", callback = function(wep) wep:_makeParticle("weapon_shell_casing_9mm_fp", wep.ShellAttachmentName) end}, 
-	},
-	fire_last = {
-		{time = 0, sound = "", callback = function(wep) wep:_makeParticle("weapon_shell_casing_9mm_fp", wep.ShellAttachmentName) end}, 
-	},
-
-}
 
  // RECOIL
 SWEP.FireMoveMod = 1
