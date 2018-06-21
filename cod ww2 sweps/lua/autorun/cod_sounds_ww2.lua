@@ -804,3 +804,33 @@ sound.Add({
 	volume = 		1,
 	sound = 			"weapons/kar98/fire.wav"	// <-- Sound Path
 })
+
+--stg44---------------------------------------------------------------
+
+sound.Add({
+	name = 			"STG44_Single",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/stg44/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"STG44_Magout",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/stg44/magout.wav"	
+})
+
+sound.Add({
+	name = 			"STG44_Magin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/stg44/magin.wav"	
+})
+
+sound.Add({
+	name = 			"STG44_Bolt",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/stg44/bolt.wav"	
+})
