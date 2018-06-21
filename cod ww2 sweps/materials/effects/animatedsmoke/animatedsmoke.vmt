@@ -1,6 +1,0 @@
-"SpriteCard"
-{
-	"$basetexture" "effects/animatedsmoke/animatedsmoke"
-	"$translucent" "1"
-	"$additive"      "1"
-}

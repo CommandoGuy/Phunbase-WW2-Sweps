@@ -116,7 +116,7 @@ SWEP.ShellSound = "PB_SHELLIMPACT_SHOTGUN"
 SWEP.ShellEjectVelocity = 10
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "weapon_muzzle_flash_autoshotgun", "muzzle_fire_pistol", "muzzle_sparks_pistol", "muzzle_bullet_trail_shotgun", "muzzle_sparks_pistol", "barrel_smoke"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_large", "muzzle_fire_pistol", "muzzle_sparks_pistol", "muzzle_sparks_pistol", "btb_vm_overheat"}
 
 SWEP.FireSound = "sawedoff_single"
 SWEP.FireSoundSecondary = "sawedoff_single"
