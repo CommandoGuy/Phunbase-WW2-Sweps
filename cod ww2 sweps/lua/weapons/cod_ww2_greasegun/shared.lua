@@ -81,8 +81,8 @@ SWEP.Sequences = {
 SWEP.UseIronTransitionAnims = false
 SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.5
-SWEP.ReloadTime = 3
-SWEP.ReloadTime_Empty = 3
+SWEP.ReloadTime = 2.2
+SWEP.ReloadTime_Empty = 2.8
 SWEP.FireModes = {"auto"}
 
 
@@ -124,4 +124,4 @@ SWEP.FullAimViewmodelRecoil = false
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 0.1
 SWEP.LuaVMRecoilMod = 5 -- modifier of overall intensity for the code based recoil
-SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0, roll = 0, forward = 0.25, pitch = 0} -- modifier for intensity of the recoil on varying axes
+SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0, roll = 0, forward = 0.4, pitch = 0} -- modifier for intensity of the recoil on varying axes
