@@ -834,3 +834,33 @@ sound.Add({
 	volume = 		1.0,
 	sound = 			"weapons/stg44/bolt.wav"	
 })
+
+--greasegun---------------------------------------------------------------
+
+sound.Add({
+	name = 			"Greasegun_Fire",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/greasegun/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"Greasegun.Magout",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/greasegun/magout.wav"	
+})
+
+sound.Add({
+	name = 			"Greasegun.Magin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/greasegun/magin.wav"	
+})
+
+sound.Add({
+	name = 			"Greasegun.Bolt",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/greasegun/bolt.wav"	
+})
