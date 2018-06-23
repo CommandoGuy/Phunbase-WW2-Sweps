@@ -20,7 +20,7 @@ SWEP.AdminSpawnable = true
 
 SWEP.NoSprintVMMovement = true
 // weapon specific variables
-SWEP.Primary.Ammo = "pistol"
+SWEP.Primary.Ammo = "phunbase_9mm"
 SWEP.Primary.ClipSize = 8
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = false

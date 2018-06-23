@@ -15,7 +15,7 @@
                   "$ambientocclusion"                   "1"
                   "$ambientocclcolor"                   "[1 1 1]"
 $rimlight 1
-	 "$rimlightexponent"   "50" 
+	 "$rimlightexponent"   "100" 
 	 "$rimlightboost"   "0.15"
                   $rimmask 1
 
