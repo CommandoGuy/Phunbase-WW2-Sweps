@@ -12,8 +12,8 @@ SWEP.AimViewModelFOV = 30
 SWEP.ViewModel = "models/weapons/kar98k.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 SWEP.EnableCustomization = true
-SWEP.CustomizationMenuSize = 0.8
-SWEP.CustomizationMenuAttachmentName = "Laser"
+SWEP.CustomizationMenuSize = 1
+SWEP.CustomizationMenuAttachmentName = "1"
 
 SWEP.HoldType = "smg"
 SWEP.SprintHoldType = "passive"
@@ -34,6 +34,7 @@ SWEP.Primary.Force = 5
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 SWEP.Chamberable = false
+
 // Recoil variables
 SWEP.Recoil	= 5
 SWEP.Spread	= 0.25
@@ -79,7 +80,6 @@ SWEP.AttachmentIronsights = {
 SWEP.Attachments = {
 	[1] = {name = "Optics", attachments = {"cod_ww2_k98k_scope"}},
 }
-
 
 
 SWEP.Sequences = {

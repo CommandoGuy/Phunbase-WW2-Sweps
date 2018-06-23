@@ -29,6 +29,10 @@ SWEP.Primary.Delay = 0.09
 SWEP.Primary.Force = 5
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
+SWEP.EnableCustomization = true
+SWEP.CustomizationMenuSize = 1
+SWEP.CustomizationMenuAttachmentName = "1"
+
 
 // Recoil variables
 SWEP.Recoil	= 2
@@ -44,6 +48,9 @@ SWEP.BaseAng = Vector(0,0,0)
 
 SWEP.IronsightPos = Vector(-3.487, -1.093, 0.241)
 SWEP.IronsightAng = Vector(0.858, 0.014, 0.000)
+
+SWEP.CustomizePos = Vector(2.222, -0.780, -2.559) 
+SWEP.CustomizeAng = Vector(12.928, 17.873, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -101,6 +108,21 @@ SWEP.FireModes = {"auto", "semi"}
 SWEP.MuzzleAttachmentName = "1"
 SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_fire_pistol", "muzzle_sparks_pistol", "btb_vm_overheat"}
 
+local ang0 = Vector()
+
+SWEP.VElements = {
+["cod_ww2_zf4_scope"] = { type = "Model", model = "models/attachments/a_optic_zf4.mdl", bone = "tag_weapon", rel = "", pos = Vector(-1.338, -0.602, 7.197), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+}
+
+SWEP.AttachmentIronsights = {
+["cod_ww2_zf4_scope"] = {pos = Vector(-3.351, -1.093, -0.107), ang = ang0}
+}
+
+SWEP.Attachments = {
+	[1] = {name = "Optics", attachments = {"cod_ww2_zf4_scope"}},
+}
+
+
 SWEP.FireSound = "STG44_Single"
 
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
@@ -112,6 +134,14 @@ SWEP.Secondary.Delay = 0
 SWEP.Secondary.ClipSize = -1
 SWEP.Secondary.DefaultClip = -1
 SWEP.Secondary.Automatic = true
+
+SWEP.RTScope_Enabled = true
+SWEP.RTScope_Zoom = 7.25
+SWEP.RTScope_Reticle = Material("models/codww2/reticles/enfield_reticle")
+SWEP.RTScope_Material = Material("models/weapons/optics/lense_rt") 
+SWEP.RTScope_Align = Angle(0,0,0)
+SWEP.RTScope_DrawIris = true
+SWEP.RTScope_DrawParallax = true
 
  // RECOIL
 SWEP.FireMoveMod = 1

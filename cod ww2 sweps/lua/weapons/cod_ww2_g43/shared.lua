@@ -17,6 +17,9 @@ SWEP.ReloadHoldType = "smg"
 
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
+SWEP.EnableCustomization = true
+SWEP.CustomizationMenuSize = 1
+SWEP.CustomizationMenuAttachmentName = "1"
 
 
 SWEP.NoSprintVMMovement = true
@@ -30,6 +33,7 @@ SWEP.Primary.Delay = 0.122
 SWEP.Primary.Force = 5
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
+SWEP.MouseSensitivityIron = 0.25
 
 // Recoil variables
 SWEP.Recoil	= 6
@@ -45,6 +49,9 @@ SWEP.BaseAng = Vector(0,0,0)
 
 SWEP.IronsightPos = Vector(-3.876, -5.000, 1.063)
 SWEP.IronsightAng = Vector(0.000, 0.000, 0.000)
+
+SWEP.CustomizePos = Vector(2.222, -0.780, -2.559) 
+SWEP.CustomizeAng = Vector(12.928, 17.873, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -109,29 +116,28 @@ SWEP.NormalFlashlight = false // enables the HL2 flashlight
 SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
 SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instant or it has a 0.5 second delay
 
-SWEP.Sounds = {
-	draw = {
-		{time = 0, sound = "Rifle_Raise2", callback = function(self) end}
-	},
-	holster = {
-		{time = 0, sound = "Rifle_Lower1", callback = function(self) end}
-	},
-	reload = {
-		{time = 0, sound = "Rifle_Raise1"},
-		{time = 2.48, sound = "Rifle_Lower2"}
-	},
-		reload_empty = {
-		{time = 0, sound = "Rifle_Raise1"},
-		{time = 3.2, sound = "Rifle_Lower2"}
-	},
-	sprint_in = {
-		{time = 0, sound = "Rifle_Lower2"},
-	},
-	sprint_out = {
-		{time = 0, sound = "Rifle_Raise1"},
-	},
+local ang0 = Vector()
 
+SWEP.VElements = {
+["cod_ww2_zf4_scope"] = { type = "Model", model = "models/attachments/a_optic_zf4.mdl", bone = "tag_weapon", rel = "", pos = Vector(0.446, -0.225, 6.31), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
+
+SWEP.AttachmentIronsights = {
+["cod_ww2_zf4_scope"] = {pos = Vector(-4.018, 0.000, 0.495), ang = ang0}
+}
+
+SWEP.Attachments = {
+	[1] = {name = "Optics", attachments = {"cod_ww2_zf4_scope"}},
+}
+
+SWEP.RTScope_Enabled = true
+SWEP.RTScope_Zoom = 7.25
+SWEP.RTScope_Reticle = Material("models/codww2/reticles/enfield_reticle")
+SWEP.RTScope_Material = Material("models/weapons/optics/lense_rt") 
+SWEP.RTScope_Align = Angle(0,0,0)
+SWEP.RTScope_DrawIris = true
+SWEP.RTScope_DrawParallax = true
+
 
 SWEP.Secondary.Ammo = ""
 SWEP.Secondary.Delay = 0
