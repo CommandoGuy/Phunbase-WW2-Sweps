@@ -17,7 +17,7 @@ SWEP.ReloadHoldType = "smg"
 
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
-
+SWEP.UseIronTransitionAnims = true
 SWEP.NoSprintVMMovement = true
 // weapon specific variables
 SWEP.Primary.Ammo = "phunbase_792x57"
@@ -137,7 +137,7 @@ SWEP.Secondary.Automatic = true
 
 SWEP.RTScope_Enabled = true
 SWEP.RTScope_Zoom = 7.25
-SWEP.RTScope_Reticle = Material("models/codww2/reticles/enfield_reticle")
+SWEP.RTScope_Reticle = Material("models/weapons/optics/zf4_crosshair")
 SWEP.RTScope_Material = Material("models/weapons/optics/lense_rt") 
 SWEP.RTScope_Align = Angle(0,0,0)
 SWEP.RTScope_DrawIris = true

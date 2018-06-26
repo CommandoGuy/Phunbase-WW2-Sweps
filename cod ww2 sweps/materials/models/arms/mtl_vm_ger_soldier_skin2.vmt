@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/arms/mtl_vm_ger_soldier_skin2"
+"$bumpmap" "models/arms/ger_inf_sleeve_normal"
+	$phong 1
+	$phongboost 0.25
+	$phongfresnelranges "[0.2 0.5 0.7]"
+	$phongexponent 6
+}
