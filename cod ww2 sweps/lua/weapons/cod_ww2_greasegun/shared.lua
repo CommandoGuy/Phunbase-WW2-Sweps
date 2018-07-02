@@ -89,13 +89,13 @@ SWEP.FireModes = {"auto"}
 SWEP.ViewModelMovementScale = 1
 
 // shell-related stuff
-SWEP.ShellVelocity = {X = 100, Y = 0, Z = 50}
+SWEP.ShellVelocity = {X = 50, Y = 0, Z = 50}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 0, Right = 350, Up = 90}
+SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.01
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/phunbase/shells/45acp.mdl"
+SWEP.ShellModel = "models/pb_cod_ww2/shells/45apc.mdl"
 SWEP.ShellEjectVelocity = 0
 
 

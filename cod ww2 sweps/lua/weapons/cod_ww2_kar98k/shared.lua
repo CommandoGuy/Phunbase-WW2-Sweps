@@ -12,7 +12,7 @@ SWEP.AimViewModelFOV = 30
 SWEP.ViewModel = "models/weapons/kar98k.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 SWEP.EnableCustomization = true
-SWEP.CustomizationMenuSize = 1
+SWEP.CustomizationMenuSize = 1.5
 SWEP.CustomizationMenuAttachmentName = "1"
 
 SWEP.HoldType = "smg"
@@ -70,15 +70,17 @@ SWEP.EmptySoundPrimary = "Dryfire_Sniper"
 local ang0 = Vector()
 
 SWEP.VElements = {
-["cod_ww2_k98k_scope"] = { type = "Model", model = "models/attachments/a_optic_kar98k.mdl", bone = "tag_weapon", rel = "", pos = Vector(4.695, -0.017, 5.296), angle = Angle(0, 0, 0), size = Vector(1.057, 1.057, 1.057), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} }
+["cod_ww2_k98k_scope"] = { type = "Model", model = "models/attachments/a_optic_kar98k.mdl", bone = "tag_weapon", rel = "", pos = Vector(4.695, -0.017, 5.296), angle = Angle(0, 0, 0), size = Vector(1.057, 1.057, 1.057), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} },
+["cod_ww2_k98k_4x_scope"] = { type = "Model", model = "models/attachments/a_optic_kar98k_4x.mdl", bone = "tag_weapon", rel = "", pos = Vector(3.278, -0.115, 5.394), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 
 SWEP.AttachmentIronsights = {
-["cod_ww2_k98k_scope"] = {pos = Vector(-4.559, 1.482, 0.013), ang = ang0}
+["cod_ww2_k98k_scope"] = {pos = Vector(-4.559, 1.482, 0.013), ang = ang0},
+["cod_ww2_k98k_4x_scope"] = {pos = Vector(-4.044, 0.000, 0.110), ang = ang0}
 }
 
 SWEP.Attachments = {
-	[1] = {name = "Optics", attachments = {"cod_ww2_k98k_scope"}},
+	[1] = {name = "Optics", attachments = {"cod_ww2_k98k_scope", "cod_ww2_k98k_4x_scope"}},
 }
 
 
