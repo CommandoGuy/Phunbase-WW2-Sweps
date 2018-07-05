@@ -1,0 +1,23 @@
+VertexLitGeneric
+{
+	"$basetexture" "models\codww2\weapons\Type5\mtl_jpn_type5_clip_01"
+
+	"$bumpmap" "models\codww2\weapons\Type5\mtl_jpn_type5_clip_01_normal"
+
+    	"$surfaceprop" "metal"
+	"$phong" "1"
+	"$phongfresnelranges"	"[0.5 4.75 5]"
+	"$phongboost"	".2"
+	"$envmaptint"	"[.135 .135 .135]"
+	"$envmapfresnel"	"1.4"
+	"$normalmapalphaenvmapmask" 1
+	"$halflambert" "1"
+	"$ambientocclusion" "1"						
+	"$phongexponenttexture" "models\codww2\weapons\Type5\exponent"	
+$phongexponent 100
+
+
+	"$nocull" "1"
+
+
+}
