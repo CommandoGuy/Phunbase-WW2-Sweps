@@ -101,7 +101,7 @@ SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 90}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/pb_cod_ww2/shells/762x54.mdl"
+SWEP.ShellModel = "models/codww2/shells/762x54.mdl"
 SWEP.ShellEjectVelocity = 0
 SWEP.FireModes = {"auto", "semi"}
 
@@ -137,8 +137,8 @@ SWEP.Secondary.Automatic = true
 
 SWEP.RTScope_Enabled = true
 SWEP.RTScope_Zoom = 7.25
-SWEP.RTScope_Reticle = Material("models/weapons/optics/zf4_crosshair")
-SWEP.RTScope_Material = Material("models/weapons/optics/lense_rt") 
+SWEP.RTScope_Reticle = Material("models/codww2/weapons/optics/zf4_crosshair")
+SWEP.RTScope_Material = Material("models/codww2/weapons/optics/lense_rt") 
 SWEP.RTScope_Align = Angle(0,0,0)
 SWEP.RTScope_DrawIris = true
 SWEP.RTScope_DrawParallax = true

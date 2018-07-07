@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"	"models\codww2\weapons\optics\weaver_crosshair"
+	"$translucent" 	"1"
+}

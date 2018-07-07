@@ -5,8 +5,8 @@ SWEP.Category = "PHUNBASE | COD WWII"
 SWEP.Slot = 3
 SWEP.SlotPos = 0
 
-SWEP.ViewModelFOV = 54
-SWEP.AimViewModelFOV = 54
+SWEP.ViewModelFOV = 50
+SWEP.AimViewModelFOV = 60
 SWEP.ViewModel = "models/weapons/trenchgun.mdl"
 SWEP.WorldModel = "models/weapons/w_shotgun.mdl"
 
@@ -112,7 +112,7 @@ SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0	, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.45
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/pb_cod_ww2/shells/12guage.mdl"
+SWEP.ShellModel = "models/codww2/shells/12guage.mdl"
 SWEP.ShellSound = "PB_SHELLIMPACT_SHOTGUN"
 SWEP.ShellEjectVelocity = 10
 

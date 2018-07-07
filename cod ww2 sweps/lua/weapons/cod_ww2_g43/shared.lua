@@ -138,6 +138,11 @@ SWEP.RTScope_Align = Angle(0,0,0)
 SWEP.RTScope_DrawIris = true
 SWEP.RTScope_DrawParallax = true
 
+SWEP.Sounds = {
+	fire_last = {
+		{time = 0, sound = "M1C_Ping", callback = function(self) end}
+	},
+}
 
 SWEP.Secondary.Ammo = ""
 SWEP.Secondary.Delay = 0

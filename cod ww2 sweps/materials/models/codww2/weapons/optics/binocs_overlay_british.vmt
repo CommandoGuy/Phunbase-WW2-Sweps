@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"	"models\codww2\weapons\optics\binocs_overlay_british"
+	"$translucent" 	"1"
+}

@@ -108,11 +108,10 @@ SWEP.ShellEjectVelocity = 0
 SWEP.RTScope_Enabled = true
 SWEP.RTScope_Zoom = 7.25
 SWEP.RTScope_Reticle = Material("models/codww2/reticles/enfield_reticle")
-SWEP.RTScope_Material = Material("models/weapons/svt40/lense") 
+SWEP.RTScope_Material = Material("models/codww2/weapons/svt40/lense") 
 SWEP.RTScope_Align = Angle(0,0,0)
 SWEP.RTScope_DrawIris = true
 SWEP.RTScope_DrawParallax = true
-SWEP.IronsightPos = Vector()
 
 
 local ang0 = Vector()

@@ -1,9 +1,0 @@
-"VertexLitGeneric"
-{
-	"$basetexture" "models/arms/mtl_vm_mp_m_hands_s1"
-"$bumpmap" "models/arms/hands_normal"
-	$phong 1
-	$phongboost 0.25
-	$phongfresnelranges "[0.2 0.5 0.7]"
-	$phongexponent 6
-}

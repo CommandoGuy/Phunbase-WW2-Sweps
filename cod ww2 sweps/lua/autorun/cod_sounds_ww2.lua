@@ -864,3 +864,33 @@ sound.Add({
 	volume = 		1.0,
 	sound = 			"weapons/greasegun/bolt.wav"	
 })
+
+--m1911---------------------------------------------------------------
+
+sound.Add({
+	name = 			"Greasegun_Fire",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/M1911/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"M1911_Magout",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/M1911/magout.wav"	
+})
+
+sound.Add({
+	name = 			"M1911_Magin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/M1911/magin.wav"	
+})
+
+sound.Add({
+	name = 			"M1911_Slide",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/M1911/slideforward.wav"	
+})

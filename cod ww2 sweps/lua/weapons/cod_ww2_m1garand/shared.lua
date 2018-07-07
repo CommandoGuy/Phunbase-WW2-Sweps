@@ -96,7 +96,7 @@ SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.01
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/pb_cod_ww2/shells/556x45.mdl"
+SWEP.ShellModel = "models/codww2/shells/556x45.mdl"
 SWEP.ShellEjectVelocity = 50
 
 SWEP.MuzzleAttachmentName = "1"
