@@ -106,7 +106,7 @@ SWEP.ShellEjectVelocity = 0
 SWEP.FireModes = {"auto", "semi"}
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_fire_pistol", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "MuzzleflashRifle", "muzzle_sparks_pistol", "btb_vm_overheat"}
 
 local ang0 = Vector()
 

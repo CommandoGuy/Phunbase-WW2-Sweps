@@ -117,7 +117,7 @@ SWEP.ShellSound = "PB_SHELLIMPACT_SHOTGUN"
 SWEP.ShellEjectVelocity = 10
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_large", "muzzle_fire_pistol", "muzzle_sparks_pistol", "muzzle_sparks_pistol", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "Muzzleflashshotgun", "muzzle_sparks_pistol", "btb_vm_overheat"}
 
 SWEP.FireSound = "Trench_Fire"
 

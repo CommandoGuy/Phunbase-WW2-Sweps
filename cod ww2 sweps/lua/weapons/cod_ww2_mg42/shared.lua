@@ -103,7 +103,7 @@ SWEP.ShellEjectVelocity = 0
 SWEP.FireModes = {"auto"}
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"btb_vm_medium", "muzzle_fire_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "MuzzleflashRifle", "muzzle_sparks_pistol", "btb_vm_overheat"}
 
 SWEP.FireSound = "MG42_Fire"
 
