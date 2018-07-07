@@ -1,11 +1,11 @@
 "VertexLitGeneric"
 {
 //INPUT
-	$basetexture				"models\weapons\mp40\weapon_mp40normandy_dm"
-	$bumpmap					"models\weapons\mp40\weapon_mp40_nm"
-	$phongexponenttexture		"models\weapons\mp40\weapon_mp40_exp"
-//	$phongexponenttexture		"models\weapons\mp40\weapon_mp40_nm"
-	$selfillummask				"models\weapons\generic\weapon_generic_si"
+	$basetexture				"models\codww2\weapons\mp40\weapon_mp40normandy_dm"
+	$bumpmap					"models\codww2\weapons\mp40\weapon_mp40_nm"
+	$phongexponenttexture		"models\codww2\weapons\mp40\weapon_mp40_exp"
+//	$phongexponenttexture		"models\codww2\weapons\mp40\weapon_mp40_nm"
+	$selfillummask				"models\codww2\weapons\generic\weapon_generic_si"
 
 
 //BASIC
