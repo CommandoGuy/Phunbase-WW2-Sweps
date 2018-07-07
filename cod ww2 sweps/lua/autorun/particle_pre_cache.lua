@@ -1,8 +1,7 @@
 -- Add and precache particles.
 local particlefiles = {
 	"btb_vm_effects.pcf",
-	"btb_vm_overheat.pcf",
-	"weapon_glock.pcf"
+	"btb_vm_overheat.pcf"
 }
 
 for k, v in pairs(particlefiles) do
@@ -14,7 +13,6 @@ local particlenames = {
 	"btb_vm_medium",
 	"btb_vm_large",
 	"btb_vm_overheat",	
-	"weapon_glock_muzzle",
 }
 
 for k, v in pairs(particlenames) do

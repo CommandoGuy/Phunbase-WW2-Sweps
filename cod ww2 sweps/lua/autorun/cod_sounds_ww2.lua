@@ -661,31 +661,10 @@ sound.Add({
 --mp28---------------------------------------------------------------
 
 sound.Add({
-	name = 			"MP28_Fire",			// <-- Sound Name That gets called for
+	name = 			"AVS36_Fire",			// <-- Sound Name That gets called for
 	channel = 		CHAN_USER_BASE +10,
 	volume = 		1.0,
-	sound = 			"weapons/mp28/fire.wav"	// <-- Sound Path
-})
-
-sound.Add({
-	name = 			"mp28_magout",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"weapons/mp28/magout.wav"	
-})
-
-sound.Add({
-	name = 			"mp28_magin",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"weapons/mp28/magin.wav"	
-})
-
-sound.Add({
-	name = 			"mp28_bolt",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"weapons/mp28/bolt.wav"	
+	sound = 			"weapons/avs/fire.wav"	// <-- Sound Path
 })
 
 
