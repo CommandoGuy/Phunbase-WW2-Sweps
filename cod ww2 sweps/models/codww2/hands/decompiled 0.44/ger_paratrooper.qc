@@ -1,10 +1,10 @@
 // Created by Crowbar 0.44.0.0
 
-$modelname "codww2\hands\ger_tanker.mdl"
+$modelname "codww2\hands\ger_infantry.mdl"
 
 $bodygroup "hands"
 {
-	studio "german tanker.smd"
+	studio "german_infantry.smd"
 }
 
 
@@ -14,7 +14,7 @@ $contents "solid"
 
 $maxeyedeflection 90
 
-$cdmaterials "models\arms\panzersoldat\"
+$cdmaterials "models\arms\infanteriesoldat\"
 
 $cbox 0 0 0 0 0 0
 

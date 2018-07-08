@@ -19,7 +19,7 @@ end
 PHUNBASE.CODWW2.RIG_ADD("Fallschirmjäger", "models/codww2/hands/ger_paratrooper.mdl")
 PHUNBASE.CODWW2.RIG_ADD("American Paratrooper", "models/codww2/hands/usa_paratrooper.mdl")
 PHUNBASE.CODWW2.RIG_ADD("Panzersoldat", "models/codww2/hands/ger_tanker.mdl")
--- PHUNBASE.CODWW2.RIG_ADD("Security (Light)", "models/weapons/v_hands_sec_l.mdl")
+PHUNBASE.CODWW2.RIG_ADD("Infanterie Soldat", "models/codww2/hands/ger_infantry.mdl")
 -- PHUNBASE.CODWW2.RIG_ADD("Security (Medium)", "models/weapons/v_hands_sec_m.mdl")
 -- PHUNBASE.CODWW2.RIG_ADD("Security (Heavy)", "models/weapons/v_hands_sec_h.mdl")
 -- PHUNBASE.CODWW2.RIG_ADD("V.I.P.", "models/weapons/v_hands_vip.mdl")

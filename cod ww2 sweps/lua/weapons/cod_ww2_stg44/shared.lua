@@ -97,11 +97,11 @@ SWEP.ViewModelMovementScale = 2
 // shell-related stuff
 SWEP.ShellVelocity = {X = 0, Y = -25, Z = 50}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 90}
+SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/codww2/shells/762x54.mdl"
+SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
 SWEP.ShellEjectVelocity = 0
 SWEP.FireModes = {"auto", "semi"}
 

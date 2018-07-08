@@ -112,7 +112,7 @@ SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0	, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.45
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/codww2/shells/12guage.mdl"
+SWEP.ShellModel = "models/phunbase/shells/12g_buck_open.mdl"
 SWEP.ShellSound = "PB_SHELLIMPACT_SHOTGUN"
 SWEP.ShellEjectVelocity = 10
 

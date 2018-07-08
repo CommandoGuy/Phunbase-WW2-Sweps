@@ -6,7 +6,7 @@ SWEP.Slot = 2
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 60
-SWEP.AimViewModelFOV = 25
+SWEP.AimViewModelFOV = 45
 SWEP.ViewModel = "models/weapons/m1carbine.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
@@ -97,7 +97,7 @@ SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.01
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/codww2/shells/556x45.mdl"
+SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
 SWEP.ShellEjectVelocity = 0
 
 SWEP.MuzzleAttachmentName = "1"
