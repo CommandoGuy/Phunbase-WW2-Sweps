@@ -1,4 +1,4 @@
-SWEP.Base = "phun_base"
+SWEP.Base = "pb_codww2_base"
 
 SWEP.PrintName = "Thompson M1A1"
 SWEP.Category = "PHUNBASE | COD WWII"
@@ -14,7 +14,7 @@ SWEP.HoldType = "smg"
 SWEP.SprintHoldType = "passive"
 SWEP.CrouchHoldType = "smg"
 SWEP.ReloadHoldType = "smg"
-
+SWEP.UseHands = true
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
 

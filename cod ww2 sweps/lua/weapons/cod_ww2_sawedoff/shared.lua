@@ -1,4 +1,4 @@
-SWEP.Base = "phun_base"
+SWEP.Base = "pb_codww2_base"
 
 SWEP.PrintName = "Sawed-off"
 SWEP.Category = "PHUNBASE | COD WWII"

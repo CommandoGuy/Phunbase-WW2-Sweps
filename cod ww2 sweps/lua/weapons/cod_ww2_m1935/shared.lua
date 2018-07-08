@@ -1,4 +1,4 @@
-SWEP.Base = "phun_base"
+SWEP.Base = "pb_codww2_base"
 
 SWEP.PrintName = "M1935 Burst Rifle"
 SWEP.Category = "PHUNBASE | COD WWII"
