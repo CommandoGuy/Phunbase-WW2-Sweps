@@ -1,10 +1,10 @@
 // Created by Crowbar 0.44.0.0
 
-$modelname "codww2\hands\ger_infantry.mdl"
+$modelname "codww2\hands\rus_infantry.mdl"
 
 $bodygroup "hands"
 {
-	studio "german_infantry.smd"
+	studio "russian_arms.smd"
 }
 
 
@@ -14,7 +14,7 @@ $contents "solid"
 
 $maxeyedeflection 90
 
-$cdmaterials "models\arms\infanteriesoldat\"
+$cdmaterials "models\arms\rusinfantry\"
 
 $cbox 0 0 0 0 0 0
 

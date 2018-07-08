@@ -16,12 +16,11 @@ PHUNBASE.CODWW2.RIG_ADD = function(name, model)
 	PHUNBASE.CODWW2.RIGS[name] = {["name"] = name, ["model"] = model}
 end
 
-PHUNBASE.CODWW2.RIG_ADD("Fallschirmjäger", "models/codww2/hands/ger_paratrooper.mdl")
 PHUNBASE.CODWW2.RIG_ADD("American Paratrooper", "models/codww2/hands/usa_paratrooper.mdl")
-PHUNBASE.CODWW2.RIG_ADD("Panzersoldat", "models/codww2/hands/ger_tanker.mdl")
-PHUNBASE.CODWW2.RIG_ADD("Infanterie Soldat", "models/codww2/hands/ger_infantry.mdl")
--- PHUNBASE.CODWW2.RIG_ADD("Security (Medium)", "models/weapons/v_hands_sec_m.mdl")
--- PHUNBASE.CODWW2.RIG_ADD("Security (Heavy)", "models/weapons/v_hands_sec_h.mdl")
+PHUNBASE.CODWW2.RIG_ADD("German Infantry", "models/codww2/hands/ger_infantry.mdl")
+PHUNBASE.CODWW2.RIG_ADD("German Tanker", "models/codww2/hands/ger_tanker.mdl")
+PHUNBASE.CODWW2.RIG_ADD("German Paratrooper", "models/codww2/hands/ger_paratrooper.mdl")
+PHUNBASE.CODWW2.RIG_ADD("Russian Infantry", "models/codww2/hands/rus_infantry.mdl")
 -- PHUNBASE.CODWW2.RIG_ADD("V.I.P.", "models/weapons/v_hands_vip.mdl")
 
 local function PB_CODWW2_MENU_PANEL(panel)
