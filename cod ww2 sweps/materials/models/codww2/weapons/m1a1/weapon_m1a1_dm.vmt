@@ -10,7 +10,7 @@
 	"$phongboost"                   "1.25"
 //	"$phongexponent"                "70"
 	"$phongfresnelranges"           "[1 2.5 7]"
-	"$phongexponenttexture"         "models\weapons\m1a1\weapon_m1a1_exp"
+	"$phongexponenttexture"         "models\codww2\weapons\m1a1\weapon_m1a1_exp"
 
 	"$envmap"                       "env_cubemap"
 	"$normalmapalphaenvmapmask"		"1"
