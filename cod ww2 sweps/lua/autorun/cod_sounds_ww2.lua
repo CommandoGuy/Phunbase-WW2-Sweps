@@ -873,3 +873,48 @@ sound.Add({
 	volume = 		1.0,
 	sound = 			"weapons/M1911/slideforward.wav"	
 })
+
+--m30---------------------------------------------------------------
+
+sound.Add({
+	name = 			"M30_Fire",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/m30/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"m30_openE",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m30/openE.wav"	
+})
+
+sound.Add({
+	name = 			"m30_openF",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m30/openF.wav"	
+})
+
+sound.Add({
+	name = 			"m30_shellsinE",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m30/shellinE.wav"	
+})
+
+sound.Add({
+	name = 			"m30_shellsinF",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m30/shellinF.wav"	
+})
+
+
+sound.Add({
+	name = 			"m30_close",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/m30/close.wav"	
+})

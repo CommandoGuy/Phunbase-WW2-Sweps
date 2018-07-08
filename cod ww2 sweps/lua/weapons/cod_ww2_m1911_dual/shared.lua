@@ -7,7 +7,7 @@ SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 54
 SWEP.AimViewModelFOV = 54
-SWEP.ViewModel = "models/weapons/codww2_dual_1911.mdl"
+SWEP.ViewModel = "models/codww2/weapons/codww2_dual_1911.mdl"
 SWEP.WorldModel = "models/weapons/w_pistol.mdl"
 SWEP.UseHands = false
 

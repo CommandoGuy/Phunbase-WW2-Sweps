@@ -7,7 +7,7 @@ SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 60
 SWEP.AimViewModelFOV = 40
-SWEP.ViewModel = "models/weapons/stg44.mdl"
+SWEP.ViewModel = "models/codww2/weapons/stg44.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
 SWEP.HoldType = "smg"

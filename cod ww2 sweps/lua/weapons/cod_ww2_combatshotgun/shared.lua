@@ -7,7 +7,7 @@ SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 50
 SWEP.AimViewModelFOV = 60
-SWEP.ViewModel = "models/weapons/trenchgun.mdl"
+SWEP.ViewModel = "models/codww2/weapons/trenchgun.mdl"
 SWEP.WorldModel = "models/weapons/w_shotgun.mdl"
 
 SWEP.HoldType = "shotgun"
