@@ -98,7 +98,7 @@ SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 90}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/codww2/shells/556x45.mdl"
+SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
 SWEP.ShellEjectVelocity = 0
 SWEP.FireModes = {"auto"}
 
