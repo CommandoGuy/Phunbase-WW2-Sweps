@@ -1,0 +1,20 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/codww2/weapons/g41/clip"
+
+$bumpmap "models/codww2/weapons/g41/clip_normal"
+
+	
+$rimlight 1
+"$rimlightexponent"   "10" 
+"$rimlightboost"   "0.5"
+ $rimmask 1
+
+"$phong"                      "1"
+	"$phongboost"                 "0.05"
+	"$phongfresnelranges"         "[5 10 10]"
+	"$phongtint"		      "[1.05 1 1.1]"
+	"$phongalbedotint"            "1"
+	"$phongalbedoboost"           "145"
+	"$halflambert"                "1"
+}

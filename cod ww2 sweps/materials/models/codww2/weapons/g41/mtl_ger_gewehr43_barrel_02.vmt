@@ -1,0 +1,24 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/codww2/weapons/g41/barrel"
+$bumpmap "models/codww2/weapons/g41/barrel_normal"
+//detail
+$detail  "models\codww2\weapons\g41\barrel_metal"
+$detailscale 1	
+$detailblendfactor 0.05
+$detailblendmode 1
+	
+$rimlight 1
+"$rimlightexponent"   "10" 
+"$rimlightboost"   "0.15"
+ $rimmask 1
+
+"$phong"                      "1"
+	"$phongboost"                 "0.15"
+$phongexponenttexture "models\codww2\weapons\g41\barrel_exponent"
+	"$phongfresnelranges"         "[5 10 10]"
+	"$phongtint"		      "[1.05 1 1.1]"
+	"$phongalbedotint"            "1"
+	"$phongalbedoboost"           "145"
+	"$halflambert"                "1"
+}
