@@ -1,0 +1,26 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/arms/waffenss/sleeves"
+$bumpmap "models/arms/waffenss/sleeves_normal"
+	"$phong" 		             "1"
+	"$phongboost" 	             "0.015"
+	"$phongtint"	             "[1 1 1]"
+	//"$phongexponent"  	             "10"
+	"$phongfresnelranges" 	             "[1 1 1]"
+	"$phongalbedotint" 	             "1"
+                  "$halflambert"                            "1"
+                  "$ambientocclusion"                   "1"
+                  "$ambientocclcolor"                   "[1 1 1]"
+$rimlight 1
+	 "$rimlightexponent"   "100" 
+	 "$rimlightboost"   "0.15"
+                  $rimmask 1
+
+
+//detail
+$detail     "models/arms/waffenss/sleeves_detail"
+$detailscale 1	
+$detailblendfactor 1
+$detailblendmode 1
+}
+
