@@ -10,7 +10,7 @@
 	"$phongexponent"		"34"
 	"$phongfresnelranges"	"[1.5 8 20]"
 
-	"$envmap" 			"env_cubemap"
+	"$envmap" 			"models/codww2/weapons/generic/metal_generic_004"
 	"$normalmapalphaenvmapmask" 	"1"
-	"$envmaptint"			"[0.1 0.1 0.1]"
+	"$envmaptint"			"[0.5 0.5 0.5]"
 }

@@ -9,7 +9,10 @@ $phongexponenttexture "models\codww2\weapons/mas38/mag_exp"
 "$phongtint"	             "[1 1 1]"
       "$phongexponent"				"50"
       "$phongboost"					"1"
-
+	"$envmap"                     "models/codww2/weapons/generic/metal_generic_001"
+	"$envmapfresnel"		"0.05"
+	"$envmaptint"                   "[0.15 0.15 0.15]"
+	"$halflambert"                "1"
       "$phongalbedotint" 1
 
       "$phongfresnelranges"			"[1 1.35]"

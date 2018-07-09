@@ -22,5 +22,6 @@ $phongexponenttexture "models\codww2\weapons\AVS36\mag_metal"
 	"$phongalbedoboost"           "145"
 	"$halflambert"                "1"
 	"$normalmapalphaenvmapmask"		"1"
-	"$normalmapalphaphongmask"	"1"
+	"$envmap" 			"models/codww2/weapons/generic/metal_generic_004"
+	"$envmaptint"			"[0.5 0.5 0.5]"
 }
