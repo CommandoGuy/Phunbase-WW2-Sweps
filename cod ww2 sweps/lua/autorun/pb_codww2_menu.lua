@@ -17,6 +17,7 @@ PHUNBASE.CODWW2.RIG_ADD = function(name, model)
 end
 
 PHUNBASE.CODWW2.RIG_ADD("American Paratrooper", "models/codww2/hands/usa_paratrooper.mdl")
+PHUNBASE.CODWW2.RIG_ADD("American Pilot", "models/codww2/hands/us_pilot.mdl")
 PHUNBASE.CODWW2.RIG_ADD("German Infantry", "models/codww2/hands/ger_infantry.mdl")
 PHUNBASE.CODWW2.RIG_ADD("Waffen-SS", "models/codww2/hands/ssarms.mdl")
 PHUNBASE.CODWW2.RIG_ADD("German Tanker", "models/codww2/hands/ger_tanker.mdl")
