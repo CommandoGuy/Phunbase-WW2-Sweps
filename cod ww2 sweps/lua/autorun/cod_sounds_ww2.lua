@@ -918,3 +918,33 @@ sound.Add({
 	volume = 		1.0,
 	sound = 			"weapons/m30/close.wav"	
 })
+
+--luger---------------------------------------------------------------
+
+sound.Add({
+	name = 			"Luger_Fire",			// <-- Sound Name That gets called for
+	channel = 		CHAN_USER_BASE +10,
+	volume = 		1.0,
+	sound = 			"weapons/luger/fire.wav"	// <-- Sound Path
+})
+
+sound.Add({
+	name = 			"Luger_Magout",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/luger/magout.wav"	
+})
+
+sound.Add({
+	name = 			"Luger_Magin",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/luger/magin.wav"	
+})
+
+sound.Add({
+	name = 			"Luger_Bolt",			
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/luger/bolt.wav"	
+})

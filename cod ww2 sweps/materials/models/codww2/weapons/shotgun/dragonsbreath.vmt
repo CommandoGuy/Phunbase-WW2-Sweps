@@ -13,7 +13,7 @@
 	$phongalbedotint			 1
 
 	$basemapalphaenvmapmask 	"1"
-	"$envmap"			 "env_cubemap"
+"$envmap"                     "models/codww2/weapons/generic/metal_generic_001"
 	$envmapfresnel 			1
 	"$envmapFresnelMinMaxExp"	"[0 .4 1]"
 	$envmaptint 			"[.20 .21 .24]"

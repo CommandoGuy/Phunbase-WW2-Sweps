@@ -8,6 +8,10 @@ $detailscale 1
 $detailblendfactor 0.052
 $detailblendmode 1
 	
+$selfillum					"1"
+$selfillumtint				"[.5 .5 .5]"
+$selfillummask				"models\codww2\weapons\generic\weapon_generic_si"
+	
 $rimlight 1
 "$rimlightexponent"   "10" 
 "$rimlightboost"   "0.15"

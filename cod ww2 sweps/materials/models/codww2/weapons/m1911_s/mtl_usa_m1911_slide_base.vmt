@@ -5,9 +5,13 @@ $bumpmap "models\codww2\weapons/m1911_s/slide_normal"
 //detail
 $detail  "models\codww2\weapons\m1911_s\slide_metal"
 $detailscale 1	
-$detailblendfactor 0.15
+$detailblendfactor 0.2
 $detailblendmode 1
 	
+$selfillum					"1"
+$selfillumtint				"[5 5 5]"
+$selfillummask				"models\codww2\weapons\generic\weapon_generic_si"
+
 $rimlight 1
 "$rimlightexponent"   "5" 
 "$rimlightboost"   "0.5"
@@ -21,7 +25,7 @@ $phongexponenttexture "models\codww2\weapons\m1911_s\slide_exponent"
 	"$phongalbedotint"            "1"
 	"$phongalbedoboost"           "145"
 
-	"$envmap"                     "models/codww2/weapons/generic/metal_generic_003"
+	"$envmap"                     "models/codww2/weapons/generic/metal_generic_002"
 	"$envmapfresnel"		"0.05"
 	"$envmaptint"                   "[0.15 0.15 0.15]"
 	"$halflambert"                "1"

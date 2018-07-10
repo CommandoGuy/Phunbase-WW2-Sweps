@@ -23,6 +23,7 @@ $phongexponenttexture "models/codww2/weapons/type5/receiver_exponent"
 	"$phongalbedotint"            "1"
 	"$phongalbedoboost"           "145"
 
+
 	"$envmap"                     "models/codww2/weapons/generic/metal_generic_002"
 	"$envmapfresnel"		"0.1"
 	"$envmaptint"                   "[0.15 0.15 0.15]"
