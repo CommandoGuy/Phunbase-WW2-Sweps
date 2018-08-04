@@ -6,7 +6,7 @@ SWEP.Slot = 2
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 60
-SWEP.AimViewModelFOV = 54
+SWEP.AimViewModelFOV = 55
 SWEP.ViewModel = "models/codww2/weapons/p38.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
@@ -20,7 +20,7 @@ SWEP.AdminSpawnable = true
 
 SWEP.NoSprintVMMovement = true
 // weapon specific variables
-SWEP.Primary.Ammo = "phunbase_9mm"
+SWEP.Primary.Ammo = "phunbase_9x19mm"
 SWEP.Primary.ClipSize = 8
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = false
@@ -42,7 +42,7 @@ SWEP.SpreadAdd_Iron	= 0.2
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-3.969, -5.069, 0.933)
+SWEP.IronsightPos = Vector(-3.969, 0, 0.933)
 SWEP.IronsightAng = Vector(0.987, 0.244, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)

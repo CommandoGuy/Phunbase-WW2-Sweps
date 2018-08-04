@@ -42,8 +42,8 @@ SWEP.SpreadAdd_Iron	= 0.2
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-4.047, -5.069, 0.726)
-SWEP.IronsightAng = Vector(1.166, 0.090, 0.000)
+SWEP.IronsightPos = Vector(-4.232, -5.069, 0.847)
+SWEP.IronsightAng = Vector(1.166, 0.008, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
