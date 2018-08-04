@@ -53,3 +53,31 @@ local att = {}
 att.name = "cod_ww2_zf4_scope"
 att.menuName = "x4 Scope"
 PHUNBASE:registerAttachment(att)
+
+local att = {}
+att.name = "cod_ww2_ppsh_drum"
+att.menuName = "Drum Magazine"
+function att:attachCallback()
+    if CLIENT then
+        local vm = self.VM
+        if IsValid(vm) then
+             self.VM:SetBodygroup(0, 1) // sets bg to 1
+        end
+    end
+	self.UsesDrumMag = true
+	self:unloadWeapon()
+	self:SetClipSize(71)
+end
+
+function att:detachCallback()
+    if CLIENT then
+        local vm = self.VM
+        if IsValid(vm) then
+             self.VM:SetBodygroup(0, 0) // resets bg to 0 (default)
+        end
+    end
+	self.UsesDrumMag = false
+	self:unloadWeapon()
+	self:RestoreClipSize()
+end
+PHUNBASE:registerAttachment(att)

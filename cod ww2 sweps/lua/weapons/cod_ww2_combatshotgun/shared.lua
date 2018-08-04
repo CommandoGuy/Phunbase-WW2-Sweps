@@ -81,6 +81,8 @@ SWEP.Sequences = {
 	sprint_end = "sprint_out", 
 }
 
+
+
 SWEP.Sounds = {
 	fire = {
 		{time = 0.1, sound = "", callback = function(wep) wep:PlayVMSequence("reload_shell_pump") end},
@@ -102,6 +104,10 @@ SWEP.Sounds = {
 SWEP.DeployTime = 0.45
 SWEP.HolsterTime = 0.25
 SWEP.ReloadTime = 1.5
+SWEP.ReloadTimes = {
+	Base = 1.5,
+}
+SWEP.UsesEmptyReloadTimes = false
 
 SWEP.ViewModelMovementScale = 0.8
 

@@ -87,6 +87,11 @@ SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.75
 SWEP.ReloadTime = 7
 SWEP.ReloadTime_Empty = 7.25
+SWEP.ReloadTimes = {
+	Base = 7,
+	Base_Empty = 7.25,
+}
+SWEP.UsesEmptyReloadTimes = true
 SWEP.FlashlightAttachmentName = "1"
 SWEP.Chamberable = false
 SWEP.ViewModelMovementScale = 2

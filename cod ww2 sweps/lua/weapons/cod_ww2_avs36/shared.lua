@@ -1,7 +1,7 @@
 SWEP.Base = "pb_codww2_base"
 
 include("avs_sounds.lua")
-
+SWEP.UsesEmptyReloadTimes = true
 SWEP.PrintName = "AVS-36"
 SWEP.Category = "PHUNBASE | COD WWII"
 SWEP.Slot = 2
@@ -89,6 +89,10 @@ SWEP.ReloadTime = 2.35
 SWEP.ReloadTime_Empty = 3
 SWEP.IdleAfterFire = false
 
+SWEP.ReloadTimes = {
+	Base = 2.35,
+	Base_Empty = 3,
+}
 
 
 

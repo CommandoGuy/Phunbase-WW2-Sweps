@@ -83,6 +83,11 @@ SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.5
 SWEP.ReloadTime = 2.2
 SWEP.ReloadTime_Empty = 2.8
+SWEP.ReloadTimes = {
+	Base = 2.33,
+	Base_Empty = 3.17,
+}
+SWEP.UsesEmptyReloadTimes = true
 SWEP.FireModes = {"auto"}
 
 

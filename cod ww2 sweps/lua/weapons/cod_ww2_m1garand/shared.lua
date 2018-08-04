@@ -6,7 +6,7 @@ SWEP.Slot = 2
 SWEP.SlotPos = 0
 include("garand_sounds.lua")
 SWEP.ViewModelFOV = 60
-SWEP.AimViewModelFOV = 30
+SWEP.AimViewModelFOV = 50
 SWEP.ViewModel = "models/codww2/weapons/garand.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
@@ -31,7 +31,7 @@ SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 
 // Recoil variables
-SWEP.Recoil	= 1.2
+SWEP.Recoil	= 2.5
 SWEP.Spread	= 0.1
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
@@ -42,8 +42,8 @@ SWEP.SpreadAdd_Iron	= 0.2
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-3.950, 0.000, 1.066)
-SWEP.IronsightAng = Vector(-0.026, 1.679, 0.000)
+SWEP.IronsightPos = Vector(-3.958, 0.000, 1.063)
+SWEP.IronsightAng = Vector(0.000, 1.581, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -85,6 +85,11 @@ SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 1
 SWEP.ReloadTime = 2.9
 SWEP.ReloadTime_Empty = 2.75
+SWEP.ReloadTimes = {
+	Base = 3.57,
+	Base_Empty = 3.17,
+}
+SWEP.UsesEmptyReloadTimes = true
 SWEP.EmptySoundPrimary = "Dryfire_Pistol"
 SWEP.FlashlightAttachmentName = "1"
 SWEP.ViewModelMovementScale = 1.25
@@ -137,7 +142,7 @@ SWEP.Secondary.Automatic = true
 SWEP.FireMoveMod = 1
 SWEP.FireMoveMod_Iron = 0
 SWEP.LuaViewmodelRecoil = true
-SWEP.FullAimViewmodelRecoil = true
+SWEP.FullAimViewmodelRecoil = false
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 0.1
 SWEP.LuaVMRecoilMod = 7 -- modifier of overall intensity for the code based recoil

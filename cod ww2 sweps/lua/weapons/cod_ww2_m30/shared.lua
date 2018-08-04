@@ -96,6 +96,11 @@ SWEP.DeployTime = 0.5
 SWEP.HolsterTime = 0.75
 SWEP.ReloadTime = 3.5
 SWEP.ReloadTime_Empty = 4
+SWEP.ReloadTimes = {
+	Base = 4,
+	Base_Empty = 3.5,
+}
+SWEP.UsesEmptyReloadTimes = true
 SWEP.Chamberable = false
 
 SWEP.Secondary.Delay = 0.5

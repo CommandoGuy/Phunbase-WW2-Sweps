@@ -6,7 +6,7 @@ SWEP.Slot = 2
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 60
-SWEP.AimViewModelFOV = 30
+SWEP.AimViewModelFOV = 40
 SWEP.ViewModel = "models/codww2/weapons/g43.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
@@ -92,6 +92,11 @@ SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 3
 SWEP.ReloadTime_Empty = 4
+SWEP.ReloadTimes = {
+	Base = 3,
+	Base_Empty = 4,
+}
+SWEP.UsesEmptyReloadTimes = true
 SWEP.FlashlightAttachmentName = "1"
 
 

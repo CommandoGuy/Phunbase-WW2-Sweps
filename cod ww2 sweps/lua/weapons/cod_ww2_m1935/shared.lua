@@ -83,7 +83,11 @@ SWEP.DeployTime = 0.3
 SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 3
 SWEP.ReloadTime_Empty = 3.25
-
+SWEP.ReloadTimes = {
+	Base = 3,
+	Base_Empty = 3.25,
+}
+SWEP.UsesEmptyReloadTimes = true
 
 
 SWEP.ViewModelMovementScale = 1

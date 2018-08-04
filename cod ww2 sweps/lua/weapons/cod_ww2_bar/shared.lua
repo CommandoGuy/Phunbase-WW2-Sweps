@@ -83,11 +83,12 @@ SWEP.Sequences = {
 SWEP.UseIronTransitionAnims = true
 SWEP.DeployTime = 1
 SWEP.HolsterTime = 0.5
-SWEP.ReloadTime = 2.5
-SWEP.ReloadTime_Empty = 3
 SWEP.IdleAfterFire = true
-
-
+SWEP.UsesEmptyReloadTimes = true
+SWEP.ReloadTimes = {
+	Base = 2.5,
+	Base_Empty = 3,
+}
 
 
 SWEP.ViewModelMovementScale = 1

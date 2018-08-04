@@ -84,6 +84,11 @@ SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 1
 SWEP.ReloadTime = 1.7
 SWEP.ReloadTime = 2
+SWEP.ReloadTimes = {
+	Base = 1.7,
+	Base_Empty = 2,
+}
+SWEP.UsesEmptyReloadTimes = true
 SWEP.EmptySoundPrimary = "Dryfire_Pistol"
 SWEP.FlashlightAttachmentName = "1"
 SWEP.ViewModelMovementScale = 1

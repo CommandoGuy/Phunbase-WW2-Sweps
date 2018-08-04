@@ -20,7 +20,7 @@ SWEP.AdminSpawnable = true
 
 SWEP.NoSprintVMMovement = false
 // weapon specific variables
-SWEP.Primary.Ammo = "phunbase_9mm"
+SWEP.Primary.Ammo = "phunbase_9x19mm"
 SWEP.Primary.ClipSize = 8
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = false
@@ -84,6 +84,11 @@ SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 1
 SWEP.ReloadTime = 1.75
 SWEP.ReloadTime_Empty = 2.7
+SWEP.ReloadTimes = {
+	Base = 1.93,
+	Base_Empty = 2.96,
+}
+SWEP.UsesEmptyReloadTimes = true
 SWEP.EmptySoundPrimary = "Dryfire_Pistol"
 SWEP.FlashlightAttachmentName = "1"
 SWEP.ViewModelMovementScale = 1

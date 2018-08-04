@@ -80,7 +80,7 @@ SWEP.Attachments = {
 	[1] = {name = "Optics", attachments = {"call_of_duty_world_war_2_7_times_magnification_marksman_rifle_scope_but_with_a_free_call_of_duty_world_war_2_executable_for_you_to_play_with"}},
 }
 
-
+SWEP.Chamberable = false
 
 SWEP.Sequences = {
 	idle = "idle",
@@ -107,6 +107,11 @@ SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 3.45
 SWEP.ReloadTime_Empty = 3.45
+SWEP.ReloadTimes = {
+	Base = 3.45,
+	Base_Empty = 3.45,
+}
+SWEP.UsesEmptyReloadTimes = true
 SWEP.FlashlightAttachmentName = "1"
 
 SWEP.RTScope_Enabled = true

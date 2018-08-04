@@ -7,7 +7,7 @@ SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 60
 SWEP.AimViewModelFOV = 54
-SWEP.ViewModel = "models/codww2/weapons/mp40.mdl"
+SWEP.ViewModel = "models/arachnit/cod_ww2/weapons/nazigermany/mp40.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
 SWEP.HoldType = "smg"
@@ -20,7 +20,7 @@ SWEP.AdminSpawnable = true
 
 SWEP.NoSprintVMMovement = true
 // weapon specific variables
-SWEP.Primary.Ammo = "phunbase_9mm"
+SWEP.Primary.Ammo = "phunbase_9x19mm"
 SWEP.Primary.ClipSize = 32
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = true
@@ -86,14 +86,18 @@ SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 1.5
 SWEP.ReloadTime_Empty = 2
-
-SWEP.EnableCustomization = true
+SWEP.ReloadTimes = {
+	Base = 2.25,
+	Base_Empty = 2.75,
+}
+SWEP.UsesEmptyReloadTimes = true
+SWEP.EnableCustomization = false
 SWEP.CustomizationMenuSize = 1.5
 SWEP.CustomizationMenuAttachmentName = "1"
 
-SWEP.Attachments = {
-	[1] = {name = "Finish", attachments = {"Normandy_Camouflage"}},
-}
+--SWEP.Attachments = {
+	--[1] = {name = "Finish", attachments = {"Normandy_Camouflage"}},
+--}
 
 
 SWEP.ViewModelMovementScale = 1

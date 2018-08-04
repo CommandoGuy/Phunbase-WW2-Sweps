@@ -1,0 +1,6 @@
+PHUNBASE:addRegularSound("BREN.Magout", "weapons/BREN/magout.wav")
+PHUNBASE:addRegularSound("BREN.MagoutF", "weapons/BREN/magoutF.wav")
+PHUNBASE:addRegularSound("BREN.Magin", "weapons/BREN/magin.wav")
+PHUNBASE:addRegularSound("BREN.MaginF", "weapons/BREN/maginF.wav")
+PHUNBASE:addRegularSound("BREN.Bolt", "weapons/BREN/bolt.wav")
+PHUNBASE:addRegularSound("BREN.Fire", "weapons/BREN/fire.wav")

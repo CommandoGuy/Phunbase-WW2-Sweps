@@ -38,7 +38,7 @@ SWEP.SpreadVel = 1.2
 SWEP.SpreadVel_Iron = 0.9
 SWEP.SpreadAdd = 0.3
 SWEP.SpreadAdd_Iron	= 0.2
-
+SWEP.DisableIronsights = true
 SWEP.BasePos = Vector(0,-2,0)
 SWEP.BaseAng = Vector(0,0,0)
 
@@ -110,6 +110,10 @@ SWEP.Sequences = {
 SWEP.DeployTime = 0.53
 SWEP.HolsterTime = 0.4
 SWEP.ReloadTime = 2.5
+SWEP.ReloadTimes = {
+	Base = 2.5,
+}
+SWEP.UsesEmptyReloadTimes = false
 
 SWEP.ViewModelMovementScale = 0.8
 

@@ -18,7 +18,7 @@ local particlenames = {
 	"Muzzleflashpistol",
 	"Muzzleflashshotgun",
 	"Muzzleflashsmg",
-	"Muzzleflashsniper"
+	"Muzzleflashsniper",
 }
 
 for k, v in pairs(particlenames) do

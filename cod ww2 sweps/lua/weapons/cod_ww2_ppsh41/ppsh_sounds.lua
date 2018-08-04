@@ -1,0 +1,6 @@
+PHUNBASE:addRegularSound("PPSH.Magout", "weapons/PPSH/magout.wav")
+PHUNBASE:addRegularSound("PPSH.Boltback", "weapons/PPSH/boltback.wav")
+PHUNBASE:addRegularSound("PPSH.Magin", "weapons/PPSH/magin.wav")
+PHUNBASE:addRegularSound("PPSH.Boltrelease", "weapons/PPSH/boltrelease.wav")
+--PHUNBASE:addRegularSound("PPSH.Bolt", "weapons/PPSH/bolt.wav")
+PHUNBASE:addRegularSound("PPSH.Fire", "weapons/PPSH/fire.wav")
