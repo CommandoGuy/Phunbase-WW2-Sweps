@@ -1,0 +1,13 @@
+"UnlitGeneric"
+{
+"$basetexture" "models\codww2\weapons\upgrades\reticle"
+"$bumpmap" "models\codww2\weapons\upgrades\lens2_n"
+"$PhongExponentTexture" "models\codww2\weapons\upgrades\lens2_s"
+
+"$color" "[.325 .325 .325]"
+"$nocull" "0"
+"$additive" "1"
+"$selfillum" "1" 
+"$translucent" "1"
+}
+

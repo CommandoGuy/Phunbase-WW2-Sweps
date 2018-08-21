@@ -78,6 +78,9 @@ SWEP.Sequences = {
 	sprint_end = "sprint_out", 
 }
 
+SWEP.EnableCustomization = true
+SWEP.CustomizationMenuSize = 1.5
+SWEP.CustomizationMenuAttachmentName = "1"
 
 SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.75
@@ -101,7 +104,7 @@ SWEP.ShellDelay = 0
 SWEP.ShellScale = 1
 SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
 SWEP.ShellEjectVelocity = 0
-SWEP.FireModes = {"auto"}
+SWEP.FireModes = {"auto", "semi"}
 
 SWEP.MuzzleAttachmentName = "1"
 SWEP.MuzzleEffect = {"PistolGlow", "MuzzleflashRifle", "muzzle_sparks_pistol", "btb_vm_overheat"}
@@ -112,6 +115,26 @@ SWEP.NormalFlashlight = false // enables the HL2 flashlight
 SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
 SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instant or it has a 0.5 second delay
 
+SWEP.Attachments = {
+	[1] = {name = "Optics", attachments = {"cod_ww2_reflexsight", "cod_ww2_x4scope"}},
+}
+
+SWEP.AttachmentIronsights = {
+["cod_ww2_x4scope"] = {pos = Vector(-3.772, 0.000, 0.792), ang = Vector(1.302, -0.891, 0.000)},
+["cod_ww2_reflexsight"] = {pos = Vector(-3.430, -1.093, 0.865), ang = Vector(-0.019, 0.026, 0.000)}
+}
+
+SWEP.VElements = {
+	["cod_ww2_reflexsight"] = { model = "models/codww2/weapons/fg42.mdl", bonemerge = true, stencilDebug = false, bodygroups = {[1] = 1, [2] = 1}, stencilmaterials = {1}},
+}
+
+SWEP.RTScope_Enabled = true
+SWEP.RTScope_Zoom = 7.25
+SWEP.RTScope_Reticle = Material("models/codww2/weapons/optics/kar98k_crosshair")
+SWEP.RTScope_Material = Material("models/codww2/weapons/upgrades/lens1") 
+SWEP.RTScope_Align = Angle(0,0,0)
+SWEP.RTScope_DrawIris = true
+SWEP.RTScope_DrawParallax = true
 
 SWEP.Secondary.Ammo = ""
 SWEP.Secondary.Delay = 0

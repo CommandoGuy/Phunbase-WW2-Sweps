@@ -8,7 +8,7 @@ SWEP.Slot = 2
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 60
-SWEP.AimViewModelFOV = 30
+SWEP.AimViewModelFOV = 45
 SWEP.ViewModel = "models/codww2/weapons/kar98k.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 SWEP.EnableCustomization = true

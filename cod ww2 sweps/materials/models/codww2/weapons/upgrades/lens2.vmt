@@ -1,0 +1,19 @@
+"LightmappedGeneric"
+{
+"$basetexture" "models\codww2\weapons\upgrades\lens2"
+"$bumpmap" "models\codww2\weapons\upgrades\lens2_n"
+"$PhongExponentTexture" "models\codww2\weapons\upgrades\lens2_s"
+"$phong" 		"1"
+"$phongalbedotint" "1"
+"$phongboost" "2.5"
+
+
+
+"$phongalbedoboost" "25"
+"$phongfresnelranges" "[1.8 4.5 7.4]"
+"$halflambert" "0"
+"$ambientocclusion" "1"
+"$nocull" "0"
+"$alpha" "0.75"
+"$translucent" "1"
+}

@@ -14,7 +14,7 @@ SWEP.HoldType = "smg"
 SWEP.SprintHoldType = "passive"
 SWEP.CrouchHoldType = "smg"
 SWEP.ReloadHoldType = "smg"
-
+SWEP.IdleAfterFire = true
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
 SWEP.UseIronTransitionAnims = true
@@ -113,20 +113,18 @@ SWEP.FireModes = {"auto", "semi"}
 SWEP.MuzzleAttachmentName = "1"
 SWEP.MuzzleEffect = {"PistolGlow", "MuzzleflashRifle", "muzzle_sparks_pistol", "btb_vm_overheat"}
 
-local ang0 = Vector()
-
-SWEP.VElements = {
-["cod_ww2_zf4_scope"] = { type = "Model", model = "models/attachments/a_optic_zf4.mdl", bone = "tag_weapon", rel = "", pos = Vector(-1.338, -0.602, 7.197), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+SWEP.AttachmentIronsights = {
+["cod_ww2_x4scope"] = {pos = Vector(-3.561, 0.000, 0.184), ang = Vector(0.364, 0.078, 0.000)},
+["cod_ww2_reflexsight"] = {pos = Vector(-3.441, -1.093, -0.006), ang = Vector(0.164, 0.116, 0.000)}
 }
 
-SWEP.AttachmentIronsights = {
-["cod_ww2_zf4_scope"] = {pos = Vector(-3.351, -1.093, -0.107), ang = ang0}
+SWEP.VElements = {
+	["cod_ww2_reflexsight"] = { model = "models/codww2/weapons/stg44.mdl", bonemerge = true, stencilDebug = false, bodygroups = {[1] = 1, [2] = 1}, stencilmaterials = {1}},
 }
 
 SWEP.Attachments = {
-	[1] = {name = "Optics", attachments = {"cod_ww2_zf4_scope"}},
+	[1] = {name = "Optics", attachments = {"cod_ww2_reflexsight", "cod_ww2_x4scope"}},
 }
-
 
 SWEP.FireSound = "STG44_Single"
 
@@ -143,7 +141,7 @@ SWEP.Secondary.Automatic = true
 SWEP.RTScope_Enabled = true
 SWEP.RTScope_Zoom = 7.25
 SWEP.RTScope_Reticle = Material("models/codww2/weapons/optics/zf4_crosshair")
-SWEP.RTScope_Material = Material("models/codww2/weapons/optics/lense_rt") 
+SWEP.RTScope_Material = Material("models/codww2/weapons/upgrades/lens1")
 SWEP.RTScope_Align = Angle(0,0,0)
 SWEP.RTScope_DrawIris = true
 SWEP.RTScope_DrawParallax = true

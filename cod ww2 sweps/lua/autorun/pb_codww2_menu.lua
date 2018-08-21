@@ -23,7 +23,6 @@ PHUNBASE.CODWW2.RIG_ADD("Waffen-SS", "models/codww2/hands/ssarms.mdl")
 PHUNBASE.CODWW2.RIG_ADD("German Tanker", "models/codww2/hands/ger_tanker.mdl")
 PHUNBASE.CODWW2.RIG_ADD("German Paratrooper", "models/codww2/hands/ger_paratrooper.mdl")
 PHUNBASE.CODWW2.RIG_ADD("Russian Infantry", "models/codww2/hands/rus_infantry.mdl")
-PHUNBASE.CODWW2.RIG_ADD("Russian Winter Infantry", "models/codww2/hands/rus_winter.mdl")
 
 local function PB_CODWW2_MENU_PANEL(panel)
 	panel:ClearControls()

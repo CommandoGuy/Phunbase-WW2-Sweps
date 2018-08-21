@@ -1,0 +1,6 @@
+PHUNBASE:addRegularSound("No2.Foley", "weapons/enfieldno2/Foley1.wav", "weapons/enfieldno2/Foley2.wav", "weapons/enfieldno2/Foley3.wav", "weapons/enfieldno2/Foley4.wav")
+PHUNBASE:addRegularSound("No2.Open", "weapons/enfieldno2/open.wav")
+PHUNBASE:addRegularSound("No2.Roundsin", "weapons/enfieldno2/roundsin.wav")
+PHUNBASE:addRegularSound("No2.Close", "weapons/enfieldno2/close.wav")
+PHUNBASE:addRegularSound("No2.Fire", "weapons/enfieldno2/fire.wav")
+PHUNBASE:addRegularSound("No2.DumpRounds", "weapons/enfieldno2/dump_rounds1.wav", "weapons/enfieldno2/dump_rounds2.wav", "weapons/enfieldno2/dump_rounds3.wav")

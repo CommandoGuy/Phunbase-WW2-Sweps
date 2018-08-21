@@ -1,0 +1,6 @@
+PHUNBASE:addRegularSound("springfield.boltback", "weapons/springfield/boltback.wav")
+PHUNBASE:addRegularSound("springfield.boltforward", "weapons/springfield/boltforward.wav")
+PHUNBASE:addRegularSound("springfield.clipin", "weapons/springfield/roundsin.wav")
+PHUNBASE:addRegularSound("springfield.boltlatch", "weapons/springfield/boltlatch.wav")
+PHUNBASE:addRegularSound("springfield.boltrelease", "weapons/springfield/boltrelease.wav")
+PHUNBASE:addRegularSound("springfield.fire", "weapons/springfield/fire.wav")

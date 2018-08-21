@@ -6,7 +6,7 @@ SWEP.Slot = 2
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 50
-SWEP.AimViewModelFOV = 30
+SWEP.AimViewModelFOV = 40
 SWEP.ViewModel = "models/codww2/weapons/volkssturmgewehr.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
@@ -29,7 +29,7 @@ SWEP.Primary.Delay = 0.08
 SWEP.Primary.Force = 5
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
-
+SWEP.FireModes = {"auto", "semi"}
 // Recoil variables
 SWEP.Recoil	= 2.5
 SWEP.Spread	= 0.1
