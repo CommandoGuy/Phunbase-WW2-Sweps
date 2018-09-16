@@ -4,14 +4,14 @@ VertexLitGeneric
 	"$color"                    "[1.0 1.0 1.0]"
 	$basetexture						"models\codww2\weapons/stg44/STG44_Receiver_Diffuse"
 	$bumpmap							"models\codww2\weapons/stg44/STG44_Receiver_Normal"
-	$phongexponenttexture				"models\codww2\weapons/stg44/STG44_Receiver_spec"
+	//$phongexponenttexture				"models\codww2\weapons/stg44/STG44_Receiver_spec"
 "$selfillummask"				"models\codww2\weapons\generic\weapon_generic_si"	
 	
 	"$phong"                        "1"
 	"$phongtint"                    "[.65 .75 1]"
 	"$phongboost"                   "1.0"
-	//"$phongexponent"				"75"
-	"$phongfresnelranges"           "[ 1 2 3 ]"
+	"$phongexponent"				"100"
+	"$phongfresnelranges"           "[ 1 1 1 ]"
 
 //SELFILLUM (subtle to avoid complete occlusion)
 	"$selfillum"					"1"

@@ -7,7 +7,7 @@ SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 60
 SWEP.AimViewModelFOV = 54
-SWEP.ViewModel = "models/arachnit/cod_ww2/weapons/nazigermany/mp40.mdl"
+SWEP.ViewModel = "models/codww2/weapons/mp40.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
 SWEP.HoldType = "smg"
@@ -42,7 +42,7 @@ SWEP.IdleAfterFire = true
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-4.191, -2.986, 1.159)
+SWEP.IronsightPos = Vector(-4.158, -2.986, 1.159)
 SWEP.IronsightAng = Vector(0.400, 0.039, 0.000)
 
 SWEP.CustomizePos = Vector(1.546, 0.000, -1.502)
@@ -103,9 +103,9 @@ SWEP.CustomizationMenuAttachmentName = "1"
 SWEP.ViewModelMovementScale = 1
 
 // shell-related stuff
-SWEP.ShellVelocity = {X = 0, Y = 0, Z = 50}
+SWEP.ShellVelocity = {X = 50, Y = 0, Z = 150}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0	, Up = 100}
+SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0	, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.01
 SWEP.ShellScale = 1

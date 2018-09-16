@@ -42,8 +42,8 @@ SWEP.IdleAfterFire = false
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-3.663, -2.986, 2.066)
-SWEP.IronsightAng = Vector(0.422, 0.000, 0.000)
+SWEP.IronsightPos = Vector(-3.655, -2.986, 1.943)
+SWEP.IronsightAng = Vector(0.845, 0.060, 0.000)
 
 SWEP.CustomizePos = Vector(1.546, 0.000, -1.502)
 SWEP.CustomizeAng = Vector(6.667, 10.892, 0.000)

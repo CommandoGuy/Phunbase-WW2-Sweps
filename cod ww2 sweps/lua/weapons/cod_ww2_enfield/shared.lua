@@ -10,8 +10,8 @@ SWEP.AimViewModelFOV = 54
 SWEP.ViewModel = "models/codww2/weapons/enfield.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 SWEP.EnableCustomization = true
-SWEP.CustomizationMenuSize = 0.8
-SWEP.CustomizationMenuAttachmentName = "Laser"
+SWEP.CustomizationMenuSize = 1
+SWEP.CustomizationMenuAttachmentName = "1"
 
 SWEP.HoldType = "smg"
 SWEP.SprintHoldType = "passive"
@@ -23,7 +23,7 @@ SWEP.AdminSpawnable = true
 SWEP.NoSprintVMMovement = true
 // weapon specific variables
 SWEP.Primary.Ammo = "phunbase_303brit"
-SWEP.Primary.ClipSize = 10
+SWEP.Primary.ClipSize = 5
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = false
 SWEP.Primary.Damage = 100

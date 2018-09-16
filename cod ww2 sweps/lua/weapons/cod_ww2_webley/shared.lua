@@ -5,8 +5,8 @@ SWEP.Category = "PHUNBASE | COD WWII"
 SWEP.Slot = 2
 SWEP.SlotPos = 0
 
-SWEP.ViewModelFOV = 65
-SWEP.AimViewModelFOV = 60
+SWEP.ViewModelFOV = 60
+SWEP.AimViewModelFOV = 70
 SWEP.ViewModel = "models/codww2/weapons/webley.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
@@ -71,7 +71,7 @@ SWEP.Sequences = {
 	fire_iron_last = "fire",
 	fire_iron = "fire",
 	reload = "reload",
-	reload_empty = "reload_empty",
+	reload_empty = "reload",
 	deploy = "draw",
 	deploy_first = "draw_first",
 	holster = "holster",
@@ -120,14 +120,9 @@ SWEP.Sounds = {
 		{time = 0, sound = "No2.Foley", callback = function(self) end}
 	},
 	reload = {
-		{time = 0.4, sound = "No2.Open", callback = function(self) end},
-		{time = 1, sound = "No2.Roundsin", callback = function(self) end},
-		{time = 1.5, sound = "No2.Close", callback = function(self) end}
-	},
-	reload_empty = {
-		{time = 0.45, sound = "No2.Open", callback = function(self) end},
-		{time = 1.05, sound = "No2.Roundsin", callback = function(self) end},
-		{time = 1.8, sound = "No2.Close", callback = function(self) end}
+		{time = 0.3, sound = "No2.Open", callback = function(self) end},
+		{time = 1.25, sound = "No2.Roundsin", callback = function(self) end},
+		{time = 1.75, sound = "No2.Close", callback = function(self) end}
 	},
 }
 

@@ -6,13 +6,9 @@
 //detail
 $detail  "models\codww2\weapons\mp28\barrel_d"
 $detailscale 1	
-$detailblendfactor .25
+$detailblendfactor ..075
 $detailblendmode 2
 	
-$rimlight 0
-"$rimlightexponent"   "6" 
-"$rimlightboost"   "0.3"
- $rimmask 1
 
 "$phong"                      "1"
 	"$phongboost"                 "0.5"

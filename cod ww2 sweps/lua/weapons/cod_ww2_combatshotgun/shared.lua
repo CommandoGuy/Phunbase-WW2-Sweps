@@ -6,7 +6,7 @@ SWEP.Slot = 3
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 50
-SWEP.AimViewModelFOV = 60
+SWEP.AimViewModelFOV = 45
 SWEP.ViewModel = "models/codww2/weapons/trenchgun.mdl"
 SWEP.WorldModel = "models/weapons/w_shotgun.mdl"
 
@@ -45,8 +45,8 @@ SWEP.Secondary.Bullets = 12
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-3.289, -5.000, 0.967)
-SWEP.IronsightAng = Vector(1.083, 0.000, 0.000)
+SWEP.IronsightPos = Vector(-3.332, 0.000, 1.309)
+SWEP.IronsightAng = Vector(0.513, 0.000, 0.000)
 
 SWEP.SprintPos = Vector(0,0,0)
 SWEP.SprintAng = Vector(0,0,0)

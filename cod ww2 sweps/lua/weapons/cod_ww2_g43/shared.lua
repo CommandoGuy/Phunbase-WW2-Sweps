@@ -147,6 +147,15 @@ SWEP.Sounds = {
 	fire_last = {
 		{time = 0, sound = "M1C_Ping", callback = function(self) end}
 	},
+	reload = {
+		{time = 0, sound = "Reload_Start", callback = function(self) end},
+		{time = 2.3, sound = "Reload_End", callback = function(self) end}
+	},
+	reload_empty = {
+		{time = 0, sound = "Reload_Start", callback = function(self) end},
+		{time = 2.3, sound = "Reload_End", callback = function(self) end},
+		{time = 3.35, sound = "Reload_Start", callback = function(self) end},
+	},
 }
 
 SWEP.Secondary.Ammo = ""

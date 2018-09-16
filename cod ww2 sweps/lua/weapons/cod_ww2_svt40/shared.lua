@@ -42,8 +42,8 @@ SWEP.SpreadAdd_Iron	= 0.2
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-3.586, 0.000, 0.947)
-SWEP.IronsightAng = Vector(0.362, 0.000, 0.000)
+SWEP.IronsightPos = Vector(-3.503, 0.000, 0.947)
+SWEP.IronsightAng = Vector(0.362, 0.037, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -81,10 +81,6 @@ SWEP.Sequences = {
 	sprint_end = "sprint_out", 
 }
 
-SWEP.EnableCustomization = true
-SWEP.CustomizationMenuSize = 0.8
-SWEP.CustomizationMenuAttachmentName = "1"
-
 SWEP.IdleAfterFire = false
 SWEP.UseIronTransitionAnims = false 
 SWEP.DeployTime = 0.75
@@ -102,37 +98,13 @@ SWEP.ViewModelMovementScale = 1
 
 // shell-related stuff
 SWEP.ShellVelocity = {X = 0, Y = 100, Z = 50}
-SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
+SWEP.ShellAngularVelocity = {Pitch_Min = 1000, Pitch_Max = -1000, Yaw_Min = 500, Yaw_Max = -500, Roll_Min = 1000, Roll_Max = -2500}
 SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.01
 SWEP.ShellScale = 1
 SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
 SWEP.ShellEjectVelocity = 0
-
-SWEP.RTScope_Enabled = true
-SWEP.RTScope_Zoom = 7.25
-SWEP.RTScope_Reticle = Material("models/codww2/reticles/enfield_reticle")
-SWEP.RTScope_Material = Material("models/codww2/weapons/svt40/lense") 
-SWEP.RTScope_Align = Angle(0,0,0)
-SWEP.RTScope_DrawIris = true
-SWEP.RTScope_DrawParallax = true
-
-
-local ang0 = Vector()
-
-SWEP.VElements = {
-["cod_ww2_svt40_scope"] = { type = "Model", model = "models/attachments/a_optic_svt40_x4.mdl", bone = "tag_weapon", rel = "", pos = Vector(-12.303, -3.441, 6.896), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
-}
-
-SWEP.AttachmentIronsights = {
-["cod_ww2_svt40_scope"] = {pos = Vector(-3.521, -2.037, 0.338), ang = ang0}
-}
-
-SWEP.Attachments = {
-	[1] = {name = "Optics", attachments = {"cod_ww2_svt40_scope"}},
-}
-
 
 
 SWEP.MuzzleAttachmentName = "1"

@@ -18,7 +18,7 @@ SWEP.ReloadHoldType = "smg"
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
 
-SWEP.NoSprintVMMovement = true
+SWEP.NoSprintVMMovement = false
 // weapon specific variables
 SWEP.Primary.Ammo = "phunbase_9x19mm"
 SWEP.Primary.ClipSize = 8
@@ -54,7 +54,7 @@ SWEP.HolsterAng = Vector(0,0,0)
 SWEP.NearWallPos = Vector(-0.429, -8.035, -9.005)
 SWEP.NearWallAng = Vector(28.318, 26.918, -14.25)
 
-SWEP.PistolSprintSway = false
+SWEP.PistolSprintSway = true
 
 SWEP.DisableIronsights = false
 SWEP.UseIronTransitionAnims = false 

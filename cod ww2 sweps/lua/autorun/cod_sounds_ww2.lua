@@ -134,7 +134,9 @@ sound.Add({
 })
 
 
-
+PHUNBASE:addRegularSound("Reload_Start", "universal/reload_magout1.wav", "universal/reload_magout2.wav", "universal/reload_magout3.wav")
+PHUNBASE:addRegularSound("Reload_End", "universal/reload_end1.wav", "universal/reload_end2.wav", "universal/reload_end3.wav")
+PHUNBASE:addRegularSound("Reload_Grab", "universal/reload_magin1.wav", "universal/reload_magin2.wav")
 
 --fg42---------------------------------------------------------------
 

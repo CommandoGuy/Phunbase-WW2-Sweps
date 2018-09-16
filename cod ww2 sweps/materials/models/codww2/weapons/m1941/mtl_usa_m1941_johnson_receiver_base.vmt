@@ -1,0 +1,21 @@
+VertexLitGeneric
+{
+	"$basetexture" "models\codww2\weapons\m1941\body"
+	"$bumpmap" "models\codww2\weapons\m1941\body_n"
+//$phongexponenttexture "models/codww2/weapons/m1941/body_s"
+
+$detail  "models\codww2\weapons\m1941\body_d"
+$detailscale 1	
+$detailblendfactor 0.01
+$detailblendmode 2
+
+
+"$phong"                      "1"
+	"$phongboost"                 "0.15"
+	"$phongfresnelranges"         "[5 10 10]"
+	"$phongtint"		      "[1.05 1 1.15]"
+$phongexponent 100
+	"$phongalbedotint"            "0"
+	"$phongalbedoboost"           "150"
+	"$halflambert"                "1"
+}

@@ -6,7 +6,7 @@ SWEP.Slot = 2
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 50
-SWEP.AimViewModelFOV = 30
+SWEP.AimViewModelFOV = 40
 SWEP.ViewModel = "models/codww2/weapons/mg42.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
@@ -43,8 +43,8 @@ SWEP.SpreadAdd_Iron	= 0.2
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-3.879, 0.000, 1.302)
-SWEP.IronsightAng = Vector(0.372, 0.032, 0.000)
+SWEP.IronsightPos = Vector(-3.950, 0.000, 0.884)
+SWEP.IronsightAng = Vector(0.200, 0.032, 0.000)
 
 SWEP.CustomizePos = Vector(1.546, 0.000, -1.502)
 SWEP.CustomizeAng = Vector(6.667, 10.892, 0.000)
@@ -115,15 +115,6 @@ SWEP.FireSound = "MG42_Fire"
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
 SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
 SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instant or it has a 0.5 second delay
-
-SWEP.EnableCustomization = true
-SWEP.CustomizationMenuSize = 1.5
-SWEP.CustomizationMenuAttachmentName = "1"
-
-SWEP.Attachments = {
-	[1] = {name = "Finish", attachments = {"Normandy_Camouflage"}},
-}
-
 
 
 

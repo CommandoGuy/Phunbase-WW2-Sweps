@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	$basetexture	"models\codww2\weapons\mp40\weapon_mp40_dm"
+	$bumpmap		"models\codww2\weapons\mp40\weapon_mp40_nm"
+	$phongexponenttexture      		"models\codww2\weapons\mp40\weapon_mp40_ex"
+
+    $color2					"[1.25 1.25 1.25]"
+   
+   
+    $phong                              			1
+    $phongfresnelranges			"[4 4 5]"
+    $phongalbedotint				1
+    $phongalbedoboost			50
+   $phongboost  50
+
+}

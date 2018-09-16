@@ -1,6 +1,7 @@
 AddCSLuaFile()
 
 PHUNBASE.LoadLua("cod_ww2_rigs.lua")
+PHUNBASE.LoadLua("cod_sounds_ww2.lua")
 
 SWEP.PrintName = "PHUNBASE COD WW2"
 SWEP.Category = "PHUNBASE"

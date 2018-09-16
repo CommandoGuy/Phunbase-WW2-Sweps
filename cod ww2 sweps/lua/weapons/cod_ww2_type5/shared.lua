@@ -6,7 +6,7 @@ SWEP.Slot = 2
 SWEP.SlotPos = 0
 include("garand_sounds.lua")
 SWEP.ViewModelFOV = 60
-SWEP.AimViewModelFOV = 30
+SWEP.AimViewModelFOV = 40
 SWEP.ViewModel = "models/codww2/weapons/type5.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 

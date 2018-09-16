@@ -150,14 +150,14 @@ SWEP.Sounds = {
 		{time = 0, sound = "Rifle_Lower1", callback = function(self) end}
 	},
 	reload = {
-		{time = 0, sound = "Rifle_Raise1"},
-		{time = 1, sound = "Rifle_Lower3"},
-		{time = 2.2, sound = "Rifle_Lower2"},
+		{time = 0, sound = "Reload_Start"},
+		{time = 1, sound = "Reload_Grab"},
+		{time = 1.8, sound = "Reload_End"},
 	},
 		reload_empty = {
-		{time = 0, sound = "Rifle_Raise1"},
-		{time = 1.5, sound = "Rifle_Lower3"},
-		{time = 3.55, sound = "Rifle_Lower2"}
+		{time = 0, sound = "Reload_Start"},
+		{time = 1.5, sound = "Reload_Grab"},
+		{time = 3.55, sound = "Reload_End"}
 	},
 	sprint_in = {
 		{time = 0, sound = "Rifle_Lower2"},

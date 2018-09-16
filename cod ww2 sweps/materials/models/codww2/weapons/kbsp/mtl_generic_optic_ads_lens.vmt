@@ -1,0 +1,19 @@
+"UnlitGeneric"
+{
+"$basetexture" "models\codww2\weapons\upgrades\lens1"
+"$bumpmap" "models\codww2\weapons\upgrades\lens1_n"
+"$PhongExponentTexture" "models\codww2\weapons\upgrades\lens1_s"
+
+	"$normalmapalphaenvmapmask" 1
+//	"$color2" "[.85 .85 .85]"
+
+	"$phong" "1"
+	"$phongboost"	"1"
+	"$phongfresnelranges"	"[0.5 4.75 5]"
+
+	"$halflambert" "1"
+	"$ambientocclusion" "1"
+	"$nocull" "0"
+}
+
+

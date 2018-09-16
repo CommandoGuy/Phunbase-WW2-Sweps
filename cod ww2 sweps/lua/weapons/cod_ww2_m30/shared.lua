@@ -98,7 +98,7 @@ SWEP.ReloadTime = 3.5
 SWEP.ReloadTime_Empty = 4
 SWEP.ReloadTimes = {
 	Base = 4,
-	Base_Empty = 3.5,
+	Base_Empty = 3.63,
 }
 SWEP.UsesEmptyReloadTimes = true
 SWEP.Chamberable = false

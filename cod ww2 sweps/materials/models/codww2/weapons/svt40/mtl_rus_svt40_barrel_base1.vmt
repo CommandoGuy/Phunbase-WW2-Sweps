@@ -1,0 +1,21 @@
+VertexLitGeneric
+{
+	"$basetexture" "models\codww2\weapons\svt40\barrel"
+	"$bumpmap" "models\codww2\weapons\svt40\barrel_n"
+//$phongexponenttexture "models/codww2/weapons/svt40/barrel_s"
+
+$detail  "models\codww2\weapons\svt40\barrel_d"
+$detailscale 1	
+$detailblendfactor 0.025
+$detailblendmode 2
+
+
+"$phong"                      "1"
+	"$phongboost"                 "0.15"
+	"$phongfresnelranges"         "[5 10 10]"
+	"$phongtint"		      "[1.05 1 1.15]"
+$phongexponent 100
+	"$phongalbedotint"            "0"
+	"$phongalbedoboost"           "150"
+	"$halflambert"                "1"
+}

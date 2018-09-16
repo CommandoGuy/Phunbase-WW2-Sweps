@@ -185,7 +185,6 @@ SWEP.LuaVMRecoilMod = 5 -- modifier of overall intensity for the code based reco
 SWEP.LuaVMRecoilAxisMod = {vert = 0.1, hor = 0.1, roll = 0.25, forward = 0.25, pitch = 0.025} -- modifier for intensity of the recoil on varying axes
 
 
-
 function SWEP:PlayIdleAnim() // override and dont use this shit
 	local clip = self:Clip1() 
 	local empty = clip < 1
@@ -279,3 +278,4 @@ end
 
 self:PlayVMSequence(seq)
 end
+

@@ -1,0 +1,32 @@
+"VertexLitGeneric"
+{
+"$basetexture" "models\codww2\weapons\MG42\body"
+"$bumpmap" "models\codww2\weapons\MG42\body_n"
+"$PhongExponentTexture" "models\codww2\weapons\MG42\body_s"
+
+//detail
+$detail  "models\codww2\weapons\mg42\body_d"
+$detailscale 1	
+$detailblendfactor 0.075
+$detailblendmode 2
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmap" "env_cubemap"
+//	"$color2" "[.85 .85 .85]"
+
+//	"$phongexponent" "30"
+	"$phongalbedotint" 0
+	"$phong" "1"
+	"$phongboost"	"1"
+	"$phongfresnelranges"	"[0.5 1 5]"
+
+	"$envmaptint"	"[.15 .15 .15]"
+//	"$envmaptint"	"[.45 .45 .45]"
+
+	"$envmapfresnel"	"1.4"
+
+	"$halflambert" "1"
+	"$ambientocclusion" "1"
+	"$nocull" "0"
+}
+

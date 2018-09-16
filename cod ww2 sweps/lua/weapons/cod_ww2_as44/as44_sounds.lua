@@ -1,0 +1,5 @@
+PHUNBASE:addRegularSound("AS44.Fire", "weapons/AS44/fire.wav")
+PHUNBASE:addRegularSound("AS44.Bolt", "weapons/AS44/bolt.wav")
+PHUNBASE:addRegularSound("AS44.Magout", "weapons/AS44/magout.wav")
+PHUNBASE:addRegularSound("AS44.Magin", "weapons/AS44/magin.wav")
+PHUNBASE:addRegularSound("AS44.Draw", "weapons/AS44/first_draw.wav")

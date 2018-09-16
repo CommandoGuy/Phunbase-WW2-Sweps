@@ -143,3 +143,25 @@ function att:detachCallback()
     end
 end
 PHUNBASE:registerAttachment(att)
+
+local att = {}
+att.name = "karabin_scope"
+att.menuName = "x7 Scope"
+function att:attachCallback()
+    if CLIENT then
+        local vm = self.VM
+        if IsValid(vm) then
+             self.VM:SetBodygroup(1, 1)
+        end
+    end
+end
+
+function att:detachCallback()
+    if CLIENT then
+        local vm = self.VM
+        if IsValid(vm) then
+             self.VM:SetBodygroup(1, 0)
+        end
+    end
+end
+PHUNBASE:registerAttachment(att)

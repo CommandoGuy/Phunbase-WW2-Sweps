@@ -12,10 +12,6 @@ $detailblendmode 1
 
 $phongexponenttexture "models/codww2/weapons/type5/stock_exponent"
 
-$rimlight 1
-"$rimlightexponent"   "10" 
-"$rimlightboost"   "0.15"
- $rimmask 1
 
 "$phong"                      "1"
 	"$phongboost"                 "0.15"
