@@ -1,0 +1,5 @@
+PHUNBASE:addRegularSound("Sterling.Fire", "weapons/Sterling/fire.wav")
+PHUNBASE:addRegularSound("Sterling.Bolt", "weapons/Sterling/bolt.wav")
+PHUNBASE:addRegularSound("Sterling.Magout", "weapons/Sterling/magout.wav")
+PHUNBASE:addRegularSound("Sterling.Magin", "weapons/Sterling/magin.wav")
+PHUNBASE:addRegularSound("Sterling.Draw", "weapons/Sterling/bolt.wav")

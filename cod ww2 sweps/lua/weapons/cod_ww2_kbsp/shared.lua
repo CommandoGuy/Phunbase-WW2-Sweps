@@ -50,7 +50,7 @@ SWEP.BaseAng = Vector(0,0,0)
 SWEP.IronsightPos = Vector(-4.493, 0.000, 1.063)
 SWEP.IronsightAng = Vector(0.100, 0.011, 0.000)
 
-SWEP.CustomizePos = Vector(2.222, -0.780, -2.559) 
+SWEP.CustomizePos = Vector(2.222, -0.780, -2.559)
 SWEP.CustomizeAng = Vector(12.928, 17.873, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
@@ -91,13 +91,13 @@ SWEP.Sequences = {
 	deploy = "draw",
 	deploy_first = "draw_first",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 }
 
 SWEP.IdleAfterFire = false
-SWEP.UseIronTransitionAnims = false 
+SWEP.UseIronTransitionAnims = false
 SWEP.DeployTime = 0.65
 SWEP.DeployTime_First = 1.57
 SWEP.HolsterTime = 0.3
@@ -114,17 +114,18 @@ SWEP.FlashlightAttachmentName = "1"
 SWEP.ViewModelMovementScale = 1
 
 // shell-related stuff
-SWEP.ShellVelocity = {X = 0, Y = 100, Z = 50}
-SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
+SWEP.ShellVelocity = {X = 0, Y = 50, Z = 90}
+SWEP.ShellAngularVelocity = {Pitch_Min = -1000, Pitch_Max = -1000, Yaw_Min = -1000, Yaw_Max = -2500, Roll_Min = 0, Roll_Max = 0}
 SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 0}
 SWEP.ShellAttachmentName = "2"
-SWEP.ShellDelay = 0.01
-SWEP.ShellScale = 1
-SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
+SWEP.ShellDelay = 0
+SWEP.ShellScale = 0.75
+SWEP.ShellModel = "models/codww2/shells/762x51.mdl"
+SWEP.ShellEjectVelocity = 0
 SWEP.ShellEjectVelocity = 0
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "MuzzleflashRifle", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
 SWEP.FireSound = "G43_Single"
 
@@ -136,7 +137,7 @@ SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instan
 SWEP.RTScope_Enabled = true
 SWEP.RTScope_Zoom = 7.25
 SWEP.RTScope_Reticle = Material("models/codww2/reticles/enfield_reticle")
-SWEP.RTScope_Material = Material("models/codww2/weapons/kbsp/mtl_generic_optic_ads_lens") 
+SWEP.RTScope_Material = Material("models/codww2/weapons/kbsp/mtl_generic_optic_ads_lens")
 SWEP.RTScope_Align = Angle(0,0,90)
 SWEP.RTScope_DrawIris = true
 SWEP.RTScope_DrawParallax = true
@@ -146,19 +147,25 @@ SWEP.Sounds = {
 	draw_first = {
 		{time = 0.5, sound = "KBSP.Bolt", callback = function(self) end}
 	},
+	 draw = {
+		{time = 0.15, sound = "WW2.DrawRifle", callback = function(self) end}
+	},
+	holster = {
+		{time = 0.15, sound = "WW2.HolsterRifle", callback = function(self) end}
+	},
 	reload = {
-		{time = 0, sound = "Reload_Start", callback = function(self) end},
+		{time = 0, sound = "WW2.Movement1", callback = function(self) end},
 		{time = 0.27, sound = "KBSP.Magout", callback = function(self) end},
 		{time = 1.25, sound = "KBSP.Magin", callback = function(self) end},
-		{time = 1.7, sound = "Reload_End", callback = function(self) end}
+		{time = 1.7, sound = "WW2.Movement2", callback = function(self) end}
 	},
 	reload_empty = {
-		{time = 0, sound = "Reload_Start", callback = function(self) end},
+		{time = 0, sound = "WW2.Movement1", callback = function(self) end},
 		{time = 0.27, sound = "KBSP.Magout", callback = function(self) end},
 		{time = 1.25, sound = "KBSP.Magin", callback = function(self) end},
-		{time = 1.75, sound = "Reload_Start", callback = function(self) end},
+		{time = 1.75, sound = "WW2.Movement2", callback = function(self) end},
 		{time = 2.15, sound = "KBSP.Bolt", callback = function(self) end},
-		{time = 2.3, sound = "Reload_End", callback = function(self) end}
+		{time = 2.3, sound = "WW2.Movement1", callback = function(self) end}
 	},
 }
 

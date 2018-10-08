@@ -34,7 +34,7 @@ SWEP.Primary.Tracer = 1
 SWEP.FireModes = {"auto", "semi"}
 
 // Recoil variables
-SWEP.Recoil	= 3.5
+SWEP.Recoil	= 2
 SWEP.Spread	= 0.1
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
@@ -77,9 +77,9 @@ SWEP.Sequences = {
 	reload_empty = "reload_empty",
 	deploy = "draw",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 }
 
 SWEP.UseIronTransitionAnims = false
@@ -101,16 +101,16 @@ SWEP.ViewModelMovementScale = 1
 // shell-related stuff
 SWEP.ShellVelocity = {X = 0, Y = 90, Z = 90}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 0}
+SWEP.ShellViewAngleAlign = {Forward = 90, Right = 0, Up = -90}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0
-SWEP.ShellScale = 1
-SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
+SWEP.ShellScale = 0.75
+SWEP.ShellModel = "models/codww2/shells/762x51.mdl"
 SWEP.ShellEjectVelocity = 0
 
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "MuzzleflashRifle", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
 SWEP.FireSound = "AVS36_Fire"
 
@@ -119,15 +119,25 @@ SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you shoul
 SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instant or it has a 0.5 second delay
 
 SWEP.Sounds = {
+   draw = {
+		{time = 0.15, sound = "WW2.DrawRifle", callback = function(self) end}
+	},
+	holster = {
+		{time = 0.15, sound = "WW2.HolsterRifle", callback = function(self) end}
+	},
 	reload = {
+		{time = 0, sound = "WW2.Movement1", callback = function(self) end},
 		{time = 0.3, sound = "AVS36_Magout"},
 		{time = 1.25, sound = "AVS36_Magin"},
+		{time = 1.75, sound = "WW2.Movement2", callback = function(self) end},
 	},
 
 	reload_empty = {
+		{time = 0, sound = "WW2.Movement1", callback = function(self) end},
 		{time = 0.5, sound = "AVS36_Magout"},
 		{time = 1.5, sound = "AVS36_Magin"},
 		{time = 2.2, sound = "AVS36_Bolt"},
+		{time = 2.5, sound = "WW2.Movement2", callback = function(self) end},
 	},
 }
 
@@ -144,5 +154,5 @@ SWEP.LuaViewmodelRecoil = true
 SWEP.FullAimViewmodelRecoil = true
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 0.1
-SWEP.LuaVMRecoilMod = 5 -- modifier of overall intensity for the code based recoil
-SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0, roll = 0, forward = 0.3, pitch = 0} -- modifier for intensity of the recoil on varying axes
+SWEP.LuaVMRecoilMod = 3 -- modifier of overall intensity for the code based recoil
+SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.15, roll = 0.1, forward = 0.3, pitch = 0} -- modifier for intensity of the recoil on varying axes

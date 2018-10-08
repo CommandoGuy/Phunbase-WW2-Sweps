@@ -1,55 +1,5 @@
 
 --universal---------------------------------------------------------------
-
-sound.Add({
-	name = 			"Rifle_Raise1",			// <-- Sound Name That gets called for
-	channel = 		CHAN_USER_BASE +10,
-	volume = 		0.5,
-	sound = 			"universal/rifle_raise1.wav"	// <-- Sound Path
-})
-
-sound.Add({
-	name = 			"Rifle_Raise2",			
-	channel = 		CHAN_STATIC,
-	volume = 		0.5,
-	sound = 			"universal/rifle_raise2.wav"	
-})
-
-sound.Add({
-	name = 			"Rifle_Lower1",			
-	channel = 		CHAN_STATIC,
-	volume = 		0.5,
-	sound = 			"universal/rifle_lower1.wav"	
-})
-
-sound.Add({
-	name = 			"Rifle_Lower2",			
-	channel = 		CHAN_STATIC,
-	volume = 		0.5,
-	sound = 			"universal/rifle_lower2.wav"	
-})
-
-sound.Add({
-	name = 			"Rifle_Lower3",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"universal/sprint1.wav"	
-})
-
-sound.Add({
-	name = 			"Draw",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"universal/draw.wav"	
-})
-
-sound.Add({
-	name = 			"Holster",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"universal/holster.wav"	
-})
-
 sound.Add({
 	name = 			"Dryfire_Pistol",			
 	channel = 		CHAN_STATIC,
@@ -84,59 +34,6 @@ sound.Add({
 	volume = 		1.0,
 	sound = 			"universal/dryfire_sniper.wav"	
 })
-
-
-sound.Add({
-	name = 			"ShellBounce_WW2",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"universal/shell_bounce1.wav",	
-	sound = 			"universal/shell_bounce2.wav",	
-	sound = 			"universal/shell_bounce3.wav",	
-	sound = 			"universal/shell_bounce4.wav",
-	sound = 			"universal/shell_bounce5.wav",
-	sound = 			"universal/shell_bounce6.wav"		
-})
-
-sound.Add({
-	name = 			"Thompson_StartReload",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"weapons/thompson/StartReload.wav"	
-})
-
-sound.Add({
-	name = 			"Thompson_EndReload",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"weapons/thompson/endReload.wav"	
-})
-
-sound.Add({
-	name = 			"Thompson_MagTransition",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"weapons/thompson/MagTransition.wav"	
-})
-
-sound.Add({
-	name = 			"Thompson_Draw",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"weapons/thompson/Draw.wav"	
-})
-
-sound.Add({
-	name = 			"Thompson_AfterMagIn",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"weapons/thompson/AfterMagIn.wav"	
-})
-
-
-PHUNBASE:addRegularSound("Reload_Start", "universal/reload_magout1.wav", "universal/reload_magout2.wav", "universal/reload_magout3.wav")
-PHUNBASE:addRegularSound("Reload_End", "universal/reload_end1.wav", "universal/reload_end2.wav", "universal/reload_end3.wav")
-PHUNBASE:addRegularSound("Reload_Grab", "universal/reload_magin1.wav", "universal/reload_magin2.wav")
 
 --fg42---------------------------------------------------------------
 
@@ -673,10 +570,10 @@ sound.Add({
 --1935---------------------------------------------------------------
 
 sound.Add({
-	name = 			"MP28_Fire",			// <-- Sound Name That gets called for
+	name = 			"1935_Fire",			// <-- Sound Name That gets called for
 	channel = 		CHAN_USER_BASE +10,
 	volume = 		1.0,
-	sound = 			"weapons/mp28/fire.wav"	// <-- Sound Path
+	sound = 			"weapons/m1935/fire.wav"	// <-- Sound Path
 })
 
 sound.Add({

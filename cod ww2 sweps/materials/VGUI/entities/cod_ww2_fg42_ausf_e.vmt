@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$basetexture" "VGUI/entities/cod_ww2_fg42_ausf_e"
+	"$nolod" 1
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+"$translucent" "1"
+}

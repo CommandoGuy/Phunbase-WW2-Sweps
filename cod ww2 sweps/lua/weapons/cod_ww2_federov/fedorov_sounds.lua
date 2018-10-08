@@ -1,0 +1,5 @@
+PHUNBASE:addRegularSound("Fedorov.Fire", "weapons/Fedorov/fire.wav")
+PHUNBASE:addRegularSound("Fedorov.Bolt", "weapons/Fedorov/bolt.wav")
+PHUNBASE:addRegularSound("Fedorov.Magout", "weapons/Fedorov/magout.wav")
+PHUNBASE:addRegularSound("Fedorov.Magin", "weapons/Fedorov/magin.wav")
+PHUNBASE:addRegularSound("Fedorov.Draw", "weapons/Fedorov/draw_first.wav")

@@ -124,11 +124,28 @@ SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 100}
 SWEP.ShellAttachmentName = "1"
 SWEP.ShellDelay = 0.075
 SWEP.ShellScale = 0.6
-SWEP.ShellModel = "models/phunbase/shells/45acp.mdl"
+SWEP.ShellModel = "models/codww2/shells/45apc.mdl"
 SWEP.ShellEjectVelocity = 50
 
+SWEP.Sounds = {
+	draw = {
+		{time = 0, sound = "WW2.DrawPistol", callback = function(self) end}
+	},
+	holster = {
+		{time = 0, sound = "WW2.HolsterPistol", callback = function(self) end}
+	},
+	reload_both = {
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 1.75, sound = "WW2.Movement2"}
+	},
+	reload_both_empty = {
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 2, sound = "WW2.Movement2"}
+	},
+}
+
 SWEP.MuzzleAttachmentName = "muzzle"
-SWEP.MuzzleEffect = {"PistolGlow", "Muzzleflashpistol", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
 SWEP.IsDual = true
 SWEP.MuzzleAttachmentName_L = "muzzle_left"

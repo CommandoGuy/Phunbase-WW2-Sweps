@@ -72,23 +72,25 @@ SWEP.Sequences = {
 	reload_empty = "reload_empty",
 	deploy = "draw",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 }
 
 SWEP.Sounds = {
 	draw = {
-		{time = 0, sound = "Rifle_Raise2", callback = function(self) end}
+		{time = 0, sound = "WW2.DrawRifle", callback = function(self) end}
 	},
 	holster = {
-		{time = 0, sound = "Rifle_Lower1", callback = function(self) end}
+		{time = 0, sound = "WW2.HolsterRifle", callback = function(self) end}
 	},
-	sprint_in = {
-		{time = 0, sound = "Rifle_Lower2"},
+reload = {
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 1.8, sound = "WW2.Movement2"},
 	},
-	sprint_out = {
-		{time = 0, sound = "Rifle_Raise1"},
+		reload_empty = {
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 1.8, sound = "WW2.Movement2"},
 	},
 }
 
@@ -97,8 +99,8 @@ SWEP.HolsterTime = 0.75
 SWEP.ReloadTime = 3.5
 SWEP.ReloadTime_Empty = 4
 SWEP.ReloadTimes = {
-	Base = 4,
-	Base_Empty = 3.63,
+	Base = 3.63,
+	Base_Empty = 4,
 }
 SWEP.UsesEmptyReloadTimes = true
 SWEP.Chamberable = false
@@ -121,7 +123,7 @@ SWEP.ShellSound = "PB_SHELLIMPACT_SHOTGUN"
 SWEP.ShellEjectVelocity = 10
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "Muzzleflashshotgun", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_large", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
 SWEP.FireSound = "sawedoff_single"
 SWEP.FireSoundSecondary = "sawedoff_single"
@@ -156,7 +158,7 @@ end
 function SWEP:PrimaryAttack()
 	self:_setupOrigValues()
 	self:_setupPrimaryValues()
-	
+
 	self:_primaryAttack()
 end
 
@@ -169,6 +171,6 @@ function SWEP:SecondaryAttack()
 		self:_setupSecondaryValues()
 		self._IsSecondary = true
 	end
-	
+
 	self:_primaryAttack(self._IsSecondary)
 end

@@ -45,7 +45,7 @@ SWEP.BasePos = Vector(0.000, 0.000, 0.000)
 SWEP.BaseAng = Vector(0.000, 0.000, 2.243)
 
 SWEP.IronsightPos = Vector(-4.136, -4.098, 1.584)
-SWEP.IronsightAng = Vector(-0.712, 0.013, 2.243)
+SWEP.IronsightAng = Vector(-0.112, 0.013, 1.007)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -56,7 +56,7 @@ SWEP.HolsterAng = Vector(0,0,0)
 SWEP.NearWallPos = Vector(-0.429, -8.035, -9.005)
 SWEP.NearWallAng = Vector(28.318, 26.918, -14.25)
 
-SWEP.CustomizePos = Vector(2.222, -0.780, -2.559) 
+SWEP.CustomizePos = Vector(2.222, -0.780, -2.559)
 SWEP.CustomizeAng = Vector(12.928, 17.873, 0.000)
 
 SWEP.PistolSprintSway = false
@@ -67,8 +67,8 @@ SWEP.EmptySoundPrimary = "Dryfire_Sniper"
 local ang0 = Vector()
 
 SWEP.VElements = {
-["call_of_duty_world_war_2_7_times_magnification_marksman_rifle_scope_but_with_a_free_call_of_duty_world_war_2_executable_for_you_to_play_with"] = { type = "Model", model = "models/attachments/a_optic_enfield_7x.mdl", bone = "j_gun", rel = "", pos = Vector(-1.477, -0.281, 5.091), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", active = true, skin = 0, bodygroup = {} },
-["call_of_duty_world_war_2_iron_sight_marksman_rifle_scope_but_with_a_free_call_of_duty_world_war_2_executable_for_you_to_play_with"] = { type = "Model", model = "models/attachments/a_iron_enfield.mdl", default = true, bone = "j_gun", rel = "", pos = Vector(-7.678, -2.866, 6.546), angle = Angle(0, 0, -1.744), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", active = true,  skin = 0, bodygroup = {} },	
+["call_of_duty_world_war_2_7_times_magnification_marksman_rifle_scope_but_with_a_free_call_of_duty_world_war_2_executable_for_you_to_play_with"] = { type = "Model", model = "models/codww2/attachments/a_optic_enfield_7x.mdl", bone = "j_gun", rel = "", pos = Vector(-1.477, -0.281, 5.091), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", active = true, skin = 0, bodygroup = {} },
+["call_of_duty_world_war_2_iron_sight_marksman_rifle_scope_but_with_a_free_call_of_duty_world_war_2_executable_for_you_to_play_with"] = { type = "Model", model = "models/codww2/attachments/a_iron_enfield.mdl", default = true, bone = "j_gun", rel = "", pos = Vector(-7.678, -2.866, 6.546), angle = Angle(0, 0, -1.744), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", active = true,  skin = 0, bodygroup = {} },
 }
 
 SWEP.AttachmentIronsights = {
@@ -95,14 +95,14 @@ SWEP.Sequences = {
 	reload_empty = "reload_empty",
 	deploy = "draw",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 	bolt = "bolt",
 }
 
 SWEP.IdleAfterFire = false
-SWEP.UseIronTransitionAnims = false 
+SWEP.UseIronTransitionAnims = false
 SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 3.45
@@ -117,7 +117,7 @@ SWEP.FlashlightAttachmentName = "1"
 SWEP.RTScope_Enabled = true
 SWEP.RTScope_Zoom = 7.25
 SWEP.RTScope_Reticle = Material("models/codww2/reticles/enfield_reticle")
-SWEP.RTScope_Material = Material("models/weapons/optics/lense_rt") 
+SWEP.RTScope_Material = Material("models/codww2/weapons/optics/lense_rt")
 SWEP.RTScope_Align = Angle(0,0,0)
 SWEP.RTScope_DrawIris = true
 SWEP.RTScope_DrawParallax = true
@@ -127,15 +127,15 @@ SWEP.ViewModelMovementScale = 1
 // shell-related stuff
 SWEP.ShellVelocity = {X = 0, Y = 100, Z = 50}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 0}
+SWEP.ShellViewAngleAlign = {Forward = 90, Right = 0, Up = -90}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.7
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
+SWEP.ShellModel = "models/codww2/shells/762x39.mdl"
 SWEP.ShellEjectVelocity = 0
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "Muzzleflashsniper", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_large", "muzzle_sparks_pistol", "weapon_muzzle_smoke_long"}
 
 SWEP.FireSound = "enfield_Single"
 

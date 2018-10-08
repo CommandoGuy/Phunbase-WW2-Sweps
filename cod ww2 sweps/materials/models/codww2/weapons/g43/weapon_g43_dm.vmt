@@ -11,7 +11,7 @@
 	"$phongalbedotint" 		"1"	
 
 	"$envmapfresnel"	"0.65"
-	"$envmap" "phunbase/envmaps/metal_generic_002" // which envmap to use, "env_cubemap" can be used but this works best with static envmaps and the whole point of this is not to rely on env_cubemaps
+	"$envmap" "models/customcubemaps/simplespec" // which envmap to use, "env_cubemap" can be used but this works best with static envmaps and the whole point of this is not to rely on env_cubemaps
 	
 	"Proxies" // needed proxy for it to work, put this in your material, chagnes the $envmaptint according to where the entity is positioned
 	{

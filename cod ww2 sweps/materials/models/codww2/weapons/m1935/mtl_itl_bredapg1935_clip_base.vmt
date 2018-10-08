@@ -17,10 +17,18 @@ $phongexponenttexture "models\codww2\weapons/m1935//mag_exponent"
 	"$phongalbedotint"            "1"
 	"$phongalbedoboost"           "145"
 
-	"$envmap"                     "env_cubemap"
-	"$envmapfresnel"		"0.5"
-	"$envmaptint"                   "[.015 .015 .015]"
-	"$halflambert"                "1"
-	"$normalmapalphaenvmapmask"		"1"
+
+	"$envmap" "models/customcubemaps/simplespec" // which envmap to use, "env_cubemap" can be used but this works best with static envmaps and the whole point of this is not to rely on env_cubemaps
+	
+	"Proxies" // needed proxy for it to work, put this in your material, chagnes the $envmaptint according to where the entity is positioned
+	{
+		"PB_ENVMAPTINT_REALTIME_COLOR"
+		{
+			"min" "0" // minimum brightness, should be 0, otherwise will be visible in pitch black areas
+			"max" "0.025" // maximum brightness, sometimes small values like 0.25 or 0.5 are pretty much the max you need, depends on the material
+		}
+	}
+	"$normalmapalphaenvmapmask"		"0"
 	"$normalmapalphaphongmask"	"1"
+
 }

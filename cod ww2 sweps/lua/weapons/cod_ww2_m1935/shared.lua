@@ -73,9 +73,9 @@ SWEP.Sequences = {
 	reload_empty = "reload_empty",
 	deploy = "draw",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 }
 
 SWEP.UseIronTransitionAnims = false
@@ -84,8 +84,8 @@ SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 3
 SWEP.ReloadTime_Empty = 3.25
 SWEP.ReloadTimes = {
-	Base = 3,
-	Base_Empty = 3.25,
+	Base = 3.17,
+	Base_Empty = 3.5,
 }
 SWEP.UsesEmptyReloadTimes = true
 
@@ -94,19 +94,35 @@ SWEP.ViewModelMovementScale = 1
 
 // shell-related stuff
 SWEP.ShellVelocity = {X = 100, Y = 100, Z = 100}
-SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0	, Up = 100}
+SWEP.ShellAngularVelocity = {Pitch_Min = 0, Pitch_Max = 0, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
+SWEP.ShellViewAngleAlign = {Forward = 180, Right = 0, Up = 180}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.01
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/phunbase/shells/5_56x45mm.mdl"
+SWEP.ShellModel = "models/codww2/shells/556x45.mdl"
 SWEP.ShellEjectVelocity = 0
 
+SWEP.Sounds = {
+	draw = {
+		{time = 0, sound = "WW2.DrawRifle", callback = function(self) end}
+	},
+	holster = {
+		{time = 0, sound = "WW2.HolsterRifle", callback = function(self) end}
+	},
+	reload = {
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 2.4, sound = "WW2.Movement2"}
+	},
+		reload_empty = {
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 2.75, sound = "WW2.Movement2"}
+	},
+}
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "MuzzleflashRifle", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
-SWEP.FireSound = "MP40_Single"
+SWEP.FireSound = "1935_Fire"
 
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
 SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
@@ -127,5 +143,5 @@ SWEP.LuaViewmodelRecoil = true
 SWEP.FullAimViewmodelRecoil = true
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 0.1
-SWEP.LuaVMRecoilMod = 5 -- modifier of overall intensity for the code based recoil
-SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0, roll = 0, forward = 0.4, pitch = 0} -- modifier for intensity of the recoil on varying axes
+SWEP.LuaVMRecoilMod = 2.25 -- modifier of overall intensity for the code based recoil
+SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.1, roll = 0.15, forward = 0.4, pitch = 0} -- modifier for intensity of the recoil on varying axes

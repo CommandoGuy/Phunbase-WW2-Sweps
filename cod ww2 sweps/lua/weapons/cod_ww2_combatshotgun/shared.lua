@@ -76,9 +76,9 @@ SWEP.Sequences = {
 	reload_shell_end = "reload_finish",
 	reload_shell_end_empty = "reload_finish",
 	reload_shell_pump = "pump",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 }
 
 
@@ -88,21 +88,21 @@ SWEP.Sounds = {
 		{time = 0.1, sound = "", callback = function(wep) wep:PlayVMSequence("reload_shell_pump") end},
 	},
 	draw = {
-		{time = 0, sound = "Rifle_Raise2", callback = function(self) end}
+		{time = 0, sound = "WW2.DrawRifle", callback = function(self) end}
 	},
 	holster = {
-		{time = 0, sound = "Rifle_Lower1", callback = function(self) end}
+		{time = 0, sound = "WW2.HolsterRifle", callback = function(self) end}
 	},
-	sprint_in = {
-		{time = 0, sound = "Rifle_Lower2"},
+	reload_start = {
+		{time = 0, sound = "WW2.Movement1", callback = function(self) end}
 	},
-	sprint_out = {
-		{time = 0, sound = "Rifle_Raise1"},
+	reload_finish = {
+		{time = 0, sound = "WW2.Movement2", callback = function(self) end}
 	},
 }
 
 SWEP.DeployTime = 0.45
-SWEP.HolsterTime = 0.25
+SWEP.HolsterTime = 0.5
 SWEP.ReloadTime = 1.5
 SWEP.ReloadTimes = {
 	Base = 1.5,
@@ -112,18 +112,18 @@ SWEP.UsesEmptyReloadTimes = false
 SWEP.ViewModelMovementScale = 0.8
 
 // shell-related stuff
-SWEP.ShellVelocity = {X = 100, Y = 0, Z = 100}
+SWEP.ShellVelocity = {X = 100, Y = 0, Z = 50}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
 SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0	, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.45
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/phunbase/shells/12g_buck_open.mdl"
+SWEP.ShellModel = "models/codww2/shells/12guage.mdl"
 SWEP.ShellSound = "PB_SHELLIMPACT_SHOTGUN"
 SWEP.ShellEjectVelocity = 10
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "Muzzleflashshotgun", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_large", "muzzle_sparks_pistol", "weapon_muzzle_smoke_long"}
 
 SWEP.FireSound = "Trench_Fire"
 

@@ -2,15 +2,32 @@
 {
 	$basetexture	"models\codww2\weapons\mp40\weapon_mp40_dm"
 	$bumpmap		"models\codww2\weapons\mp40\weapon_mp40_nm"
-	$phongexponenttexture      		"models\codww2\weapons\mp40\weapon_mp40_ex"
+	$phongexponenttexture      		"models\codww2\weapons\mp40\weapon_mp40_exp"
 
-    $color2					"[1.25 1.25 1.25]"
-   
-   
-    $phong                              			1
-    $phongfresnelranges			"[4 4 5]"
-    $phongalbedotint				1
-    $phongalbedoboost			50
-   $phongboost  50
+//BASIC
+	$model						"1"
+    $color						"[ .75 .75 .75 ]"
+	
+//SELFILLUM (subtle to avoid complete occlusion)
+	$selfillum					"1"
+	$selfillumtint				"[ .5 .5 .5 ]"
 
+//PHONG
+	$phong                      "1"
+	$phongtint                  "[ .67 .85 1 ]"
+	$phongboost                	"15"
+//	$phongexponent				"60"
+	$phongfresnelranges       	"[ .1 .5 1 ]"
+
+//RIMLIGHT
+	$rimlight					"1"
+	$rimlightexponent       	"80"
+	$rimmask					"1"
+	$rimlightboost          	".25"	
+
+//ENVMAP
+	$envmap						"env_cubemap"
+//	$envmapfresnel 				"-1"
+	$normalmapalphaenvmapmask	"1"
+	$envmaptint               	"[ .15 .15 .15 ]"
 }

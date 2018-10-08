@@ -1,10 +1,10 @@
 // Created by Crowbar 0.44.0.0
 
-$modelname "codww2\hands\ger_infantry.mdl"
+$modelname "codww2\hands\desert_rat.mdl"
 
 $bodygroup "hands"
 {
-	studio "ger_infantry_reference.smd"
+	studio "player_m_arms_s1_LOD0.001.smd"
 }
 
 
@@ -14,6 +14,7 @@ $contents "solid"
 
 $maxeyedeflection 90
 
+$cdmaterials "models\arms\desert_rat\"
 $cdmaterials "models\arms\infanteriesoldat\"
 
 $cbox 0 0 0 0 0 0

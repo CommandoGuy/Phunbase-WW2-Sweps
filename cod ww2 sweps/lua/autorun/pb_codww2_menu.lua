@@ -18,8 +18,11 @@ end
 
 PHUNBASE.CODWW2.RIG_ADD("American Paratrooper", "models/codww2/hands/usa_paratrooper.mdl")
 PHUNBASE.CODWW2.RIG_ADD("American Pilot", "models/codww2/hands/us_pilot.mdl")
+PHUNBASE.CODWW2.RIG_ADD("American Infantry", "models/codww2/hands/usaa_infantry.mdl")
+PHUNBASE.CODWW2.RIG_ADD("American Tanker", "models/codww2/hands/usaa_tanker.mdl")
+PHUNBASE.CODWW2.RIG_ADD("British Desert Rat", "models/codww2/hands/desert_rat.mdl")
 PHUNBASE.CODWW2.RIG_ADD("German Infantry", "models/codww2/hands/ger_infantry.mdl")
-PHUNBASE.CODWW2.RIG_ADD("Waffen-SS", "models/codww2/hands/ssarms.mdl")
+PHUNBASE.CODWW2.RIG_ADD("German Waffen-SS", "models/codww2/hands/ssarms.mdl")
 PHUNBASE.CODWW2.RIG_ADD("German Tanker", "models/codww2/hands/ger_tanker.mdl")
 PHUNBASE.CODWW2.RIG_ADD("German Paratrooper", "models/codww2/hands/ger_paratrooper.mdl")
 PHUNBASE.CODWW2.RIG_ADD("Russian Infantry", "models/codww2/hands/rus_infantry.mdl")

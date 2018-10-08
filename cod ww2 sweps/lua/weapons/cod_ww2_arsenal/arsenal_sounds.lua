@@ -1,0 +1,5 @@
+PHUNBASE:addRegularSound("Arsenal.Fire", "weapons/Arsenal/fire.wav")
+PHUNBASE:addRegularSound("Arsenal.Bolt", "weapons/Arsenal/bolt.wav")
+PHUNBASE:addRegularSound("Arsenal.Magout", "weapons/Arsenal/magout.wav")
+PHUNBASE:addRegularSound("Arsenal.Magin", "weapons/Arsenal/magin.wav")
+PHUNBASE:addRegularSound("Arsenal.Draw", "weapons/Arsenal/draw_first.wav")

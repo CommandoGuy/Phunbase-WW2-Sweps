@@ -57,7 +57,7 @@ SWEP.NearWallAng = Vector(28.318, 26.918, -14.25)
 SWEP.PistolSprintSway = true
 
 SWEP.DisableIronsights = false
-SWEP.UseIronTransitionAnims = false 
+SWEP.UseIronTransitionAnims = false
 SWEP.IdleAfterFire = false
 
 
@@ -75,9 +75,9 @@ SWEP.Sequences = {
 	deploy = "draw",
 	deploy_first = "draw_first",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 }
 
 
@@ -88,7 +88,7 @@ SWEP.ReloadTime = 1.25
 SWEP.ReloadTime = 1.35
 SWEP.ReloadTimes = {
 	Base = 2.4,
-	Base_Empty = 2.88,
+	Base_Empty = 2.4,
 }
 SWEP.UsesEmptyReloadTimes = true
 SWEP.EmptySoundPrimary = "Dryfire_Pistol"
@@ -107,7 +107,7 @@ SWEP.ShellEjectVelocity = 0
 SWEP.NoShells = true
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "MuzzleFlashpistol", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
 SWEP.FireSound = "No2.Fire"
 
@@ -119,7 +119,14 @@ SWEP.Sounds = {
 	draw_first = {
 		{time = 0, sound = "No2.Foley", callback = function(self) end}
 	},
+	draw = {
+		{time = 0, sound = "WW2.DrawPistol", callback = function(self) end}
+	},
+	holster = {
+		{time = 0, sound = "WW2.HolsterPistol", callback = function(self) end}
+	},
 	reload = {
+		{time = 0, sound = "WW2.Movement1"},
 		{time = 0.3, sound = "No2.Open", callback = function(self) end},
 		{time = 1.25, sound = "No2.Roundsin", callback = function(self) end},
 		{time = 1.75, sound = "No2.Close", callback = function(self) end}

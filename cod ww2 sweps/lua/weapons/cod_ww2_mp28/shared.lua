@@ -76,14 +76,14 @@ SWEP.Sequences = {
 	reload_empty = "reload_empty",
 	deploy = "draw",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 }
 
 SWEP.UseIronTransitionAnims = false
 SWEP.DeployTime = 0.75
-SWEP.HolsterTime = 0.3
+SWEP.HolsterTime = 0.5
 SWEP.ReloadTime = 2.5
 SWEP.ReloadTime_Empty = 3
 SWEP.ReloadTimes = {
@@ -91,6 +91,24 @@ SWEP.ReloadTimes = {
 	Base_Empty = 3,
 }
 SWEP.UsesEmptyReloadTimes = true
+
+SWEP.Sounds = {
+	draw = {
+		{time = 0, sound = "WW2.DrawSMG", callback = function(self) end}
+	},
+	holster = {
+		{time = 0, sound = "WW2.HolsterSMG", callback = function(self) end}
+	},
+reload = {
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 2, sound = "WW2.Movement2"},
+	},
+	reload_empty = {
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 2, sound = "WW2.Movement2"},
+	},
+}
+
 
 SWEP.EnableCustomization = false
 SWEP.CustomizationMenuSize = 1.5
@@ -106,16 +124,16 @@ SWEP.ViewModelMovementScale = 1
 // shell-related stuff
 SWEP.ShellVelocity = {X = 50, Y = 0, Z = 125}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0	, Up = 100}
+SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0	, Up = 180}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.01
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/phunbase/shells/9x19mm.mdl"
+SWEP.ShellModel = "models/codww2/shells/9x19.mdl"
 SWEP.ShellEjectVelocity = 0
 
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "Muzzleflashsmg", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
 SWEP.FireSound = "MP28_Fire"
 
@@ -135,8 +153,8 @@ SWEP.Secondary.Automatic = true
 SWEP.FireMoveMod = 1
 SWEP.FireMoveMod_Iron = 0
 SWEP.LuaViewmodelRecoil = true
-SWEP.FullAimViewmodelRecoil = false
+SWEP.FullAimViewmodelRecoil = true
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 0.1
-SWEP.LuaVMRecoilMod = 5 -- modifier of overall intensity for the code based recoil
-SWEP.LuaVMRecoilAxisMod = {vert = 0.1, hor = 0.1, roll = 0.25, forward = 0.25, pitch = 0.025} -- modifier for intensity of the recoil on varying axes
+SWEP.LuaVMRecoilMod = 2.25 -- modifier of overall intensity for the code based recoil
+SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.1, roll = 0.25, forward = 0.25, pitch = 0.15} -- modifier for intensity of the recoil on varying axes

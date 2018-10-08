@@ -37,9 +37,9 @@ SWEP.Recoil	= 5
 SWEP.Spread	= 0.25
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
-SWEP.SpreadVel_Iron = 0.9
+SWEP.SpreadVel_Iron = 0.1
 SWEP.SpreadAdd = 0.3
-SWEP.SpreadAdd_Iron	= 0.2
+SWEP.SpreadAdd_Iron	= 0
 
 SWEP.BasePos = Vector(0.000, 0.000, 0.000)
 SWEP.BaseAng = Vector(0.000, 0.000, 2.243)
@@ -77,14 +77,14 @@ SWEP.Sequences = {
 	partial_reload = "reload_partial",
 	deploy = "draw",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 	cock = "rechamber",
 }
 
 SWEP.IdleAfterFire = false
-SWEP.UseIronTransitionAnims = false 
+SWEP.UseIronTransitionAnims = false
 SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.3
 SWEP.ReloadTimes = {
@@ -103,17 +103,18 @@ SWEP.AutoCockStartTime = 0.2
 SWEP.ViewModelMovementScale = 1
 
 // shell-related stuff
-SWEP.ShellVelocity = {X = 50, Y = 50, Z = 50}
-SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 90}
+SWEP.ShellVelocity = {X = 90, Y = -25, Z = 50}
+SWEP.ShellAngularVelocity = {Pitch_Min = -1000, Pitch_Max = -1000, Yaw_Min = -1000, Yaw_Max = -2500, Roll_Min = 0, Roll_Max = 0}
+SWEP.ShellViewAngleAlign = {Forward = 90, Right = 0, Up = 90}
 SWEP.ShellAttachmentName = "2"
-SWEP.ShellDelay = 0.4
+SWEP.ShellDelay = 0.3
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
+SWEP.ShellModel = "models/codww2/shells/762x51.mdl"
+SWEP.ShellEjectVelocity = 0
 SWEP.ShellEjectVelocity = 0
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "Muzzleflashsniper", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_large", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
 SWEP.FireSound = "mosin.fire"
 
@@ -123,6 +124,12 @@ SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instan
 
 
 SWEP.Sounds = {
+	draw = {
+		{time = 0, sound = "WW2.DrawRifle", callback = function(self) end}
+	},
+	holster = {
+		{time = 0, sound = "WW2.HolsterRifle", callback = function(self) end}
+	},
 	rechamber = {
 		{time = 0.15, sound = "mosin.boltlatch"},
 		{time = 0.3, sound = "mosin.boltback"},
@@ -130,30 +137,33 @@ SWEP.Sounds = {
 		{time = 0.5, sound = "mosin.boltforward"},
 	},
 	reload_empty = {
-		{time = 0, sound = "Reload_Start"},
+		{time = 0, sound = "WW2.Movement1"},
 		{time = 0.4, sound = "mosin.boltlatch"},
 		{time = 0.6, sound = "mosin.boltback"},
 		{time = 1.75, sound = "mosin.clipin"},
 		{time = 1.9, sound = "mosin.roundsin"},
 		{time = 2.6, sound = "mosin.boltrelease"},
 		{time = 2.7, sound = "mosin.boltforward"},
+		{time = 3, sound = "WW2.Movement2"},
 	},
 	reload = {
-		{time = 0, sound = "Reload_Start"},
+		{time = 0, sound = "WW2.Movement1"},
 		{time = 0.4, sound = "mosin.boltlatch"},
 		{time = 0.6, sound = "mosin.boltback"},
 		{time = 1.75, sound = "mosin.clipin"},
 		{time = 1.9, sound = "mosin.roundsin"},
 		{time = 2.6, sound = "mosin.boltrelease"},
 		{time = 2.7, sound = "mosin.boltforward"},
+		{time = 3, sound = "WW2.Movement2"},
 	},
 	reload_partial = {
-		{time = 0, sound = "Reload_Start"},
+		{time = 0, sound = "WW2.Movement1"},
 		{time = 0.4, sound = "mosin.boltlatch"},
 		{time = 0.6, sound = "mosin.boltback"},
 		{time = 1.25, sound = "mosin.bulletin"},
 		{time = 1.9, sound = "mosin.boltrelease"},
 		{time = 2.05, sound = "mosin.boltforward"},
+		{time = 2.5, sound = "WW2.Movement2"},
 	},
 }
 
@@ -165,7 +175,7 @@ SWEP.Secondary.Automatic = true
 
 
 function SWEP:ReloadAnimLogic()
-	local clip = self:Clip1() 
+	local clip = self:Clip1()
 	local empty = clip < 1
 
 	local seq = empty and "reload_empty" or "reload"

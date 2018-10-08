@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/arms/usaa_infantry/sleeves"
+$bumpmap "models/arms/usaa_infantry/sleeves_n"
+//$phongexponenttexture "models/arms/usaa_infantry/sleeves_e"
+	"$phong" 		             "1"
+	"$phongboost" 	             "0.025"
+	"$phongtint"	             "[1 1 1]"
+	"$phongexponent"  	             "50"
+	"$phongfresnelranges" 	             "[1 1 1]"
+
+                  "$halflambert"                            "1"
+}

@@ -1,0 +1,5 @@
+PHUNBASE:addRegularSound("VMG21.Fire", "weapons/VMG21/fire.wav")
+PHUNBASE:addRegularSound("VMG21.Bolt", "weapons/VMG21/bolt.wav")
+PHUNBASE:addRegularSound("VMG21.Magout", "weapons/VMG21/magout.wav")
+PHUNBASE:addRegularSound("VMG21.Magin", "weapons/VMG21/magin.wav")
+PHUNBASE:addRegularSound("VMG21.Draw", "weapons/VMG21/draw_first.wav")

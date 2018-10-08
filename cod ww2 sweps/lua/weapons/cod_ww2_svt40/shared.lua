@@ -51,7 +51,7 @@ SWEP.SprintAng = Vector(0, 0, 0)
 SWEP.HolsterPos = Vector(0,0,20)
 SWEP.HolsterAng = Vector(0,0,0)
 
-SWEP.CustomizePos = Vector(2.222, -0.780, -2.559) 
+SWEP.CustomizePos = Vector(2.222, -0.780, -2.559)
 SWEP.CustomizeAng = Vector(12.928, 17.873, 0.000)
 
 SWEP.NearWallPos = Vector(-0.429, -8.035, -9.005)
@@ -76,13 +76,13 @@ SWEP.Sequences = {
 	reload_empty = "reload_empty",
 	deploy = "draw",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 }
 
 SWEP.IdleAfterFire = false
-SWEP.UseIronTransitionAnims = false 
+SWEP.UseIronTransitionAnims = false
 SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 2.3
@@ -103,12 +103,12 @@ SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 0}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.01
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
+SWEP.ShellModel = "models/codww2/shells/762x51.mdl"
 SWEP.ShellEjectVelocity = 0
 
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "MuzzleflashRifle", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
 SWEP.FireSound = "SVT_Single"
 
@@ -118,26 +118,19 @@ SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instan
 
 SWEP.Sounds = {
 	draw = {
-		{time = 0, sound = "Rifle_Raise2", callback = function(self) end}
+		{time = 0, sound = "WW2.DrawRifle", callback = function(self) end}
 	},
 	holster = {
-		{time = 0, sound = "Rifle_Lower1", callback = function(self) end}
+		{time = 0, sound = "WW2.HolsterRifle", callback = function(self) end}
 	},
 	reload = {
-		{time = 0, sound = "Rifle_Raise1"},
-		{time = 1.75, sound = "Rifle_Lower2"}
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 1.75, sound = "WW2.Movement2"}
 	},
 		reload_empty = {
-		{time = 0, sound = "Rifle_Raise1"},
-		{time = 2.35, sound = "Rifle_Lower2"}
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 2.35, sound = "WW2.Movement2"}
 	},
-	sprint_in = {
-		{time = 0, sound = "Rifle_Lower2"},
-	},
-	sprint_out = {
-		{time = 0, sound = "Rifle_Raise1"},
-	},
-
 }
 
 SWEP.Secondary.Ammo = ""

@@ -40,9 +40,9 @@ SWEP.Recoil	= 5
 SWEP.Spread	= 0.25
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
-SWEP.SpreadVel_Iron = 0.9
+SWEP.SpreadVel_Iron = 0
 SWEP.SpreadAdd = 0.3
-SWEP.SpreadAdd_Iron	= 0.2
+SWEP.SpreadAdd_Iron	= 0
 
 SWEP.BasePos = Vector(0.000, 0.000, 0.000)
 SWEP.BaseAng = Vector(0.000, 0.000, 2.243)
@@ -59,7 +59,7 @@ SWEP.HolsterAng = Vector(0,0,0)
 SWEP.NearWallPos = Vector(-0.429, -8.035, -9.005)
 SWEP.NearWallAng = Vector(28.318, 26.918, -14.25)
 SWEP.MouseSensitivityIron = 0.25
-SWEP.CustomizePos = Vector(2.222, -0.780, -2.559) 
+SWEP.CustomizePos = Vector(2.222, -0.780, -2.559)
 SWEP.CustomizeAng = Vector(12.928, 17.873, 0.000)
 
 SWEP.PistolSprintSway = false
@@ -70,13 +70,13 @@ SWEP.EmptySoundPrimary = "Dryfire_Sniper"
 local ang0 = Vector()
 
 SWEP.VElements = {
-["cod_ww2_k98k_scope"] = { type = "Model", model = "models/attachments/a_optic_kar98k.mdl", bone = "tag_weapon", rel = "", pos = Vector(4.695, -0.017, 5.296), angle = Angle(0, 0, 0), size = Vector(1.057, 1.057, 1.057), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} },
-["cod_ww2_k98k_4x_scope"] = { type = "Model", model = "models/attachments/a_optic_kar98k_4x.mdl", bone = "tag_weapon", rel = "", pos = Vector(3.278, -0.115, 5.394), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+["cod_ww2_k98k_scope"] = { type = "Model", model = "models/codww2/attachments/a_optic_kar98k.mdl", bone = "tag_weapon", rel = "", pos = Vector(4.695, -0.017, 5.296), angle = Angle(0, 0, 0), size = Vector(1.057, 1.057, 1.057), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} },
+["cod_ww2_k98k_4x_scope"] = { type = "Model", model = "models/codww2/attachments/a_optic_kar98k_4x.mdl", bone = "tag_weapon", rel = "", pos = Vector(3.278, -0.115, 5.394), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 
 SWEP.AttachmentIronsights = {
-["cod_ww2_k98k_scope"] = {pos = Vector(-4.559, 1.482, 0.013), ang = ang0},
-["cod_ww2_k98k_4x_scope"] = {pos = Vector(-4.044, 0.000, 0.110), ang = ang0}
+["cod_ww2_k98k_scope"] = {pos = Vector(-4.559, -3, 0.013), ang = ang0},
+["cod_ww2_k98k_4x_scope"] = {pos = Vector(-4.044, -2.5, 0.110), ang = ang0}
 }
 
 SWEP.Attachments = {
@@ -97,14 +97,14 @@ SWEP.Sequences = {
 	reload_empty = "reload_empty",
 	deploy = "draw",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 	bolt = "bolt",
 }
 
 SWEP.IdleAfterFire = false
-SWEP.UseIronTransitionAnims = false 
+SWEP.UseIronTransitionAnims = false
 SWEP.DeployTime = 0.75
 SWEP.HolsterTime = 0.3
 SWEP.ReloadTime = 3.45
@@ -119,7 +119,7 @@ SWEP.FlashlightAttachmentName = "1"
 SWEP.RTScope_Enabled = true
 SWEP.RTScope_Zoom = 7.25
 SWEP.RTScope_Reticle = Material("models/codww2/weapons/optics/kar98k_crosshair")
-SWEP.RTScope_Material = Material("models/codww2/weapons/optics/lense_rt") 
+SWEP.RTScope_Material = Material("models/codww2/weapons/optics/lense_rt")
 SWEP.RTScope_Align = Angle(0,0,0)
 SWEP.RTScope_DrawIris = true
 SWEP.RTScope_DrawParallax = true
@@ -127,17 +127,18 @@ SWEP.RTScope_DrawParallax = true
 SWEP.ViewModelMovementScale = 1
 
 // shell-related stuff
-SWEP.ShellVelocity = {X = 50, Y = 50, Z = 50}
-SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 90}
+SWEP.ShellVelocity = {X = 90, Y = -25, Z = 50}
+SWEP.ShellAngularVelocity = {Pitch_Min = -1000, Pitch_Max = -1000, Yaw_Min = -1000, Yaw_Max = -2500, Roll_Min = 0, Roll_Max = 0}
+SWEP.ShellViewAngleAlign = {Forward = 90, Right = 0, Up = 90}
 SWEP.ShellAttachmentName = "2"
-SWEP.ShellDelay = 0.7
+SWEP.ShellDelay = 0.6
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
+SWEP.ShellModel = "models/codww2/shells/762x51.mdl"
+SWEP.ShellEjectVelocity = 0
 SWEP.ShellEjectVelocity = 0
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "Muzzleflashsniper", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_large", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
 SWEP.FireSound = "kar98_single"
 
@@ -147,26 +148,23 @@ SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instan
 
 
 SWEP.Sounds = {
-	draw = {
-		{time = 0, sound = "Rifle_Raise2", callback = function(self) end}
+	 draw = {
+		{time = 0.15, sound = "WW2.DrawRifle", callback = function(self) end}
 	},
 	holster = {
-		{time = 0, sound = "Rifle_Lower1", callback = function(self) end}
+		{time = 0.15, sound = "WW2.HolsterRifle", callback = function(self) end}
 	},
 	 fire = {
 		{time = 0.2, sound = "", callback = function(wep) wep:PlayVMSequence("bolt") end},
 	},
-		reload_empty = {
-		{time = 0, sound = "Rifle_Raise1"},
-		{time = 2.8, sound = "Rifle_Lower2"}
+	reload_empty = {
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 2.8, sound = "WW2.Movement2"}
 	},
-	sprint_in = {
-		{time = 0, sound = "Rifle_Lower2"},
+	reload = {
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 2.8, sound = "WW2.Movement2"}
 	},
-	sprint_out = {
-		{time = 0, sound = "Rifle_Raise1"},
-	},
-
 }
 
 SWEP.Secondary.Ammo = ""

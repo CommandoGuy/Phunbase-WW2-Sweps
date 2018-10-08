@@ -37,12 +37,12 @@ SWEP.Chamberable = false
 
 // Recoil variables
 SWEP.Recoil	= 5
-SWEP.Spread	= 0.25
-SWEP.Spread_Iron = 0.01
+SWEP.Spread	= 0.1
+SWEP.Spread_Iron = 0
 SWEP.SpreadVel = 1.2
-SWEP.SpreadVel_Iron = 0.9
+SWEP.SpreadVel_Iron = 0
 SWEP.SpreadAdd = 0.3
-SWEP.SpreadAdd_Iron	= 0.2
+SWEP.SpreadAdd_Iron	= 0
 
 SWEP.BasePos = Vector(0.000, 0.000, 0.000)
 SWEP.BaseAng = Vector(0.000, 0.000, 2.243)
@@ -59,7 +59,7 @@ SWEP.HolsterAng = Vector(0,0,0)
 SWEP.NearWallPos = Vector(-0.429, -8.035, -9.005)
 SWEP.NearWallAng = Vector(28.318, 26.918, -14.25)
 SWEP.MouseSensitivityIron = 0.25
-SWEP.CustomizePos = Vector(2.222, -0.780, -2.559) 
+SWEP.CustomizePos = Vector(2.222, -0.780, -2.559)
 SWEP.CustomizeAng = Vector(12.928, 17.873, 0.000)
 
 SWEP.PistolSprintSway = false
@@ -70,8 +70,8 @@ SWEP.EmptySoundPrimary = "Dryfire_Sniper"
 local ang0 = Vector()
 
 SWEP.VElements = {
-["springfield_ironsight"] = { type = "Model", model = "models/attachments/a_iron_springfield.mdl", bone = "j_gun", rel = "", pos = Vector(-9.504, -3.198, 7.3), default = true, angle = Angle(0, 0, 0), size = Vector(1.25, 1.25, 1.25), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
-["springfield_x7_scope"] = { type = "Model", model = "models/attachments/a_optic_springfield_7x.mdl", bone = "j_gun", rel = "", pos = Vector(-1.731, -0.095, 5.366), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+["springfield_ironsight"] = { type = "Model", model = "models/codww2/attachments/a_iron_springfield.mdl", bone = "j_gun", rel = "", pos = Vector(-9.504, -3.198, 7.3), default = true, angle = Angle(0, 0, 0), size = Vector(1.25, 1.25, 1.25), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+["springfield_x7_scope"] = { type = "Model", model = "models/codww2/attachments/a_optic_springfield_7x.mdl", bone = "j_gun", rel = "", pos = Vector(-1.731, -0.095, 5.366), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 
 SWEP.AttachmentIronsights = {
@@ -102,14 +102,14 @@ SWEP.Sequences = {
 	deploy = "draw",
 	deploy_first = "draw_first",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 	bolt = "bolt",
 }
 
 SWEP.IdleAfterFire = false
-SWEP.UseIronTransitionAnims = false 
+SWEP.UseIronTransitionAnims = false
 SWEP.DeployTime = 0.75
 SWEP.DeployTime_First =1.9
 SWEP.HolsterTime = 0.3
@@ -125,7 +125,7 @@ SWEP.FlashlightAttachmentName = "1"
 SWEP.RTScope_Enabled = true
 SWEP.RTScope_Zoom = 7.25
 SWEP.RTScope_Reticle = Material("models/codww2/weapons/optics/kar98k_crosshair")
-SWEP.RTScope_Material = Material("models/codww2/weapons/optics/lense_rt") 
+SWEP.RTScope_Material = Material("models/codww2/weapons/optics/lense_rt")
 SWEP.RTScope_Align = Angle(0,0,0)
 SWEP.RTScope_DrawIris = true
 SWEP.RTScope_DrawParallax = true
@@ -139,11 +139,11 @@ SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 90}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.7
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/phunbase/shells/4_6x30mm.mdl"
+SWEP.ShellModel = "models/codww2/shells/762x51.mdl"
 SWEP.ShellEjectVelocity = 0
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "Muzzleflashsniper", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_large", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
 SWEP.FireSound = "springfield.fire"
 
@@ -153,27 +153,37 @@ SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instan
 
 
 SWEP.Sounds = {
+	draw = {
+		{time = 0, sound = "WW2.DrawRifle", callback = function(self) end}
+	},
+	holster = {
+		{time = 0, sound = "WW2.HolsterRifle", callback = function(self) end}
+	},
 	 fire = {
 		{time = 0.2, sound = "", callback = function(wep) wep:PlayVMSequence("bolt") end},
 	},
 		reload_empty = {
+		{time = 0, sound = "WW2.Movement1"},
 		{time = 0.4, sound = "springfield.boltlatch"},
 		{time = 0.4, sound = "springfield.boltback"},
 		{time = 2.25, sound = "springfield.clipin"},
 		{time = 2.75, sound = "springfield.boltforward"},
-		{time = 2.75, sound = "springfield.boltrelease"}
+		{time = 2.75, sound = "springfield.boltrelease"},
+		{time = 3.2, sound = "WW2.Movement2"}
 	},
-		
+
 		draw_first = {
 		{time = 0.4, sound = "springfield.boltlatch"},
 		{time = 0.4, sound = "springfield.boltback"}
 	},
 		reload = {
+		{time = 0, sound = "WW2.Movement1"},
 		{time = 0.5, sound = "springfield.boltlatch"},
 		{time = 0.5, sound = "springfield.boltback"},
 		{time = 2.25, sound = "springfield.clipin"},
 		{time = 2.75, sound = "springfield.boltforward"},
-		{time = 2.75, sound = "springfield.boltrelease"}
+		{time = 2.75, sound = "springfield.boltrelease"},
+		{time = 3, sound = "WW2.Movement2"}
 	},
 		bolt = {
 		{time = 0.3, sound = "springfield.boltlatch"},
@@ -181,13 +191,6 @@ SWEP.Sounds = {
 		{time = 0.5, sound = "springfield.boltforward"},
 		{time = 0.5, sound = "springfield.boltrelease"}
 	},
-	sprint_in = {
-		{time = 0, sound = "Rifle_Lower2"},
-	},
-	sprint_out = {
-		{time = 0, sound = "Rifle_Raise1"},
-	},
-
 }
 
 SWEP.Secondary.Ammo = ""

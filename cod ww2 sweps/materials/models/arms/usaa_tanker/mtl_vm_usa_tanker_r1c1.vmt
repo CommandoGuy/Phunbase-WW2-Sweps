@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/arms/usaa_tanker/sleeves"
+"$bumpmap" "models/arms/usaa_tanker/sleeves_n"
+$phongexponenttexture "models/arms/usaa_tanker/sleeves_s"
+	$phong 1
+	$phongboost 0.25
+	$phongfresnelranges "[0.2 0.5 0.7]"
+}

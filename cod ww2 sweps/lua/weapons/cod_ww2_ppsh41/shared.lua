@@ -77,9 +77,9 @@ SWEP.Sequences = {
 	deploy = "draw",
 	deploy_first = "draw_first",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 	drum_deploy = "extmag_draw",
 	drum_deploy_first = "extmag_draw_first",
 	drum_holster = "extmag_holster",
@@ -98,28 +98,42 @@ SWEP.UsesEmptyReloadTimes = true
 
 SWEP.Sounds = {
 	draw_first = {
-		{time = 0, sound = "BREN.Magout"},
+		{time = 0, sound = "PPSH.Boltrelease"},
+	},
+	draw = {
+		{time = 0, sound = "WW2.DrawSMG", callback = function(self) end}
+	},
+	holster = {
+		{time = 0, sound = "WW2.HolsterSMG", callback = function(self) end}
 	},
 	reload = {
+		{time = 0, sound = "WW2.Movement1"},
 		{time = 0.5, sound = "PPSH.Magout"},
 		{time = 1.5, sound = "PPSH.Magin"},
+		{time = 1.75, sound = "WW2.Movement2"},
 	},
 
 	reload_empty = {
+		{time = 0, sound = "WW2.Movement1"},
 		{time = 0.5, sound = "PPSH.Magout"},
 		{time = 1.5, sound = "PPSH.Magin"},
 		{time = 2.25, sound = "PPSH.Boltback"},
+		{time = 2.4, sound = "WW2.Movement2"},
 	},
 
 	extmag_reload = {
+		{time = 0, sound = "WW2.Movement1"},
 		{time = 0.5, sound = "PPSH.Magout"},
 		{time = 1.5, sound = "PPSH.Magin"},
+		{time = 1.75, sound = "WW2.Movement2"},
 	},
 
 	extmag_reload_empty = {
+		{time = 0, sound = "WW2.Movement1"},
 		{time = 0.5, sound = "PPSH.Magout"},
 		{time = 1.5, sound = "PPSH.Magin"},
 		{time = 2.25, sound = "PPSH.Boltback"},
+		{time = 2.4, sound = "WW2.Movement2"},
 	},
 }
 
@@ -149,16 +163,16 @@ SWEP.ViewModelMovementScale = 1
 // shell-related stuff
 SWEP.ShellVelocity = {X = 150, Y = 0, Z = 90}
 SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
-SWEP.ShellViewAngleAlign = {Forward = 0, Right = -90	, Up = 0}
+SWEP.ShellViewAngleAlign = {Forward = -90, Right = 	0, Up = 180}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.01
 SWEP.ShellScale = 1
-SWEP.ShellModel = "models/phunbase/shells/9x19mm.mdl"
+SWEP.ShellModel = "models/codww2/shells/9x19.mdl"
 SWEP.ShellEjectVelocity = 0
 
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "Muzzleflashsmg", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
 SWEP.FireSound = "PPSH.Fire"
 
@@ -186,11 +200,11 @@ SWEP.LuaVMRecoilAxisMod = {vert = 0.1, hor = 0.1, roll = 0.25, forward = 0.25, p
 
 
 function SWEP:PlayIdleAnim() // override and dont use this shit
-	local clip = self:Clip1() 
+	local clip = self:Clip1()
 	local empty = clip < 1
 
 	local seq = empty and "idle_empty" or "idle"
-		
+
 	if self.UsesDrumMag then
 	seq = "drum_"..seq
 end
@@ -223,7 +237,7 @@ self:PlayVMSequence(seq)
 end
 
 function SWEP:ReloadAnimLogic()
-	local clip = self:Clip1() 
+	local clip = self:Clip1()
 	local empty = clip < 1
 
 	local seq = empty and "reload_empty" or "reload"
@@ -239,9 +253,9 @@ function SWEP:FireAnimLogic(isSecondary)
 	local clip = self:Clip1() // clip before firing anim played
 	local last = clip == 1
 	local dry = clip < 1
-	
+
 	local seq = last and "fire_last" or (dry and "fire_dry" or "fire")
-	
+
 	if self.UsesDrumMag then
 	seq = "drum_"..seq
 end
@@ -251,7 +265,7 @@ end
 
 function SWEP:SprintStartAnimLogic()
 	local seq = "sprint_start"
-	
+
 	if self.UsesDrumMag then
 	seq = "drum_"..seq
 end
@@ -261,7 +275,7 @@ end
 
 function SWEP:SprintLoopAnimLogic()
 	local seq = "sprint_idle"
-	
+
 	if self.UsesDrumMag then
 	seq = "drum_"..seq
 end
@@ -271,11 +285,10 @@ end
 
 function SWEP:SprintEndAnimLogic()
 	local seq = "sprint_end"
-	
+
 	if self.UsesDrumMag then
 	seq = "drum_"..seq
 end
 
 self:PlayVMSequence(seq)
 end
-

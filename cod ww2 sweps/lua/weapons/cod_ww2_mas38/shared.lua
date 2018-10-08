@@ -74,9 +74,9 @@ SWEP.Sequences = {
 	reload_empty = "reload_empty",
 	deploy = "draw",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 }
 
 SWEP.UseIronTransitionAnims = false
@@ -85,12 +85,27 @@ SWEP.HolsterTime = 0.5
 SWEP.ReloadTime = 3
 SWEP.ReloadTime_Empty = 3.3
 SWEP.ReloadTimes = {
-	Base = 3,
+	Base = 2.37,
 	Base_Empty = 3.3,
 }
 SWEP.UsesEmptyReloadTimes = true
 
-
+SWEP.Sounds = {
+	draw = {
+		{time = 0, sound = "WW2.DrawSMG", callback = function(self) end}
+	},
+	holster = {
+		{time = 0, sound = "WW2.HolsterSMG", callback = function(self) end}
+	},
+reload = {
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 1.8, sound = "WW2.Movement2"},
+	},
+		reload_empty = {
+		{time = 0, sound = "WW2.Movement1"},
+		{time = 1.8, sound = "WW2.Movement2"},
+	},
+}
 
 SWEP.ViewModelMovementScale = 2
 
@@ -106,7 +121,7 @@ SWEP.ShellEjectVelocity = 0
 
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "Muzzleflashsmg", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
 SWEP.FireSound = "MP40_Single"
 
@@ -125,8 +140,8 @@ SWEP.Secondary.Automatic = true
 SWEP.FireMoveMod = 1
 SWEP.FireMoveMod_Iron = 0
 SWEP.LuaViewmodelRecoil = true
-SWEP.FullAimViewmodelRecoil = false
+SWEP.FullAimViewmodelRecoil = true
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 0.1
-SWEP.LuaVMRecoilMod = 5 -- modifier of overall intensity for the code based recoil
-SWEP.LuaVMRecoilAxisMod = {vert = 0.1, hor = 0.1, roll = 0.25, forward = 0.25, pitch = 0.025} -- modifier for intensity of the recoil on varying axes
+SWEP.LuaVMRecoilMod = 2.25 -- modifier of overall intensity for the code based recoil
+SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.1, roll = 0.25, forward = 0.25, pitch = 0.1} -- modifier for intensity of the recoil on varying axes

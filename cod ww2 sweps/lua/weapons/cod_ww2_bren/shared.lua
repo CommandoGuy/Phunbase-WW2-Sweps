@@ -74,9 +74,9 @@ SWEP.Sequences = {
 	deploy = "draw",
 	deploy_first = "draw_first",
 	holster = "holster",
-	sprint_start = "sprint_in", 
-	sprint_idle = "sprint", 
-	sprint_end = "sprint_out", 
+	sprint_start = "sprint_in",
+	sprint_idle = "sprint",
+	sprint_end = "sprint_out",
 }
 
 SWEP.UseIronTransitionAnims = false
@@ -94,16 +94,25 @@ SWEP.Sounds = {
 	draw_first = {
 		{time = 0, sound = "BREN.Magout"},
 	},
-
+     draw = {
+		{time = 0.15, sound = "WW2.DrawRifle", callback = function(self) end}
+	},
+	holster = {
+		{time = 0.15, sound = "WW2.HolsterRifle", callback = function(self) end}
+	},
 	reload = {
+		{time = 0, sound = "WW2.Movement1", callback = function(self) end},
 		{time = 1, sound = "BREN.Magout"},
 		{time = 4, sound = "BREN.Magin"},
+		{time = 5.6, sound = "WW2.Movement2", callback = function(self) end},
 	},
 
 	reload_empty = {
+	    {time = 0, sound = "WW2.Movement1", callback = function(self) end},
 		{time = 1, sound = "BREN.Magout"},
 		{time = 4, sound = "BREN.Magin"},
 		{time = 5.25, sound = "BREN.Bolt"},
+		{time = 6, sound = "WW2.Movement2", callback = function(self) end},
 	},
 }
 
@@ -121,7 +130,7 @@ SWEP.ShellEjectVelocity = 0
 
 
 SWEP.MuzzleAttachmentName = "1"
-SWEP.MuzzleEffect = {"PistolGlow", "MuzzleflashRifle", "muzzle_sparks_pistol", "btb_vm_overheat"}
+SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
 SWEP.FireSound = "BREN.Fire"
 
@@ -139,10 +148,10 @@ SWEP.Secondary.Automatic = true
 
  // RECOIL
 SWEP.FireMoveMod = 1
-SWEP.FireMoveMod_Iron = 0
+SWEP.FireMoveMod_Iron = 1
 SWEP.LuaViewmodelRecoil = true
-SWEP.FullAimViewmodelRecoil = false
+SWEP.FullAimViewmodelRecoil = true
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 0.1
-SWEP.LuaVMRecoilMod = 5 -- modifier of overall intensity for the code based recoil
-SWEP.LuaVMRecoilAxisMod = {vert = 0.1, hor = 0.1, roll = 0.25, forward = 0.25, pitch = 0.025} -- modifier for intensity of the recoil on varying axes
+SWEP.LuaVMRecoilMod = 3.25 -- modifier of overall intensity for the code based recoil
+SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.1, roll = 0.15, forward = 0.25, pitch = 0} -- modifier for intensity of the recoil on varying axes

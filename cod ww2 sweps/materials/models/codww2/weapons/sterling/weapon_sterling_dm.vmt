@@ -1,0 +1,27 @@
+"VertexLitGeneric"
+{
+	"$basetexture"					"models\codww2\weapons\sterling\weapon_sterling_dm"
+	"$bumpmap" 						"models\codww2\weapons\sterling\weapon_sterling_nm"
+    "$color"						"[1 1 1]"
+
+	"$phong"                        "1"
+	"$phongalbedotint"              "1"
+	"$phongtint"                    "[.67 .9 1]"
+	"$phongboost"                   "1.0"
+//	"$phongexponent"                "70"
+	"$phongfresnelranges"           "[1 1 1]"
+	"$phongexponenttexture"         "models\codww2\weapons\sterling\weapon_sterling_exp"
+
+	"$envmapfresnel"	"1.25"
+	"$envmap" "models/customcubemaps/simplespec" // which envmap to use, "env_cubemap" can be used but this works best with static envmaps and the whole point of this is not to rely on env_cubemaps
+	
+	"Proxies" // needed proxy for it to work, put this in your material, chagnes the $envmaptint according to where the entity is positioned
+	{
+		"PB_ENVMAPTINT_REALTIME_COLOR"
+		{
+			"min" "0" // minimum brightness, should be 0, otherwise will be visible in pitch black areas
+			"max" "0.025" // maximum brightness, sometimes small values like 0.25 or 0.5 are pretty much the max you need, depends on the material
+		}
+	}
+	"$normalmapalphaenvmapmask"		"1"
+}

@@ -3,11 +3,14 @@ att.name = "call_of_duty_world_war_2_7_times_magnification_marksman_rifle_scope_
 att.menuName = "7x Scope"
 PHUNBASE:registerAttachment(att)
 
-local ang0 = Vector()
-
 local att = {}
 att.name = "call_of_duty_world_war_2_iron_sight_marksman_rifle_scope_but_with_a_free_call_of_duty_world_war_2_executable_for_you_to_play_with"
 att.menuName = "Ironsights"
+PHUNBASE:registerAttachment(att)
+
+local att = {}
+att.name = "cod_ww2_garand_optic"
+att.menuName = "Scope"
 PHUNBASE:registerAttachment(att)
 
 local att = {}
@@ -89,6 +92,34 @@ function att:detachCallback()
 	self.UsesDrumMag = false
 	self:unloadWeapon()
 	self:RestoreClipSize()
+end
+PHUNBASE:registerAttachment(att)
+
+local att = {}
+att.name = "cod_ww2_garand_mag"
+att.menuName = "Extended Magazine"
+function att:attachCallback()
+    if CLIENT then
+        local vm = self.VM
+        if IsValid(vm) then
+             self.VM:SetBodygroup(1, 1) // sets bg to 1
+        end
+    end
+    self.UsesExtMag = true
+    self:unloadWeapon()
+    self:SetClipSize(12)
+end
+
+function att:detachCallback()
+    if CLIENT then
+        local vm = self.VM
+        if IsValid(vm) then
+             self.VM:SetBodygroup(1, 0) // resets bg to 0 (default)
+        end
+    end
+    self.UsesExtMag = false
+    self:unloadWeapon()
+    self:RestoreClipSize()
 end
 PHUNBASE:registerAttachment(att)
 
