@@ -31,7 +31,7 @@ SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 
 // Recoil variables
-SWEP.Recoil	= 2.5
+SWEP.Recoil	= 1
 SWEP.Spread	= 0.1
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
@@ -42,8 +42,8 @@ SWEP.SpreadAdd_Iron	= 0.2
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-4.332, -5.069, 0.847)
-SWEP.IronsightAng = Vector(1.166, 0.008, 0.000)
+SWEP.IronsightPos = Vector(-4.035, -5.069, 0.847)
+SWEP.IronsightAng = Vector(0.765, 0.108, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -69,7 +69,7 @@ SWEP.Sequences = {
 	fire = "fire",
 	fire_last = "fire_last",
 	fire_iron_last = "fire_last",
-	fire_iron = "fire",
+	fire_iron = "fire_ads",
 	reload = "reload",
 	reload_empty = "reload_empty",
 	deploy = "draw",
@@ -144,4 +144,4 @@ SWEP.FullAimViewmodelRecoil = true
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 0.1
 SWEP.LuaVMRecoilMod = 5 -- modifier of overall intensity for the code based recoil
-SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0, roll = 0, forward = 0.2, pitch = 0} -- modifier for intensity of the recoil on varying axes
+SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0, roll = 0, forward = 0, pitch = 0} -- modifier for intensity of the recoil on varying axes

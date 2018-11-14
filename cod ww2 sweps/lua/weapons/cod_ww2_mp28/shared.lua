@@ -157,4 +157,4 @@ SWEP.FullAimViewmodelRecoil = true
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 0.1
 SWEP.LuaVMRecoilMod = 2.25 -- modifier of overall intensity for the code based recoil
-SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.1, roll = 0.25, forward = 0.25, pitch = 0.15} -- modifier for intensity of the recoil on varying axes
+SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.1, roll = 0.5, forward = 0.25, pitch = 0} -- modifier for intensity of the recoil on varying axes

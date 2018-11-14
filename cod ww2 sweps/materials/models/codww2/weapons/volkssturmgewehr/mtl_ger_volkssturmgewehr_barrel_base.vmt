@@ -1,22 +1,41 @@
-
-"VertexLitGeneric"
+VertexLitGeneric
 {
-	"$basetexture" "models\codww2\weapons/volkssturmgewehr/barrel"
-     "$bumpmap" "models\codww2\weapons/volkssturmgewehr/barrel_normal"
+	"$basetexture" "models\codww2\weapons\volkssturmgewehr\barrel"
+	"$bumpmap" "models\codww2\weapons\volkssturmgewehr\barrel_n"
+$phongexponenttexture "models/codww2/weapons/volkssturmgewehr/barrel_e"
+
 //detail
-$detail  "models\codww2\weapons/volkssturmgewehr/barrel_metal"
+$detail  "models\codww2\weapons\volkssturmgewehr\barrel_d"
 $detailscale 1	
-$detailblendfactor 0.15
-$detailblendmode 1
+$detailblendfactor 0.05
+$detailblendmode 2
 
-"$phong"                      "1"
-	"$phongboost"                 "0.15"
-$phongexponenttexture "models\codww2\weapons/volkssturmgewehr/barrel_exponent"
-	"$phongfresnelranges"         "[5 10 10]"
-	"$phongtint"		      "[1.05 1 1.1]"
-	"$phongalbedotint"            "1"
-	"$phongalbedoboost"           "145"
+$rimlight 1
+	 "$rimlightexponent"   "50" 
+	 "$rimlightboost"   "0.75"
+                  $rimmask 1	
 
+$halfambert 1
+	"$phong" "1"
+	"$phongboost"					"25"
+
+$phongalbedotint 1
+	"$phongfresnelranges"			"[1 1.05 1.25]"
+
+	"$envmap" "env_cubemap" // which envmap to use, "env_cubemap" can be used but this works best with static envmaps and the whole point of this is not to rely on env_cubemaps
+	
+	"Proxies" // needed proxy for it to work, put this in your material, chagnes the $envmaptint according to where the entity is positioned
+	{
+		"PB_ENVMAPTINT_REALTIME_COLOR"
+		{
+			"min" "0" // minimum brightness, should be 0, otherwise will be visible in pitch black areas
+			"max" "0.05" // maximum brightness, sometimes small values like 0.25 or 0.5 are pretty much the max you need, depends on the material
+		}
+	}
+	"$normalmapalphaenvmapmask"		"1"
+
+
+	"$envmapfresnel"	"15"
+	"$halflambert"                "1"
 }
-
 

@@ -42,8 +42,8 @@ SWEP.IdleAfterFire = true
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-3.673, -1.343, 1.110)
-SWEP.IronsightAng = Vector(0.116, 0.225, 0.000)
+SWEP.IronsightPos = Vector(-3.521, -1.343, 1.408)
+SWEP.IronsightAng = Vector(0.116, 0.025, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -67,7 +67,7 @@ SWEP.Sequences = {
 	idle_iron_empty = "idle",
 	fire = "fire",
 	fire_last = "fire",
-	fire_iron = "fire",
+	fire_iron = "fire_ads",
 	fire_iron_last = "fire",
 	reload = "reload",
 	reload_empty = "reload_empty",

@@ -6,7 +6,7 @@ SWEP.Slot = 2
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 60
-SWEP.AimViewModelFOV = 45
+SWEP.AimViewModelFOV = 50
 SWEP.ViewModel = "models/codww2/weapons/sterling.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
@@ -43,8 +43,8 @@ SWEP.IdleAfterFire = true
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-3.297, 0.000, 2.106)
-SWEP.IronsightAng = Vector(0.900, 0.554, 0.000)
+SWEP.IronsightPos = Vector(-4.065, 0.000, 2.614)
+SWEP.IronsightAng = Vector(-0.200, 0.027, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)

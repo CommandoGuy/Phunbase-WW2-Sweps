@@ -1,0 +1,21 @@
+VertexLitGeneric
+{
+	"$basetexture" "models\codww2\weapons\springfield\mag"
+	"$bumpmap" "models\codww2\weapons\springfield\mag_n"
+$phongexponenttexture "models/codww2/weapons/springfield/mag_e"
+
+$rimlight 1
+	 "$rimlightexponent"   "50" 
+	 "$rimlightboost"   "0.75"
+                  $rimmask 1	
+
+$halfambert 1
+	"$phong" "1"
+	"$phongboost"					"25"
+$phongalbedotint 1
+	"$phongfresnelranges"			"[1 1.05 1.25]"
+
+
+	"$envmapfresnel"	"5"
+	"$halflambert"                "1"
+}

@@ -20,11 +20,18 @@ $detailblendmode 2
 	"$PhongDisableHalfLambert"  "0"
 	"$PhongAlbedoTint"          "1"
 
-	"$Envmap"                   "env_cubemap"
-	"$EnvmapFresnel" 		    "1"
-	"$EnvmapFresnelMinMaxExp"   "[0 0.5 1]"
-	"$EnvmapTint" 			    "[0.01 0.01 0.01]"
-	"$NormalmapAlphaEnvmapMask" "1"
+$envmapfresnel .25
+	"$envmap" "env_cubemap" // which envmap to use, "env_cubemap" can be used but this works best with static envmaps and the whole point of this is not to rely on env_cubemaps
+	
+	"Proxies" // needed proxy for it to work, put this in your material, chagnes the $envmaptint according to where the entity is positioned
+	{
+		"PB_ENVMAPTINT_REALTIME_COLOR"
+		{
+			"min" "0" // minimum brightness, should be 0, otherwise will be visible in pitch black areas
+			"max" "0.1" // maximum brightness, sometimes small values like 0.25 or 0.5 are pretty much the max you need, depends on the material
+		}
+	}
+	"$normalmapalphaenvmapmask"		"1"
 	"$halflambert"                "1"
 
 }

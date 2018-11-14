@@ -1,0 +1,23 @@
+VertexLitGeneric
+{
+	"$basetexture" "models\codww2\weapons\mosin\base"
+	"$bumpmap" "models\codww2\weapons\mosin\base_n"
+$phongexponenttexture "models/codww2/weapons/mosin/base_e"
+
+//detail
+$detail  "models\codww2\weapons\mosin\base_d"
+$detailscale 1	
+$detailblendfactor 0.05
+$detailblendmode 2
+
+$rimlight 1
+	 "$rimlightexponent"   "50" 
+	 "$rimlightboost"   "0.75"
+                  $rimmask 1	
+
+$halfambert 1
+	"$phong" "1"
+	"$phongboost"					"75"
+$phongalbedotint 1
+	"$phongfresnelranges"			"[1 1.05 1.25]"
+}

@@ -1,38 +1,38 @@
 
 --universal---------------------------------------------------------------
 sound.Add({
-	name = 			"Dryfire_Pistol",			
+	name = 			"Dryfire_Pistol",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"universal/dryfire_pistol.wav"	
+	sound = 			"universal/dryfire_pistol.wav"
 })
 
 sound.Add({
-	name = 			"Dryfire_AR",			
+	name = 			"Dryfire_AR",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"universal/dryfire_ar.wav"	
+	sound = 			"universal/dryfire_ar.wav"
 })
 
 sound.Add({
-	name = 			"Dryfire_LMG",			
+	name = 			"Dryfire_LMG",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"universal/dryfire_lmg.wav"	
+	sound = 			"universal/dryfire_lmg.wav"
 })
 
 sound.Add({
-	name = 			"Dryfire_SG",			
+	name = 			"Dryfire_SG",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"universal/dryfire_sg.wav"	
+	sound = 			"universal/dryfire_sg.wav"
 })
 
 sound.Add({
-	name = 			"Dryfire_Sniper",			
+	name = 			"Dryfire_Sniper",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"universal/dryfire_sniper.wav"	
+	sound = 			"universal/dryfire_sniper.wav"
 })
 
 --fg42---------------------------------------------------------------
@@ -45,24 +45,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"FG42_Magout",			
+	name = 			"FG42_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/fg42/magout.wav"	
+	sound = 			"weapons/fg42/magout.wav"
 })
 
 sound.Add({
-	name = 			"FG42_Magin",			
+	name = 			"FG42_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/fg42/magin.wav"	
+	sound = 			"weapons/fg42/magin.wav"
 })
 
 sound.Add({
-	name = 			"FG42_Bolt",			
+	name = 			"FG42_Bolt",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/fg42/bolt.wav"	
+	sound = 			"weapons/fg42/bolt.wav"
 })
 
 --g43---------------------------------------------------------------
@@ -75,24 +75,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"G43_Magout",			
+	name = 			"G43_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/g43/magout.wav"	
+	sound = 			"weapons/g43/magout.wav"
 })
 
 sound.Add({
-	name = 			"G43_Magin",			
+	name = 			"G43_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/g43/magin.wav"	
+	sound = 			"weapons/g43/magin.wav"
 })
 
 sound.Add({
-	name = 			"G43_Bolt",			
+	name = 			"G43_Bolt",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/g43/bolt.wav"	
+	sound = 			"weapons/g43/bolt.wav"
 })
 
 --g43---------------------------------------------------------------
@@ -105,24 +105,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"P38_Magout",			
+	name = 			"P38_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/p38/magout.wav"	
+	sound = 			"weapons/p38/magout.wav"
 })
 
 sound.Add({
-	name = 			"P38_Magin",			
+	name = 			"P38_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/p38/magin.wav"	
+	sound = 			"weapons/p38/magin.wav"
 })
 
 sound.Add({
-	name = 			"P38_Slide",			
+	name = 			"P38_Slide",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/p38/slide.wav"	
+	sound = 			"weapons/p38/slide.wav"
 })
 
 
@@ -136,38 +136,38 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"SVT_Magout",			
+	name = 			"SVT_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/svt/magout.wav"	
+	sound = 			"weapons/svt/magout.wav"
 })
 
 sound.Add({
-	name = 			"SVT_MagoutEmpty",			
+	name = 			"SVT_MagoutEmpty",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/svt/magoutE.wav"	
+	sound = 			"weapons/svt/magoutE.wav"
 })
 
 sound.Add({
-	name = 			"SVT_Magin",			
+	name = 			"SVT_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/svt/magin.wav"	
+	sound = 			"weapons/svt/magin.wav"
 })
 
 sound.Add({
-	name = 			"SVT_MaginEmpty",			
+	name = 			"SVT_MaginEmpty",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/svt/maginE.wav"	
+	sound = 			"weapons/svt/maginE.wav"
 })
 
 sound.Add({
-	name = 			"SVT_Bolt",			
+	name = 			"SVT_Bolt",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/svt/bolt.wav"	
+	sound = 			"weapons/svt/bolt.wav"
 })
 
 --enfield---------------------------------------------------------------
@@ -180,31 +180,31 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"enfield_magin",			
+	name = 			"enfield_magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/enfield/magin.wav"	
+	sound = 			"weapons/enfield/magin.wav"
 })
 
 sound.Add({
-	name = 			"enfield_ping",			
+	name = 			"enfield_ping",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/enfield/ping.wav"	
+	sound = 			"weapons/enfield/ping.wav"
 })
 
 sound.Add({
-	name = 			"enfield_boltforward",			
+	name = 			"enfield_boltforward",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/enfield/boltforward.wav"	
+	sound = 			"weapons/enfield/boltforward.wav"
 })
 
 sound.Add({
-	name = 			"enfield_boltback",			
+	name = 			"enfield_boltback",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/enfield/boltbackward.wav"	
+	sound = 			"weapons/enfield/boltbackward.wav"
 })
 
 --mp40---------------------------------------------------------------
@@ -217,24 +217,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"MP40_Magin",			
+	name = 			"MP40_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/MP40/magin.wav"	
+	sound = 			"weapons/MP40/magin.wav"
 })
 
 sound.Add({
-	name = 			"MP40_Magout",			
+	name = 			"MP40_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/MP40/magout.wav"	
+	sound = 			"weapons/MP40/magout.wav"
 })
 
 sound.Add({
-	name = 			"MP40_Bolt",			
+	name = 			"MP40_Bolt",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/MP40/bolt.wav"	
+	sound = 			"weapons/MP40/bolt.wav"
 })
 
 --trench---------------------------------------------------------------
@@ -247,24 +247,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"trench_pumpback",			
+	name = 			"trench_pumpback",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/trench/pumpback.wav"	
+	sound = 			"weapons/trench/pumpback.wav"
 })
 
 sound.Add({
-	name = 			"trench_Insert",			
+	name = 			"trench_Insert",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/trench/insert.wav"	
+	sound = 			"weapons/trench/insert.wav"
 })
 
 sound.Add({
-	name = 			"trench_pumpforward",			
+	name = 			"trench_pumpforward",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/trench/pumpforward.wav"	
+	sound = 			"weapons/trench/pumpforward.wav"
 })
 
 --c96---------------------------------------------------------------
@@ -277,24 +277,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"C96_Magout",			
+	name = 			"C96_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/c96/magout.wav"	
+	sound = 			"weapons/c96/magout.wav"
 })
 
 sound.Add({
-	name = 			"C96_Magin",			
+	name = 			"C96_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/c96/magin.wav"	
+	sound = 			"weapons/c96/magin.wav"
 })
 
 sound.Add({
-	name = 			"C96_Boltrelease",			
+	name = 			"C96_Boltrelease",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/c96/bolt.wav"	
+	sound = 			"weapons/c96/bolt.wav"
 })
 
 --sawedoff---------------------------------------------------------------
@@ -307,47 +307,47 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"sawedoff_open",			
+	name = 			"sawedoff_open",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/sawedoff/open.wav"	
+	sound = 			"weapons/sawedoff/open.wav"
 })
 
 sound.Add({
-	name = 			"sawedoff_shellsE",			
+	name = 			"sawedoff_shellsE",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/sawedoff/eject2.wav"	
+	sound = 			"weapons/sawedoff/eject2.wav"
 })
 
 sound.Add({
-	name = 			"sawedoff_shells",			
+	name = 			"sawedoff_shells",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/sawedoff/eject1.wav"	
+	sound = 			"weapons/sawedoff/eject1.wav"
 })
 
 sound.Add({
-	name = 			"sawedoff_shellin1",			
+	name = 			"sawedoff_shellin1",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/sawedoff/insert1.wav"	
-})
-
-
-sound.Add({
-	name = 			"sawedoff_shellin2",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"weapons/sawedoff/insert2.wav"	
+	sound = 			"weapons/sawedoff/insert1.wav"
 })
 
 
 sound.Add({
-	name = 			"sawedoff_close",			
+	name = 			"sawedoff_shellin2",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/sawedoff/close.wav"	
+	sound = 			"weapons/sawedoff/insert2.wav"
+})
+
+
+sound.Add({
+	name = 			"sawedoff_close",
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/sawedoff/close.wav"
 })
 
 
@@ -362,38 +362,38 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"m1911_clipout2",			
+	name = 			"m1911_clipout2",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m1911/magout.wav"	
+	sound = 			"weapons/m1911/magout.wav"
 })
 
 sound.Add({
-	name = 			"m1911_clipin1",			
+	name = 			"m1911_clipin1",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m1911/magin.wav"	
+	sound = 			"weapons/m1911/magin.wav"
 })
 
 sound.Add({
-	name = 			"m1911_clipin2",			
+	name = 			"m1911_clipin2",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m1911/magin.wav"	
+	sound = 			"weapons/m1911/magin.wav"
 })
 
 sound.Add({
-	name = 			"m1911_slide1",			
+	name = 			"m1911_slide1",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m1911/slideforward.wav"	
+	sound = 			"weapons/m1911/slideforward.wav"
 })
 
 sound.Add({
-	name = 			"m1911_slide2",			
+	name = 			"m1911_slide2",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m1911/slideforward.wav"	
+	sound = 			"weapons/m1911/slideforward.wav"
 })
 
 
@@ -407,24 +407,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"Volk_Magin",			
+	name = 			"Volk_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/volk/magin.wav"	
+	sound = 			"weapons/volk/magin.wav"
 })
 
 sound.Add({
-	name = 			"Volk_Magout",			
+	name = 			"Volk_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/volk/magout.wav"	
+	sound = 			"weapons/volk/magout.wav"
 })
 
 sound.Add({
-	name = 			"Volk_Barrel",			
+	name = 			"Volk_Barrel",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/volk/bolt.wav"	
+	sound = 			"weapons/volk/bolt.wav"
 })
 
 --mas38---------------------------------------------------------------
@@ -437,24 +437,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"Mas38_Magout",			
+	name = 			"Mas38_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/mas38/magout.wav"	
+	sound = 			"weapons/mas38/magout.wav"
 })
 
 sound.Add({
-	name = 			"Mas38_Magin",			
+	name = 			"Mas38_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/mas38/magin.wav"	
+	sound = 			"weapons/mas38/magin.wav"
 })
 
 sound.Add({
-	name = 			"Mas38_Bolt",			
+	name = 			"Mas38_Bolt",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/mas38/bolt.wav"	
+	sound = 			"weapons/mas38/bolt.wav"
 })
 
 
@@ -468,32 +468,32 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"M1C_Magout",			
+	name = 			"M1C_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m1c/magout.wav"	
+	sound = 			"weapons/m1c/magout.wav"
 })
 
 sound.Add({
-	name = 			"M1C_Magin",			
+	name = 			"M1C_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m1c/magin.wav"	
+	sound = 			"weapons/m1c/magin.wav"
 })
 
 sound.Add({
-	name = 			"M1C_Bolt",			
+	name = 			"M1C_Bolt",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m1c/bolt.wav"	
+	sound = 			"weapons/m1c/bolt.wav"
 })
 
 
 sound.Add({
-	name = 			"M1C_Ping",			
+	name = 			"M1C_Ping",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m1c/ping.wav"	
+	sound = 			"weapons/m1c/ping.wav"
 })
 
 --Thompson---------------------------------------------------------------
@@ -506,24 +506,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"Thompson_Magin",			
+	name = 			"Thompson_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/thompson/magout.wav"	
+	sound = 			"weapons/thompson/magout.wav"
 })
 
 sound.Add({
-	name = 			"Thompson_Magout",			
+	name = 			"Thompson_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/thompson/magin.wav"	
+	sound = 			"weapons/thompson/magin.wav"
 })
 
 sound.Add({
-	name = 			"Thompson_Magtap",			
+	name = 			"Thompson_Magtap",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/thompson/maghit.wav"	
+	sound = 			"weapons/thompson/maghit.wav"
 })
 
 --M1 Garand---------------------------------------------------------------
@@ -536,24 +536,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"Garand_Boltopen",			
+	name = 			"Garand_Boltopen",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/garand/boltback.wav"	
+	sound = 			"weapons/garand/boltback.wav"
 })
 
 sound.Add({
-	name = 			"Garand_Clipin",			
+	name = 			"Garand_Clipin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/garand/clipin.wav"	
+	sound = 			"weapons/garand/clipin.wav"
 })
 
 sound.Add({
-	name = 			"Garand_Boltclose",			
+	name = 			"Garand_Boltclose",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/garand/boltclose.wav"	
+	sound = 			"weapons/garand/boltclose.wav"
 })
 
 
@@ -577,24 +577,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"1935_Magout",			
+	name = 			"1935_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m1935/magout.wav"	
+	sound = 			"weapons/m1935/magout.wav"
 })
 
 sound.Add({
-	name = 			"1935_Magin",			
+	name = 			"1935_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m1935/magin.wav"	
+	sound = 			"weapons/m1935/magin.wav"
 })
 
 sound.Add({
-	name = 			"1935_Maghit",			
+	name = 			"1935_Maghit",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m1935/maghit.wav"	
+	sound = 			"weapons/m1935/maghit.wav"
 })
 
 --MP28---------------------------------------------------------------
@@ -607,24 +607,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"MP28_Magout",			
+	name = 			"MP28_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/mp28/magout.wav"	
+	sound = 			"weapons/mp28/magout.wav"
 })
 
 sound.Add({
-	name = 			"MP28_Magin",			
+	name = 			"MP28_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/mp28/magin.wav"	
+	sound = 			"weapons/mp28/magin.wav"
 })
 
 sound.Add({
-	name = 			"MP28_Bolt",			
+	name = 			"MP28_Bolt",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/mp28/bolt.wav"	
+	sound = 			"weapons/mp28/bolt.wav"
 })
 
 --bar---------------------------------------------------------------
@@ -637,24 +637,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"Bar_Magout",			
+	name = 			"Bar_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/bar/magout.wav"	
+	sound = 			"weapons/bar/magout.wav"
 })
 
 sound.Add({
-	name = 			"Bar_Magin",			
+	name = 			"Bar_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/bar/magin.wav"	
+	sound = 			"weapons/bar/magin.wav"
 })
 
 sound.Add({
-	name = 			"Bar_Charge",			
+	name = 			"Bar_Charge",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/bar/charge.wav"	
+	sound = 			"weapons/bar/charge.wav"
 })
 
 
@@ -668,40 +668,40 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"MG42_Open",			
+	name = 			"MG42_Open",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/mg42/open.wav"	
+	sound = 			"weapons/mg42/open.wav"
 })
 
 sound.Add({
-	name = 			"MG42_Close",			
+	name = 			"MG42_Close",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/mg42/close.wav"	
+	sound = 			"weapons/mg42/close.wav"
 })
 
 sound.Add({
-	name = 			"MG42_Beltin",			
+	name = 			"MG42_Beltin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/mg42/beltin.wav"	
-})
-
-
-sound.Add({
-	name = 			"MG42_Beltout",			
-	channel = 		CHAN_STATIC,
-	volume = 		1.0,
-	sound = 			"weapons/mg42/beltout.wav"	
+	sound = 			"weapons/mg42/beltin.wav"
 })
 
 
 sound.Add({
-	name = 			"MG42_Charge",			
+	name = 			"MG42_Beltout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/mg42/charge.wav"	
+	sound = 			"weapons/mg42/beltout.wav"
+})
+
+
+sound.Add({
+	name = 			"MG42_Charge",
+	channel = 		CHAN_STATIC,
+	volume = 		1.0,
+	sound = 			"weapons/mg42/charge.wav"
 })
 
 --kar97k---------------------------------------------------------------
@@ -723,54 +723,53 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"STG44_Magout",			
+	name = 			"STG44_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/stg44/magout.wav"	
+	sound = 			"weapons/stg44/magout.wav"
 })
 
 sound.Add({
-	name = 			"STG44_Magin",			
+	name = 			"STG44_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/stg44/magin.wav"	
+	sound = 			"weapons/stg44/magin.wav"
 })
 
 sound.Add({
-	name = 			"STG44_Bolt",			
+	name = 			"STG44_Bolt",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/stg44/bolt.wav"	
+	sound = 			"weapons/stg44/bolt.wav"
 })
 
 --greasegun---------------------------------------------------------------
-
 sound.Add({
-	name = 			"Greasegun_Fire",			// <-- Sound Name That gets called for
+	name = 			"Grease.Fire",			// <-- Sound Name That gets called for
 	channel = 		CHAN_USER_BASE +10,
 	volume = 		1.0,
 	sound = 			"weapons/greasegun/fire.wav"	// <-- Sound Path
 })
 
 sound.Add({
-	name = 			"Greasegun.Magout",			
+	name = 			"Greasegun.Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/greasegun/magout.wav"	
+	sound = 			"weapons/greasegun/magout.wav"
 })
 
 sound.Add({
-	name = 			"Greasegun.Magin",			
+	name = 			"Greasegun.Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/greasegun/magin.wav"	
+	sound = 			"weapons/greasegun/magin.wav"
 })
 
 sound.Add({
-	name = 			"Greasegun.Bolt",			
+	name = 			"Greasegun.Bolt",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/greasegun/bolt.wav"	
+	sound = 			"weapons/greasegun/bolt.wav"
 })
 
 --m1911---------------------------------------------------------------
@@ -783,24 +782,24 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"M1911_Magout",			
+	name = 			"M1911_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/M1911/magout.wav"	
+	sound = 			"weapons/M1911/magout.wav"
 })
 
 sound.Add({
-	name = 			"M1911_Magin",			
+	name = 			"M1911_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/M1911/magin.wav"	
+	sound = 			"weapons/M1911/magin.wav"
 })
 
 sound.Add({
-	name = 			"M1911_Slide",			
+	name = 			"M1911_Slide",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/M1911/slideforward.wav"	
+	sound = 			"weapons/M1911/slideforward.wav"
 })
 
 --m30---------------------------------------------------------------
@@ -813,39 +812,39 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"m30_openE",			
+	name = 			"m30_openE",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m30/openE.wav"	
+	sound = 			"weapons/m30/openE.wav"
 })
 
 sound.Add({
-	name = 			"m30_openF",			
+	name = 			"m30_openF",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m30/openF.wav"	
+	sound = 			"weapons/m30/openF.wav"
 })
 
 sound.Add({
-	name = 			"m30_shellsinE",			
+	name = 			"m30_shellsinE",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m30/shellinE.wav"	
+	sound = 			"weapons/m30/shellinE.wav"
 })
 
 sound.Add({
-	name = 			"m30_shellsinF",			
+	name = 			"m30_shellsinF",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m30/shellinF.wav"	
+	sound = 			"weapons/m30/shellinF.wav"
 })
 
 
 sound.Add({
-	name = 			"m30_close",			
+	name = 			"m30_close",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/m30/close.wav"	
+	sound = 			"weapons/m30/close.wav"
 })
 
 --luger---------------------------------------------------------------
@@ -858,22 +857,22 @@ sound.Add({
 })
 
 sound.Add({
-	name = 			"Luger_Magout",			
+	name = 			"Luger_Magout",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/luger/magout.wav"	
+	sound = 			"weapons/luger/magout.wav"
 })
 
 sound.Add({
-	name = 			"Luger_Magin",			
+	name = 			"Luger_Magin",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/luger/magin.wav"	
+	sound = 			"weapons/luger/magin.wav"
 })
 
 sound.Add({
-	name = 			"Luger_Bolt",			
+	name = 			"Luger_Bolt",
 	channel = 		CHAN_STATIC,
 	volume = 		1.0,
-	sound = 			"weapons/luger/bolt.wav"	
+	sound = 			"weapons/luger/bolt.wav"
 })

@@ -29,7 +29,8 @@ SWEP.Primary.Delay = 0.05
 SWEP.Primary.Force = 5
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
-
+SWEP.UsesBipod = true
+SWEP.BipodTransitionDelay = 0.5
 
 // Recoil variables
 SWEP.Recoil	= 2
@@ -76,6 +77,7 @@ SWEP.Sequences = {
 	reload = "reload",
 	reload_empty = "reload_empty",
 	deploy = "draw",
+	deploy_first = "draw_first",
 	holster = "holster",
 	sprint_start = "sprint_in",
 	sprint_idle = "sprint",
@@ -84,12 +86,15 @@ SWEP.Sequences = {
 
 
 SWEP.DeployTime = 0.75
+SWEP.DeployTime_First = 2
 SWEP.HolsterTime = 0.75
 SWEP.ReloadTime = 7
 SWEP.ReloadTime_Empty = 7.25
 SWEP.ReloadTimes = {
 	Base = 7,
 	Base_Empty = 7.25,
+	Bipod = 7,
+Bipod_Empty = 7.25,
 }
 SWEP.UsesEmptyReloadTimes = true
 SWEP.FlashlightAttachmentName = "1"
@@ -99,6 +104,10 @@ SWEP.ViewModelMovementScale = 2
 SWEP.Sounds = {
 	draw = {
 		{time = 0, sound = "WW2.DrawRifle", callback = function(self) end}
+	},
+	draw_first = {
+		{time = 0, sound = "WW2.DrawRifle", callback = function(self) end},
+		{time = 0.15, sound = "MG42_Charge"},
 	},
 	holster = {
 		{time = 0, sound = "WW2.HolsterRifle", callback = function(self) end}
@@ -158,4 +167,12 @@ function SWEP:AdditionalThink()
             vm:SetBodygroup(1, bullets)
         end
     end
+end
+
+function SWEP:BipodModeAnimLogic()
+	if self:GetBipodState() == PB_BIPODSTATE_ENTER then
+		self:PlayVMSequence("in")
+	else
+		self:PlayVMSequence("out")
+	end
 end

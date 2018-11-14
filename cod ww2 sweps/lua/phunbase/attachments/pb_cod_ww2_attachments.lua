@@ -38,16 +38,6 @@ end
 PHUNBASE:registerAttachment(att)
 
 local att = {}
-att.name = "cod_ww2_k98k_scope"
-att.menuName = "7x Scope"
-PHUNBASE:registerAttachment(att)
-
-local att = {}
-att.name = "cod_ww2_k98k_4x_scope"
-att.menuName = "x4 Scope"
-PHUNBASE:registerAttachment(att)
-
-local att = {}
 att.name = "springfield_ironsight"
 att.menuName = "Ironsights"
 PHUNBASE:registerAttachment(att)
@@ -74,7 +64,7 @@ function att:attachCallback()
     if CLIENT then
         local vm = self.VM
         if IsValid(vm) then
-             self.VM:SetBodygroup(0, 1) // sets bg to 1
+             self.VM:SetBodygroup(1, 1) // sets bg to 1
         end
     end
 	self.UsesDrumMag = true
@@ -86,7 +76,7 @@ function att:detachCallback()
     if CLIENT then
         local vm = self.VM
         if IsValid(vm) then
-             self.VM:SetBodygroup(0, 0) // resets bg to 0 (default)
+             self.VM:SetBodygroup(1, 0) // resets bg to 0 (default)
         end
     end
 	self.UsesDrumMag = false
@@ -124,6 +114,34 @@ end
 PHUNBASE:registerAttachment(att)
 
 local att = {}
+att.name = "cod_ww2_type100_mag"
+att.menuName = "Extended Magazine"
+function att:attachCallback()
+    if CLIENT then
+        local vm = self.VM
+        if IsValid(vm) then
+             self.VM:SetBodygroup(1, 1) // sets bg to 1
+        end
+    end
+    self.UsesExtMag = true
+    self:unloadWeapon()
+    self:SetClipSize(64)
+end
+
+function att:detachCallback()
+    if CLIENT then
+        local vm = self.VM
+        if IsValid(vm) then
+             self.VM:SetBodygroup(1, 0) // resets bg to 0 (default)
+        end
+    end
+    self.UsesExtMag = false
+    self:unloadWeapon()
+    self:RestoreClipSize()
+end
+PHUNBASE:registerAttachment(att)
+
+local att = {}
 att.name = "cod_ww2_reflexsight"
 att.menuName = "Reflex Sight"
 
@@ -139,6 +157,52 @@ function att:attachCallback()
         local vm = self.VM
         if IsValid(vm) then
              self.VM:SetBodygroup(1, 1) // sets bg to 1
+        end
+    end
+end
+
+function att:detachCallback()
+    if CLIENT then
+        local vm = self.VM
+        if IsValid(vm) then
+             self.VM:SetBodygroup(1, 0) // resets bg to 0 (default)
+        end
+    end
+end
+PHUNBASE:registerAttachment(att)
+
+local att = {}
+att.name = "cod_ww2_k98k_x7scope"
+att.menuName = "7x Scope"
+
+function att:attachCallback()
+    if CLIENT then
+        local vm = self.VM
+        if IsValid(vm) then
+             self.VM:SetBodygroup(1, 1) // sets bg to 1
+        end
+    end
+end
+
+function att:detachCallback()
+    if CLIENT then
+        local vm = self.VM
+        if IsValid(vm) then
+             self.VM:SetBodygroup(1, 0) // resets bg to 0 (default)
+        end
+    end
+end
+PHUNBASE:registerAttachment(att)
+
+local att = {}
+att.name = "cod_ww2_k98k_x4scope"
+att.menuName = "7x Scope"
+
+function att:attachCallback()
+    if CLIENT then
+        local vm = self.VM
+        if IsValid(vm) then
+             self.VM:SetBodygroup(1, 2) // sets bg to 1
         end
     end
 end

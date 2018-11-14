@@ -36,7 +36,7 @@ SWEP.Primary.Tracer = 0
 SWEP.MouseSensitivityIron = 0.25
 
 // Recoil variables
-SWEP.Recoil	= 3
+SWEP.Recoil	= 2
 SWEP.Spread	= 0.1
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2

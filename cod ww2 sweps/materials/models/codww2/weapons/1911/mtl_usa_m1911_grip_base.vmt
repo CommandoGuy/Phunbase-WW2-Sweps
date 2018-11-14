@@ -1,0 +1,26 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\codww2\weapons/1911/receiver"
+$bumpmap "models\codww2\weapons/1911/receiver_normal"
+//detail
+$detail  "models\codww2\weapons/1911\receiver_metal"
+$detailscale 1	
+$detailblendfactor 0.025
+$detailblendmode 1
+	
+
+"$phong"                      "1"
+	"$phongboost"                 "0.15"
+$phongexponenttexture "models\codww2\weapons/1911\receiver_exponent"
+	"$phongfresnelranges"         "[5 10 10]"
+	"$phongtint"		      "[1.05 1 1.1]"
+	"$phongalbedotint"            "1"
+	"$phongalbedoboost"           "145"
+
+	"$envmap"                     "env_cubemap"
+	"$envmapfresnel"		"0.5"
+	"$envmaptint"                   "[.015 .015 .015]"
+	"$halflambert"                "1"
+	"$normalmapalphaenvmapmask"		"1"
+	"$normalmapalphaphongmask"	"1"
+}

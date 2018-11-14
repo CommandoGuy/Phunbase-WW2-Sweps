@@ -9,6 +9,10 @@ $detailscale 1
 $detailblendfactor 0.015
 $detailblendmode 2
 
+$rimlight 1
+	 "$rimlightexponent"   "100" 
+	 "$rimlightboost"   "0.025"
+                  $rimmask 1
 
 "$phong"                      "1"
 	"$phongboost"                 "0.15"

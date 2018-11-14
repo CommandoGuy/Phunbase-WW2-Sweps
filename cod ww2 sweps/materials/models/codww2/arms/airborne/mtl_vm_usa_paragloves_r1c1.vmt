@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/codww2/arms/airborne/mtl_vm_usa_paragloves_r1c1"
+$bumpmap "models/codww2/arms/airborne/gloves_normal"
+
+	"$phong" 		             "1"
+	"$phongboost" 	             "0.15"
+	"$phongtint"	             "[1 1 1]"
+	"$phongexponent"  	             "10"
+	"$phongfresnelranges" 	             "[1 1 1]"
+	"$phongalbedotint" 	             "1"
+                  "$halflambert"                            "1"
+                  "$ambientocclusion"                   "1"
+                  "$ambientocclcolor"                   "[1 1 1]"
+}

@@ -8,7 +8,7 @@ SWEP.Slot = 2
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 60
-SWEP.AimViewModelFOV = 45
+SWEP.AimViewModelFOV = 40
 SWEP.ViewModel = "models/codww2/weapons/springfield.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 SWEP.EnableCustomization = true
@@ -47,8 +47,8 @@ SWEP.SpreadAdd_Iron	= 0
 SWEP.BasePos = Vector(0.000, 0.000, 0.000)
 SWEP.BaseAng = Vector(0.000, 0.000, 2.243)
 
-SWEP.IronsightPos = Vector(-3.898, 0.000, 0.735)
-SWEP.IronsightAng = Vector(0.140, 0.023, 0.000)
+SWEP.IronsightPos = Vector(-3.894, 0.000, 0.807)
+SWEP.IronsightAng = Vector(0.039, 0.023, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -66,27 +66,6 @@ SWEP.PistolSprintSway = false
 
 SWEP.DisableIronsights = false
 SWEP.EmptySoundPrimary = "Dryfire_Sniper"
-
-local ang0 = Vector()
-
-SWEP.VElements = {
-["springfield_ironsight"] = { type = "Model", model = "models/codww2/attachments/a_iron_springfield.mdl", bone = "j_gun", rel = "", pos = Vector(-9.504, -3.198, 7.3), default = true, angle = Angle(0, 0, 0), size = Vector(1.25, 1.25, 1.25), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
-["springfield_x7_scope"] = { type = "Model", model = "models/codww2/attachments/a_optic_springfield_7x.mdl", bone = "j_gun", rel = "", pos = Vector(-1.731, -0.095, 5.366), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
-}
-
-SWEP.AttachmentIronsights = {
-["springfield_x7_scope"] = {pos = Vector(-3.865, 0.000, 0.604), ang = Vector(0.140, 0.023, 0.000)}
-}
-
-SWEP.Attachments = {
-	[1] = {name = "Optics", attachments = {"springfield_x7_scope"}},
-}
-
-SWEP.ReplaceVElements = {
-	["springfield_x7_scope"] = {
-		["springfield_ironsight"] = "springfield_x7_scope",
-	},
-}
 
 SWEP.Sequences = {
 	idle = "idle",
@@ -133,8 +112,8 @@ SWEP.RTScope_DrawParallax = true
 SWEP.ViewModelMovementScale = 1
 
 // shell-related stuff
-SWEP.ShellVelocity = {X = 50, Y = 50, Z = 50}
-SWEP.ShellAngularVelocity = {Pitch_Min = -500, Pitch_Max = 200, Yaw_Min = 0, Yaw_Max = 1000, Roll_Min = -200, Roll_Max = 100}
+SWEP.ShellVelocity = {X = 90, Y = -25, Z = 50}
+SWEP.ShellAngularVelocity = {Pitch_Min = -1000, Pitch_Max = -1000, Yaw_Min = -1000, Yaw_Max = -2500, Roll_Min = 0, Roll_Max = 0}
 SWEP.ShellViewAngleAlign = {Forward = 0, Right = 0, Up = 90}
 SWEP.ShellAttachmentName = "2"
 SWEP.ShellDelay = 0.7

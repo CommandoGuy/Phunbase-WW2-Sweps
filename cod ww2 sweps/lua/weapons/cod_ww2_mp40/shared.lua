@@ -70,11 +70,12 @@ SWEP.Sequences = {
 	idle_iron_empty = "idle",
 	fire = "fire",
 	fire_last = "fire_last",
-	fire_iron = "fire",
-	fire_iron_last = "fire_last",
+	fire_iron = "fire_ads",
+	fire_iron_last = "fire_ads_last",
 	reload = "reload",
 	reload_empty = "reload_empty",
 	deploy = "draw",
+	deploy_first = "draw_first",
 	holster = "holster",
 	sprint_start = "sprint_in",
 	sprint_idle = "sprint",
@@ -83,6 +84,7 @@ SWEP.Sequences = {
 
 SWEP.UseIronTransitionAnims = false
 SWEP.DeployTime = 0.75
+SWEP.DeployTime_First = 1.5
 SWEP.HolsterTime = 0.55
 SWEP.ReloadTime = 1.5
 SWEP.ReloadTime_Empty = 2
@@ -126,6 +128,10 @@ SWEP.Sounds = {
 	draw = {
 		{time = 0, sound = "WW2.DrawSMG", callback = function(self) end}
 	},
+	draw_first = {
+		{time = 0, sound = "WW2.DrawSMG", callback = function(self) end},
+		{time = 0.5, sound = "MP40_Bolt"},
+	},
 	holster = {
 		{time = 0, sound = "WW2.HolsterSMG", callback = function(self) end}
 	},
@@ -154,4 +160,4 @@ SWEP.FullAimViewmodelRecoil = true
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 0.1
 SWEP.LuaVMRecoilMod = 2.25 -- modifier of overall intensity for the code based recoil
-SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.15, roll = 0.15, forward = 0.25, pitch = 0.15} -- modifier for intensity of the recoil on varying axes
+SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0, roll = 0, forward = 0, pitch = 0} -- modifier for intensity of the recoil on varying axes

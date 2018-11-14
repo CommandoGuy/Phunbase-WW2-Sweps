@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/codww2/arms/desert_rat/bandage"
+$bumpmap "models/codww2/arms/desert_rat/bandage_n"
+$phongexponenttexture "models/codww2/arms/desert_rat/bandage_s"
+
+	"$phong" 		             "1"
+	"$phongboost" 	             "0.5"
+	"$phongtint"	             "[1 1 1]"
+	"$phongfresnelranges" 	             "[1 1 1]"
+	"$phongalbedotint" 	             "1"
+                  "$halflambert"                            "1"
+                  "$ambientocclusion"                   "1"
+                  "$ambientocclcolor"                   "[1 1 1]"
+}

@@ -1,5 +1,5 @@
 SWEP.Base = "pb_codww2_base"
-
+include("thompson_sounds.lua")
 SWEP.PrintName = "Thompson M1A1"
 SWEP.Category = "PHUNBASE | COD WWII"
 SWEP.Slot = 2
@@ -42,8 +42,8 @@ SWEP.IdleAfterFire = false
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-2.959, -1.343, 1.941)
-SWEP.IronsightAng = Vector(-1.744, 0.846, 1.860)
+SWEP.IronsightPos = Vector(-3.346, 0.000, 0.700)
+SWEP.IronsightAng = Vector(0.906, 0.000, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -66,12 +66,13 @@ SWEP.Sequences = {
 	idle_iron = "idle",
 	idle_iron_empty = "idle",
 	fire = "fire",
-	fire_last = "fire_last",
-	fire_iron = "fire",
-	fire_iron_last = "fire_last",
+	fire_last = "fire",
+	fire_iron = "fire_ads",
+	fire_iron_last = "fire_ads",
 	reload = "reload",
 	reload_empty = "reload_empty",
 	deploy = "draw",
+	deploy_first = "draw_first",
 	holster = "holster",
 	sprint_start = "sprint_in",
 	sprint_idle = "sprint",
@@ -80,6 +81,7 @@ SWEP.Sequences = {
 
 SWEP.UseIronTransitionAnims = false
 SWEP.DeployTime = 0.75
+SWEP.DeployTime_First = 1.5
 SWEP.HolsterTime = 0.5
 SWEP.ReloadTime = 3
 SWEP.ReloadTime_Empty = 3
@@ -94,15 +96,26 @@ SWEP.Sounds = {
 	draw = {
 		{time = 0, sound = "WW2.DrawSMG", callback = function(self) end}
 	},
+	draw_first = {
+		{time = 0, sound = "WW2.DrawSMG", callback = function(self) end},
+		{time = 0.65, sound = "Thompson.Bolt"},
+	},
 	holster = {
 		{time = 0, sound = "WW2.HolsterSMG", callback = function(self) end}
 	},
 reload = {
 		{time = 0, sound = "WW2.Movement1"},
+		{time = 0.45, sound = "Thompson.Magout"},
+		{time = 1, sound = "WW2.Movement1"},
+		{time = 1.55, sound = "Thompson.Magin"},
 		{time = 2.25, sound = "WW2.Movement2"},
 	},
 	reload_empty = {
 		{time = 0, sound = "WW2.Movement1"},
+		{time = 0.45, sound = "Thompson.Magout"},
+		{time = 1, sound = "WW2.Movement1"},
+		{time = 1.75, sound = "Thompson.Magin"},
+		{time = 2.25, sound = "Thompson.Maghit"},
 		{time = 2.5, sound = "WW2.Movement2"},
 	},
 }
@@ -123,7 +136,7 @@ SWEP.ShellEjectVelocity = 0
 SWEP.MuzzleAttachmentName = "1"
 SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
-SWEP.FireSound = "Thompson_Fire"
+SWEP.FireSound = "Thompson.Fire"
 
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
 SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
@@ -145,4 +158,4 @@ SWEP.FullAimViewmodelRecoil = true
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 0.1
 SWEP.LuaVMRecoilMod = 2.5 -- modifier of overall intensity for the code based recoil
-SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.1, roll = 0.25, forward = 0.25, pitch = 0} -- modifier for intensity of the recoil on varying axes
+SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.1, roll = 0.5, forward = 0.5, pitch = 0} -- modifier for intensity of the recoil on varying axes

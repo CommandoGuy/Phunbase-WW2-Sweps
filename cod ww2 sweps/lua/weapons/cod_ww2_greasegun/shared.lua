@@ -42,8 +42,8 @@ SWEP.IdleAfterFire = false
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-4.122, 0.000, 0.786)
-SWEP.IronsightAng = Vector(-0.171, 0.078, -0.354)
+SWEP.IronsightPos = Vector(-4.100, 0.000, 0.862)
+SWEP.IronsightAng = Vector(0.518, 0.006, -0.354)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -66,9 +66,9 @@ SWEP.Sequences = {
 	idle_iron = "idle",
 	idle_iron_empty = "idle",
 	fire = "fire",
-	fire_last = "fire_last",
-	fire_iron = "fire",
-	fire_iron_last = "fire_last",
+	fire_last = "fire",
+	fire_iron = "fire_ads",
+	fire_iron_last = "fire_ads",
 	reload = "reload",
 	reload_empty = "reload_empty",
 	deploy = "draw",
@@ -126,7 +126,7 @@ SWEP.Sounds = {
 SWEP.MuzzleAttachmentName = "1"
 SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
-SWEP.FireSound = "Greasegun_Fire"
+SWEP.FireSound = "Grease.Fire"
 
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
 SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
@@ -147,5 +147,5 @@ SWEP.LuaViewmodelRecoil = true
 SWEP.FullAimViewmodelRecoil = true
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 0.1
-SWEP.LuaVMRecoilMod = 2.5 -- modifier of overall intensity for the code based recoil
+SWEP.LuaVMRecoilMod = 3.5 -- modifier of overall intensity for the code based recoil
 SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0, roll = 0, forward = 0.4, pitch = 0} -- modifier for intensity of the recoil on varying axes

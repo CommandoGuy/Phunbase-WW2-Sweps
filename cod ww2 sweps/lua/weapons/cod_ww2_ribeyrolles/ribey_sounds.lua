@@ -1,0 +1,5 @@
+PHUNBASE:addRegularSound("Ribey.Magout", "weapons/ribey/magout.wav")
+PHUNBASE:addRegularSound("Ribey.Magin", "weapons/ribey/magin.wav")
+PHUNBASE:addRegularSound("Ribey.Bolt", "weapons/ribey/bolt.wav")
+PHUNBASE:addRegularSound("Ribey.Fire", "weapons/ribey/fire.wav")
+PHUNBASE:addRegularSound("Ribey.Draw_First", "weapons/ribey/draw_first.wav")

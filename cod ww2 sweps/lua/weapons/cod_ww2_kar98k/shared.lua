@@ -47,8 +47,8 @@ SWEP.SpreadAdd_Iron	= 0
 SWEP.BasePos = Vector(0.000, 0.000, 0.000)
 SWEP.BaseAng = Vector(0.000, 0.000, 2.243)
 
-SWEP.IronsightPos = Vector(-4.618, 0.000, 0.880)
-SWEP.IronsightAng = Vector(0.880, 0.034, 0.000)
+SWEP.IronsightPos = Vector(-4.583, 0.000, 1.294)
+SWEP.IronsightAng = Vector(0.179, 0.034, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -69,18 +69,13 @@ SWEP.EmptySoundPrimary = "Dryfire_Sniper"
 
 local ang0 = Vector()
 
-SWEP.VElements = {
-["cod_ww2_k98k_scope"] = { type = "Model", model = "models/codww2/attachments/a_optic_kar98k.mdl", bone = "tag_weapon", rel = "", pos = Vector(4.695, -0.017, 5.296), angle = Angle(0, 0, 0), size = Vector(1.057, 1.057, 1.057), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} },
-["cod_ww2_k98k_4x_scope"] = { type = "Model", model = "models/codww2/attachments/a_optic_kar98k_4x.mdl", bone = "tag_weapon", rel = "", pos = Vector(3.278, -0.115, 5.394), angle = Angle(0, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
-}
-
 SWEP.AttachmentIronsights = {
-["cod_ww2_k98k_scope"] = {pos = Vector(-4.559, -3, 0.013), ang = ang0},
-["cod_ww2_k98k_4x_scope"] = {pos = Vector(-4.044, -2.5, 0.110), ang = ang0}
+["cod_ww2_k98k_x7scope"] = {pos = Vector(-4.559, -3, 0.013), ang = ang0},
+["cod_ww2_k98k_x4scope"] = {pos = Vector(-4.044, -2.5, 0.110), ang = ang0}
 }
 
 SWEP.Attachments = {
-	[1] = {name = "Optics", attachments = {"cod_ww2_k98k_scope", "cod_ww2_k98k_4x_scope"}},
+	[1] = {name = "Sights", attachments = {"cod_ww2_k98k_x7scope", "cod_ww2_k98k_x4scope"}},
 }
 
 
@@ -159,11 +154,29 @@ SWEP.Sounds = {
 	},
 	reload_empty = {
 		{time = 0, sound = "WW2.Movement1"},
-		{time = 2.8, sound = "WW2.Movement2"}
+		{time = 0.4, sound = "mosin.boltlatch"},
+		{time = 0.6, sound = "mosin.boltback"},
+		{time = 1.75, sound = "mosin.clipin"},
+		{time = 1.9, sound = "mosin.roundsin"},
+		{time = 2.6, sound = "mosin.boltrelease"},
+		{time = 2.7, sound = "mosin.boltforward"},
+		{time = 3, sound = "WW2.Movement2"},
 	},
 	reload = {
 		{time = 0, sound = "WW2.Movement1"},
-		{time = 2.8, sound = "WW2.Movement2"}
+		{time = 0.4, sound = "mosin.boltlatch"},
+		{time = 0.6, sound = "mosin.boltback"},
+		{time = 1.75, sound = "mosin.clipin"},
+		{time = 1.9, sound = "mosin.roundsin"},
+		{time = 2.6, sound = "mosin.boltrelease"},
+		{time = 2.7, sound = "mosin.boltforward"},
+		{time = 3, sound = "WW2.Movement2"},
+	},
+	bolt = {
+		{time = 0.15, sound = "mosin.boltlatch"},
+		{time = 0.3, sound = "mosin.boltback"},
+		{time = 0.4, sound = "mosin.boltrelease"},
+		{time = 0.5, sound = "mosin.boltforward"},
 	},
 }
 

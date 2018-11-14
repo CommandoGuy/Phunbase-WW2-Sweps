@@ -1,0 +1,26 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/codww2/arms/infanteriesoldat/mtl_vm_mp_m_hands_s1"
+$bumpmap "models/codww2/arms/infanteriesoldat/hands_normal"
+$phongexponenttexture "models/codww2/arms/infanteriesoldat/hands_exponent"
+	"$phong" 		             "1"
+	"$phongboost" 	             "0.015"
+	"$phongtint"	             "[1 1 1]"
+	//"$phongexponent"  	             "10"
+	"$phongfresnelranges" 	             "[1 1 1]"
+	"$phongalbedotint" 	             "1"
+                  "$halflambert"                            "1"
+                  "$ambientocclusion"                   "1"
+                  "$ambientocclcolor"                   "[1 1 1]"
+$rimlight 1
+	 "$rimlightexponent"   "100" 
+	 "$rimlightboost"   "0.15"
+                  $rimmask 1
+
+
+//detail
+$detail     "models/codww2/arms/infanteriesoldat/hands_detail"
+$detailscale 1	
+$detailblendfactor 1
+$detailblendmode 1
+}

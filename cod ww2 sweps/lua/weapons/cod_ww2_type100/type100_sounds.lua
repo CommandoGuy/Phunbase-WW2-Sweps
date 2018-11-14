@@ -1,0 +1,5 @@
+PHUNBASE:addRegularSound("Type100.Magout", "weapons/type100/magout.wav")
+PHUNBASE:addRegularSound("Type100.First_Draw", "weapons/type100/draw_first.wav")
+PHUNBASE:addRegularSound("Type100.Magin", "weapons/type100/magin.wav")
+PHUNBASE:addRegularSound("Type100.Bolt", "weapons/type100/bolt.wav")
+PHUNBASE:addRegularSound("Type100.Fire", "weapons/type100/fire.wav")

@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/codww2/arms/uspilot/gloves"
+"$bumpmap" "models/codww2/arms/uspilot/gloves_normal"
+	"$phongexponenttexture"           "models/codww2/arms/uspilot\gloves_exponent"
+
+	"$phong" 		             "1"
+	"$phongboost" 	             "0.05"
+	"$phongtint"	             "[1 1 1]"
+	"$phongfresnelranges" 	             "[1 1 1]"
+	"$phongalbedotint" 	             "1"
+                  "$halflambert"                            "1"
+                  "$ambientocclusion"                   "1"
+                  "$ambientocclcolor"                   "[1 1 1]"
+
+
+}

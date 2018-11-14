@@ -46,8 +46,8 @@ SWEP.SpreadAdd_Iron	= 0.1
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-5.395, -7.308, 2.682)
-SWEP.IronsightAng = Vector(20.103, -8.049, 0.000)
+SWEP.IronsightPos = Vector(-4.531, -10.556, 2.534)
+SWEP.IronsightAng = Vector(24.119, -7.248, 0.000)
 
 SWEP.CustomizePos = Vector(2.222, -0.780, -2.559)
 SWEP.CustomizeAng = Vector(12.928, 17.873, 0.000)
@@ -131,6 +131,7 @@ SWEP.Sounds = {
 
 	reload = {
 		{time = 0, sound = "WW2.Movement1", callback = function(self) end},
+		{time = 0, sound = "Panzer.Rattle", callback = function(self) end},
 		{time = 0.75, sound = "Panzer.Load", callback = function(self) end},
 		{time = 1.5, sound = "WW2.Movement2", callback = function(self) end}
 	},

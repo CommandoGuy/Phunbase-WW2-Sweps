@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/codww2/arms/fallschirmjager/mtl_vm_ita_para_jacket_r1c1"
+"$bumpmap" "models/codww2/arms/fallschirmjager/jacket_normal"
+	$phong 1
+	$phongboost 0.25
+	$phongfresnelranges "[0.2 0.5 0.7]"
+	$phongexponent 6
+}

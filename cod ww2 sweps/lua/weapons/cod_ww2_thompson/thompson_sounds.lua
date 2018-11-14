@@ -1,0 +1,5 @@
+PHUNBASE:addRegularSound("Thompson.Fire", "weapons/thompson/fire.wav")
+PHUNBASE:addRegularSound("Thompson.Bolt", "weapons/thompson/bolt.wav")
+PHUNBASE:addRegularSound("Thompson.Magout", "weapons/thompson/magout.wav")
+PHUNBASE:addRegularSound("Thompson.Magin", "weapons/thompson/magin.wav")
+PHUNBASE:addRegularSound("Thompson.Maghit", "weapons/thompson/tap.wav")

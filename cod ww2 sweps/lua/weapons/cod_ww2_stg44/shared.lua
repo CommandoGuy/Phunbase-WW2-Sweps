@@ -25,7 +25,7 @@ SWEP.Primary.ClipSize = 30
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = true
 SWEP.Primary.Damage = 40
-SWEP.Primary.Delay = 0.09
+SWEP.Primary.Delay = 0.1
 SWEP.Primary.Force = 5
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
@@ -46,8 +46,8 @@ SWEP.SpreadAdd_Iron	= 0.2
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-3.487, -1.093, 0.241)
-SWEP.IronsightAng = Vector(0.858, 0.014, 0.000)
+SWEP.IronsightPos = Vector(-3.619, -1.093, 0.150)
+SWEP.IronsightAng = Vector(0.558, 0.014, 0.000)
 
 SWEP.CustomizePos = Vector(2.222, -0.780, -2.559)
 SWEP.CustomizeAng = Vector(12.928, 17.873, 0.000)
@@ -115,11 +115,11 @@ SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weap
 
 SWEP.AttachmentIronsights = {
 ["cod_ww2_x4scope"] = {pos = Vector(-3.561, 0.000, 0.184), ang = Vector(0.364, 0.078, 0.000)},
-["cod_ww2_reflexsight"] = {pos = Vector(-3.487, -1.093, -0.025), ang = Vector(0.091, 0.014, 0.000)}
+["cod_ww2_reflexsight"] = {pos = Vector(-3.683, 0.000, -0.111), ang = Vector(0.057, 0.014, 0.000)}
 }
 
 SWEP.VElements = {
-	["cod_ww2_reflexsight"] = { model = "models/codww2/weapons/stg44.mdl", bonemerge = true, stencilDebug = false, bodygroups = {[1] = 1, [2] = 1}, stencilmaterials = {3}},
+	["cod_ww2_reflexsight"] = { model = "models/codww2/weapons/stg44.mdl", bonemerge = true, stencilDebug = false, bodygroups = {[1] = 1, [2] = 1}, stencilmaterials = {6}},
 }
 
 SWEP.Attachments = {
@@ -169,6 +169,6 @@ SWEP.FireMoveMod_Iron = 0
 SWEP.LuaViewmodelRecoil = true
 SWEP.FullAimViewmodelRecoil = true
 SWEP.LuaVMRecoilIntensity = 2
-SWEP.LuaVMRecoilLowerSpeed = 0.1
+SWEP.LuaVMRecoilLowerSpeed = 0.5
 SWEP.LuaVMRecoilMod = 2.5 -- modifier of overall intensity for the code based recoil
-SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.15, roll = 0.2, forward = 0.25, pitch = 0} -- modifier for intensity of the recoil on varying axes
+SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.15, roll = 0, forward = 0.25, pitch = 0} -- modifier for intensity of the recoil on varying axes

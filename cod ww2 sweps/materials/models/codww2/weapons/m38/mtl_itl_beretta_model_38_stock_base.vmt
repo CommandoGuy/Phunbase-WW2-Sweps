@@ -1,0 +1,23 @@
+VertexLitGeneric
+{
+	"$basetexture" "models\codww2\weapons\m38\stock"
+	"$bumpmap" "models\codww2\weapons\m38\stock_n"
+$phongexponenttexture "models/codww2/weapons/m38/stock_e"
+
+//detail
+$detail  "models\codww2\weapons\m38\stock_d"
+$detailscale 1	
+$detailblendfactor 0.025
+$detailblendmode 2
+
+$rimlight 1
+	 "$rimlightexponent"   "50" 
+	 "$rimlightboost"   "0.75"
+                  $rimmask 1	
+
+$halfambert 1
+	"$phong" "1"
+	"$phongboost"					"50"
+$phongalbedotint 1
+	"$phongfresnelranges"			"[1 1.05 1.25]"
+}

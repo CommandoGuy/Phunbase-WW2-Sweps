@@ -1,0 +1,7 @@
+PHUNBASE:addRegularSound("LA.Fire", "weapons/leveraction/fire.wav")
+PHUNBASE:addRegularSound("LA.Open", "weapons/leveraction/open.wav")
+PHUNBASE:addRegularSound("LA.Close", "weapons/leveraction/close.wav")
+PHUNBASE:addRegularSound("LA.Insert", "weapons/leveraction/insert.wav")
+PHUNBASE:addRegularSound("LA.Draw", "weapons/leveraction/first_draw.wav")
+PHUNBASE:addRegularSound("LA.ReloadS", "weapons/leveraction/reload_start.wav")
+PHUNBASE:addRegularSound("LA.ReloadC", "weapons/leveraction/reload_charge.wav")

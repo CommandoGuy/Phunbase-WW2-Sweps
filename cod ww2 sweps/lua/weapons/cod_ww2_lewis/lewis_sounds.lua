@@ -1,0 +1,8 @@
+PHUNBASE:addRegularSound("Lewis.Fire", "weapons/lewis/fire.wav")
+PHUNBASE:addRegularSound("Lewis.magin", "weapons/lewis/magin.wav")
+PHUNBASE:addRegularSound("Lewis.magout", "weapons/lewis/magout.wav")
+PHUNBASE:addRegularSound("Lewis.magoutf", "weapons/lewis/magoutf.wav")
+PHUNBASE:addRegularSound("Lewis.bolt", "weapons/lewis/bolt.wav")
+PHUNBASE:addRegularSound("Lewis.Fetch", "weapons/lewis/magfetch.wav")
+PHUNBASE:addRegularSound("Lewis.Fiddlesticks", "weapons/lewis/magfiddle.wav")
+PHUNBASE:addRegularSound("Lewis.maghit", "weapons/lewis/maghit.wav")

@@ -1,5 +1,5 @@
 SWEP.Base = "pb_codww2_base"
-
+include("p38_sounds.lua")
 SWEP.PrintName = "P38"
 SWEP.Category = "PHUNBASE | COD WWII"
 SWEP.Slot = 2
@@ -69,7 +69,7 @@ SWEP.Sequences = {
 	fire = "fire",
 	fire_last = "fire_last",
 	fire_iron_last = "fire_last",
-	fire_iron = "fire",
+	fire_iron = "fire_ads",
 	reload = "reload",
 	reload_empty = "reload_empty",
 	deploy = "draw",
@@ -85,8 +85,8 @@ SWEP.HolsterTime = 1
 SWEP.ReloadTime = 1.7
 SWEP.ReloadTime = 2
 SWEP.ReloadTimes = {
-	Base = 1.7,
-	Base_Empty = 2,
+	Base = 1.2,
+	Base_Empty = 1.4,
 }
 SWEP.UsesEmptyReloadTimes = true
 SWEP.EmptySoundPrimary = "Dryfire_Pistol"
@@ -121,10 +121,15 @@ SWEP.Sounds = {
 	},
 	reload = {
 		{time = 0, sound = "WW2.Movement1"},
+		{time = 0.075, sound = "P38.Magout"},
+		{time = 0.65, sound = "P38.Magin"},
 		{time = 1.25, sound = "WW2.Movement2"}
 	},
 		reload_empty = {
 		{time = 0, sound = "WW2.Movement1"},
+		{time = 0.075, sound = "P38.Magout"},
+		{time = 0.65, sound = "P38.Magin"},
+		{time = 1.35, sound = "P38.Slide"},
 		{time = 1.65, sound = "WW2.Movement2"}
 	},
 }

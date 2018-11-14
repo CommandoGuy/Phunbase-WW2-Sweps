@@ -1,0 +1,67 @@
+//Arachnit's super duper cool MLG vmt config, donut steal plz. :(
+
+"VertexLitGeneric"
+{
+//Basic
+	"$BaseTexture" 			    "models/arachnit/cod_ww2/weapons/nazigermany/mp40/mtl_ger_mp40_barrel_d"
+">=dx90"
+{
+	"$BumpMap" 				    "models/arachnit/cod_ww2/weapons/nazigermany/mp40/mtl_ger_mp40_barrel_n"
+	"$PhongExponentTexture"     "models/arachnit/cod_ww2/weapons/nazigermany/mp40/mtl_ger_mp40_barrel_m"
+
+//Warp
+	"$LightWarpTexture"         "models/arachnit/shared/clothes_wrp2"		//< Change as needed
+	"$PhongWarpTexture"         "models/arachnit/cod_ww2/weapons/phongwarp" 		//< Change as needed
+
+//Phong
+	"$Phong"				    "1"
+	"$PhongBoost"               "50" 	//< Change as needed
+//	"$PhongExponent"            "5" 	//< $PhongExponent overrides $PhongExponentTexture !!!
+	"$PhongFresnelRanges"	    "[5 7 8]"
+	"$PhongDisableHalfLambert"  "0"
+	"$PhongAlbedoTint"          "1"
+	"$NormalmapAlphaPhongMask"  "1"
+	"$ForcePhong"				"1"
+
+//Rimlight
+	"$Rimlight" 			    "1"
+	"$RimMask" 				    "1"
+	"$RimlightExponent"         "6"
+	"$RimlightBoost"            "0.3"
+
+//Environment map / Reflection
+	"$envmap" "env_cubemap" // which envmap to use, "env_cubemap" can be used but this works best with static envmaps and the whole point of this is not to rely on env_cubemaps
+	
+	"Proxies" // needed proxy for it to work, put this in your material, chagnes the $envmaptint according to where the entity is positioned
+	{
+		"PB_ENVMAPTINT_REALTIME_COLOR"
+		{
+			"min" "0" // minimum brightness, should be 0, otherwise will be visible in pitch black areas
+			"max" "0.015" // maximum brightness, sometimes small values like 0.25 or 0.5 are pretty much the max you need, depends on the material
+		}
+	}
+	"$normalmapalphaenvmapmask"		"1"
+
+
+	"$envmapfresnel"	"0.5"
+	"$halflambert"                "1"
+}
+
+//Other
+	"$Model"                    "1"
+	"$HalfLambert" 			    "1"
+	"$NoDecal" 				    "0"
+	"$AmbientOcclusion" 	    "1"
+	"$NoCull" 				    "0"
+	"$SurfaceProp" 			    "metal"
+	"$BlendTintByBaseAlpha"     "1"
+	"$Color2"					"{ 127.5 127.5 127.5 }"	//< RGB colors
+
+"<dx90"
+{
+	"$HalfLambert" 			    "0"
+	"$NoDecal" 				    "1"
+	"$AmbientOcclusion" 	    "0"
+	"$SurfaceProp" 			    "no_decal"
+}
+}

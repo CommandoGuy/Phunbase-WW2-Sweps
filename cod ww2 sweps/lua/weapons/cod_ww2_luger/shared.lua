@@ -42,8 +42,8 @@ SWEP.SpreadAdd_Iron	= 0.2
 SWEP.BasePos = Vector(0,0,0)
 SWEP.BaseAng = Vector(0,0,0)
 
-SWEP.IronsightPos = Vector(-4.034, 0.000, 0.440)
-SWEP.IronsightAng = Vector(0.573, 0.026, 0.000)
+SWEP.IronsightPos = Vector(-4.059, 0.000, 0.737)
+SWEP.IronsightAng = Vector(0.373, 0.026, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -69,7 +69,7 @@ SWEP.Sequences = {
 	fire = "fire",
 	fire_last = "fire_last",
 	fire_iron_last = "fire_last",
-	fire_iron = "fire",
+	fire_iron = "fire_ads",
 	reload = "reload",
 	reload_empty = "reload_empty",
 	deploy = "draw",

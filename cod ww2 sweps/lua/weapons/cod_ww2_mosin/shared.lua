@@ -44,8 +44,8 @@ SWEP.SpreadAdd_Iron	= 0
 SWEP.BasePos = Vector(0.000, 0.000, 0.000)
 SWEP.BaseAng = Vector(0.000, 0.000, 2.243)
 
-SWEP.IronsightPos = Vector(-4.391, 0.000, 1.301)
-SWEP.IronsightAng = Vector(0.190, 0.034, 0.000)
+SWEP.IronsightPos = Vector(-4.391, 0.000, 1.593)
+SWEP.IronsightAng = Vector(0.090, 0.034, 0.000)
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Vector(0, 0, 0)
@@ -74,7 +74,6 @@ SWEP.Sequences = {
 	fire_iron = "fire_ads",
 	reload = "reload",
 	reload_empty = "reload_empty",
-	partial_reload = "reload_partial",
 	deploy = "draw",
 	holster = "holster",
 	sprint_start = "sprint_in",
@@ -172,17 +171,3 @@ SWEP.Secondary.Delay = 0
 SWEP.Secondary.ClipSize = -1
 SWEP.Secondary.DefaultClip = -1
 SWEP.Secondary.Automatic = true
-
-
-function SWEP:ReloadAnimLogic()
-	local clip = self:Clip1()
-	local empty = clip < 1
-
-	local seq = empty and "reload_empty" or "reload"
-
-if self:Clip1() == 4 then
-	seq = "partial_"..seq
-end
-
-self:PlayVMSequence(seq)
-end

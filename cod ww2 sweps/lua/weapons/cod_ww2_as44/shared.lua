@@ -71,8 +71,8 @@ SWEP.Sequences = {
 	idle_iron_empty = "idle",
 	fire = "fire",
 	fire_last = "fire",
-	fire_iron = "fire",
-	fire_iron_last = "fire",
+	fire_iron = "fire_ads",
+	fire_iron_last = "fire_ads",
 	reload = "reload",
 	reload_empty = "reload_empty",
 	deploy = "draw",
@@ -156,5 +156,5 @@ SWEP.LuaViewmodelRecoil = true
 SWEP.FullAimViewmodelRecoil = true
 SWEP.LuaVMRecoilIntensity = 2
 SWEP.LuaVMRecoilLowerSpeed = 1
-SWEP.LuaVMRecoilMod = 5 -- modifier of overall intensity for the code based recoil
-SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.15, roll = 0.15, forward = 0.4, pitch = 0.05} -- modifier for intensity of the recoil on varying axes
+SWEP.LuaVMRecoilMod = 3.25 -- modifier of overall intensity for the code based recoil
+SWEP.LuaVMRecoilAxisMod = {vert = 0, hor = 0.15, roll = 0.15, forward = 0.4, pitch = 0} -- modifier for intensity of the recoil on varying axes

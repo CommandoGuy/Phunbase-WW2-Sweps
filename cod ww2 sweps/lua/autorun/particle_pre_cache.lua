@@ -2,7 +2,6 @@
 local particlefiles = {
 	"btb_vm_effects.pcf",
 	"btb_vm_overheat.pcf",
-	"bf3_fx.pcf",
 	"cs_weapon_fx.pcf"
 }
 
@@ -15,11 +14,6 @@ local particlenames = {
 	"btb_vm_medium",
 	"btb_vm_large",
 	"btb_vm_overheat",
-	"MuzzleflashRifle",
-	"Muzzleflashpistol",
-	"Muzzleflashshotgun",
-	"Muzzleflashsmg",
-	"Muzzleflashsniper",
 	"weapon_muzzle_smoke_long",
 	"weapon_muzzle_smoke",
 	"weapon_muzzle_smoke_b",

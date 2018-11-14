@@ -1,0 +1,34 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/codww2/arms/panzersoldat/mtl_vm_ger_panzergloves_r1c1"
+$bumpmap "models/codww2/arms/panzersoldat/gloves_normal"
+//$phongexponenttexture "models/codww2/arms/panzersoldat/gloves_exponent"
+	"$phong" 		             "1"
+	"$phongboost" 	             "0.15"
+	"$phongtint"	             "[1 1 1]"
+	"$phongexponent"  	             "50"
+	"$phongfresnelranges" 	             "[1 1 1]"
+	"$phongalbedotint" 	             "1"
+                  "$halflambert"                            "1"
+                  "$ambientocclusion"                   "1"
+                  "$ambientocclcolor"                   "[1 1 1]"
+
+//detail
+$detail     "models/codww2/arms/panzersoldat\gloves_detail"
+$detailscale 1	
+$detailblendfactor 0.25
+$detailblendmode 1
+
+	"$envmapfresnel"	"0.5"
+	"$envmap" "env_cubemap" // which envmap to use, "env_cubemap" can be used but this works best with static envmaps and the whole point of this is not to rely on env_cubemaps
+	
+	"Proxies" // needed proxy for it to work, put this in your material, chagnes the $envmaptint according to where the entity is positioned
+	{
+		"PB_ENVMAPTINT_REALTIME_COLOR"
+		{
+			"min" "0" // minimum brightness, should be 0, otherwise will be visible in pitch black areas
+			"max"  "0.025" // maximum brightness, sometimes small values like 0.25 or 0.5 are pretty much the max you need, depends on the material
+		}
+	}
+	"$normalmapalphaenvmapmask"		"1"
+}
