@@ -2,7 +2,7 @@ SWEP.Base = "pb_codww2_base"
 
 SWEP.PrintName = "Lee Enfield"
 SWEP.Category = "PHUNBASE | COD WWII"
-SWEP.Slot = 2
+SWEP.Slot = 3
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 60
@@ -13,10 +13,10 @@ SWEP.EnableCustomization = true
 SWEP.CustomizationMenuSize = 1
 SWEP.CustomizationMenuAttachmentName = "1"
 
-SWEP.HoldType = "smg"
+SWEP.HoldType = "ar2"
 SWEP.SprintHoldType = "passive"
-SWEP.CrouchHoldType = "smg"
-SWEP.ReloadHoldType = "smg"
+SWEP.CrouchHoldType = "ar2"
+SWEP.ReloadHoldType = "ar2"
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
 
@@ -26,22 +26,22 @@ SWEP.Primary.Ammo = "phunbase_303brit"
 SWEP.Primary.ClipSize = 5
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = false
-SWEP.Primary.Damage = 100
+SWEP.Primary.Damage = 107
 SWEP.Primary.Delay = 1.3
-SWEP.Primary.Force = 5
+SWEP.Primary.Force = 30
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 
 // Recoil variables
 SWEP.Recoil	= 5
-SWEP.Spread	= 0.25
-SWEP.Spread_Iron = 0.01
+SWEP.Spread	= 0.027
+SWEP.Spread_Iron = 0.004
 SWEP.SpreadVel = 1.2
 SWEP.SpreadVel_Iron = 0.9
 SWEP.SpreadAdd = 0.3
 SWEP.SpreadAdd_Iron	= 0.2
 
-SWEP.BasePos = Vector(0.000, 0.000, 0.000)
+SWEP.BasePos = Vector(-1.000, 0.300, 0.000)
 SWEP.BaseAng = Vector(0.000, 0.000, 2.243)
 
 SWEP.IronsightPos = Vector(-4.136, -4.098, 1.584)
@@ -53,8 +53,8 @@ SWEP.SprintAng = Vector(0, 0, 0)
 SWEP.HolsterPos = Vector(0,0,20)
 SWEP.HolsterAng = Vector(0,0,0)
 
-SWEP.NearWallPos = Vector(-0.429, -8.035, -9.005)
-SWEP.NearWallAng = Vector(28.318, 26.918, -14.25)
+SWEP.NearWallPos = Vector(2.062, -8.247, -10.309)
+SWEP.NearWallAng = Vector(43.299, 45.361, 0.000)
 
 SWEP.CustomizePos = Vector(2.222, -0.780, -2.559)
 SWEP.CustomizeAng = Vector(12.928, 17.873, 0.000)
@@ -115,7 +115,7 @@ SWEP.UsesEmptyReloadTimes = true
 SWEP.FlashlightAttachmentName = "1"
 
 SWEP.RTScope_Enabled = true
-SWEP.RTScope_Zoom = 7.25
+SWEP.RTScope_Zoom = 4
 SWEP.RTScope_Reticle = Material("models/codww2/reticles/enfield_reticle")
 SWEP.RTScope_Material = Material("models/codww2/weapons/optics/lense_rt")
 SWEP.RTScope_Align = Angle(0,0,0)
@@ -140,8 +140,8 @@ SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_large", "muzzle_sparks_pistol", "weap
 SWEP.FireSound = "enfield_Single"
 
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
-SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
-SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instant or it has a 0.5 second delay
+SWEP.CustomFlashlight = false // enables a ProjectedTexture flashlight, you should disable the Normal one
+SWEP.InstantFlashlight = false // whether turning the flashlight on/off is instant or it has a 0.5 second delay
 
 
 SWEP.Sounds = {

@@ -8,7 +8,11 @@ SWEP.SlotPos = 0
 SWEP.ViewModelFOV = 60
 SWEP.AimViewModelFOV = 54
 SWEP.ViewModel = "models/codww2/weapons/mp40.mdl"
-SWEP.WorldModel = "models/weapons/w_smg1.mdl"
+SWEP.WorldModel = "models/codww2/weapons/w_mp40.mdl"
+
+SWEP.CustomWorldModel = "models/codww2/weapons/w_mp40.mdl"
+SWEP.CustomWorldModelPos = Vector(1,6,1)
+SWEP.CustomWorldModelAng = Angle(-4.25,-95.75,180)
 
 SWEP.HoldType = "smg"
 SWEP.SprintHoldType = "passive"
@@ -24,26 +28,26 @@ SWEP.Primary.Ammo = "phunbase_9x19mm"
 SWEP.Primary.ClipSize = 32
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = true
-SWEP.Primary.Damage = 25
-SWEP.Primary.Delay = 0.09
+SWEP.Primary.Damage = 34
+SWEP.Primary.Delay = 0.109
 SWEP.Primary.Force = 5
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 
 // Recoil variables
-SWEP.Recoil	= 1
-SWEP.Spread	= 0.1
-SWEP.Spread_Iron = 0.01
+SWEP.Recoil	= 1.05
+SWEP.Spread	= 0.03
+SWEP.Spread_Iron = 0.009
 SWEP.SpreadVel = 1.2
 SWEP.SpreadVel_Iron = 0.9
-SWEP.SpreadAdd = 0.3
+SWEP.SpreadAdd = 0.25
 SWEP.SpreadAdd_Iron	= 0.2
 SWEP.IdleAfterFire = true
-SWEP.BasePos = Vector(0,0,0)
-SWEP.BaseAng = Vector(0,0,0)
+SWEP.BasePos = Vector(-0.961, -0.961, -0.262)
+SWEP.BaseAng = Vector(0.000, 0.000, 0.000)
 
-SWEP.IronsightPos = Vector(-4.158, -2.986, 1.159)
-SWEP.IronsightAng = Vector(0.400, 0.039, 0.000)
+SWEP.IronsightPos = Vector(-4.163, -2.986, 1.300)
+SWEP.IronsightAng = Vector(0.150, 0.039, 0.000)
 
 SWEP.CustomizePos = Vector(1.546, 0.000, -1.502)
 SWEP.CustomizeAng = Vector(6.667, 10.892, 0.000)
@@ -65,11 +69,11 @@ SWEP.EmptySoundPrimary = "Dryfire_pistol"
 SWEP.FireModes = {"auto", "semi"}
 SWEP.Sequences = {
 	idle = "idle",
-	idle_empty = "idle",
+	idle_empty = "empty_idle",
 	idle_iron = "idle",
 	idle_iron_empty = "idle",
 	fire = "fire",
-	fire_last = "fire_last",
+	fire_last = "fire_ads_last",
 	fire_iron = "fire_ads",
 	fire_iron_last = "fire_ads_last",
 	reload = "reload",

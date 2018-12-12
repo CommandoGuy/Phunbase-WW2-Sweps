@@ -5,10 +5,13 @@ SWEP.Category = "PHUNBASE | COD WWII"
 SWEP.Slot = 3
 SWEP.SlotPos = 0
 
-SWEP.ViewModelFOV = 50
+SWEP.ViewModelFOV = 55
 SWEP.AimViewModelFOV = 45
 SWEP.ViewModel = "models/codww2/weapons/trenchgun.mdl"
-SWEP.WorldModel = "models/weapons/w_shotgun.mdl"
+SWEP.WorldModel = "models/codww2/weapons/w_trenchgun.mdl"
+SWEP.CustomWorldModel = "models/codww2/weapons/w_trenchgun.mdl"
+SWEP.CustomWorldModelPos = Vector(-0.3,4,1.3)
+SWEP.CustomWorldModelAng = Angle(-9.25,0,180)
 
 SWEP.HoldType = "shotgun"
 SWEP.SprintHoldType = "passive"
@@ -21,19 +24,19 @@ SWEP.AdminSpawnable = true
 SWEP.NoSprintVMMovement = true
 // weapon specific variables
 SWEP.Primary.Ammo = "phunbase_12gauge"
-SWEP.Primary.ClipSize = 6
+SWEP.Primary.ClipSize = 5
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = false
-SWEP.Primary.Damage = 22
-SWEP.Primary.Delay = 0.75
-SWEP.Primary.Force = 5
+SWEP.Primary.Damage = 15
+SWEP.Primary.Delay = 0.85
+SWEP.Primary.Force = 10
 SWEP.Primary.Bullets = 7
 SWEP.Primary.Tracer = 0
 
 // Recoil variables
 SWEP.Recoil	= 5
-SWEP.Spread	= 0.075
-SWEP.Spread_Iron = 0.065
+SWEP.Spread	= 0.03
+SWEP.Spread_Iron = 0.028
 SWEP.SpreadVel = 1.2
 SWEP.SpreadVel_Iron = 0.9
 SWEP.SpreadAdd = 0.3
@@ -42,8 +45,8 @@ SWEP.SpreadAdd_Iron	= 0.2
 SWEP.Secondary.Delay = 0.9
 SWEP.Secondary.Bullets = 12
 
-SWEP.BasePos = Vector(0,0,0)
-SWEP.BaseAng = Vector(0,0,0)
+SWEP.BasePos = Vector(-0.961, -1, 0.000)
+SWEP.BaseAng = Vector(0.000, 0.000, 0.000)
 
 SWEP.IronsightPos = Vector(-3.332, 0.000, 1.309)
 SWEP.IronsightAng = Vector(0.513, 0.000, 0.000)
@@ -107,6 +110,7 @@ SWEP.ReloadTime = 1.5
 SWEP.ReloadTimes = {
 	Base = 1.5,
 }
+
 SWEP.UsesEmptyReloadTimes = false
 
 SWEP.ViewModelMovementScale = 0.8
@@ -128,7 +132,7 @@ SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_large", "muzzle_sparks_pistol", "weap
 SWEP.FireSound = "Trench_Fire"
 
 
-SWEP.NormalFlashlight = true
+SWEP.NormalFlashlight = false
 SWEP.CustomFlashlight = false
 
 
