@@ -1,18 +1,23 @@
 SWEP.Base = "pb_codww2_base"
-include("thompson_sounds.lua")
 SWEP.PrintName = "Thompson M1A1"
 SWEP.Category = "PHUNBASE | COD WWII"
 SWEP.Slot = 2
 SWEP.SlotPos = 0
+include("thompson_sounds.lua")
 
 SWEP.ViewModelFOV = 60
 SWEP.AimViewModelFOV = 54
 SWEP.ViewModel = "models/codww2/weapons/thompson.mdl"
-SWEP.WorldModel = "models/weapons/w_smg1.mdl"
+SWEP.WorldModel = "models/codww2/weapons/w_thompson.mdl"
 
-SWEP.HoldType = "smg"
+SWEP.CustomWorldModel = "models/codww2/weapons/w_thompson.mdl"
+SWEP.CustomWorldModelPos = Vector(7.5,1.2,0.9)
+SWEP.CustomWorldModelAng = Angle(0,-90.75,180)
+
+
+SWEP.HoldType = "ar2"
 SWEP.SprintHoldType = "passive"
-SWEP.CrouchHoldType = "smg"
+SWEP.CrouchHoldType = "ar2"
 SWEP.ReloadHoldType = "smg"
 SWEP.UseHands = true
 SWEP.Spawnable = true
@@ -24,23 +29,23 @@ SWEP.Primary.Ammo = "phunbase_45acp"
 SWEP.Primary.ClipSize = 20
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = true
-SWEP.Primary.Damage = 25
-SWEP.Primary.Delay = 0.09
-SWEP.Primary.Force = 5
+SWEP.Primary.Damage = 34
+SWEP.Primary.Delay = 0.0857
+SWEP.Primary.Force = 5.2
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 
 // Recoil variables
-SWEP.Recoil	= 1
-SWEP.Spread	= 0.1
-SWEP.Spread_Iron = 0.01
+SWEP.Recoil	= 1.14
+SWEP.Spread	= 0.033
+SWEP.Spread_Iron = 0.009
 SWEP.SpreadVel = 1.2
 SWEP.SpreadVel_Iron = 0.9
 SWEP.SpreadAdd = 0.3
 SWEP.SpreadAdd_Iron	= 0.2
 SWEP.IdleAfterFire = false
-SWEP.BasePos = Vector(0,0,0)
-SWEP.BaseAng = Vector(0,0,0)
+SWEP.BasePos = Vector(-0.500, 0.961, -0.162)
+SWEP.BaseAng = Vector(0.000, 0.000, 0.000)
 
 SWEP.IronsightPos = Vector(-3.346, 0.000, 0.700)
 SWEP.IronsightAng = Vector(0.906, 0.000, 0.000)

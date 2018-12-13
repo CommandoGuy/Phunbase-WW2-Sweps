@@ -2,7 +2,7 @@ SWEP.Base = "pb_codww2_base"
 
 SWEP.PrintName = "Luger P08"
 SWEP.Category = "PHUNBASE | COD WWII"
-SWEP.Slot = 2
+SWEP.Slot = 1
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 60
@@ -10,10 +10,10 @@ SWEP.AimViewModelFOV = 64
 SWEP.ViewModel = "models/codww2/weapons/luger.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
-SWEP.HoldType = "smg"
+SWEP.HoldType = "pistol"
 SWEP.SprintHoldType = "passive"
-SWEP.CrouchHoldType = "smg"
-SWEP.ReloadHoldType = "smg"
+SWEP.CrouchHoldType = "pistol"
+SWEP.ReloadHoldType = "pistol"
 
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
@@ -24,23 +24,23 @@ SWEP.Primary.Ammo = "phunbase_9x19mm"
 SWEP.Primary.ClipSize = 8
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = false
-SWEP.Primary.Damage = 40
-SWEP.Primary.Delay = 0.130
+SWEP.Primary.Damage = 33.4
+SWEP.Primary.Delay = 0.120
 SWEP.Primary.Force = 5
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 
 // Recoil variables
-SWEP.Recoil	= 1
-SWEP.Spread	= 0.1
+SWEP.Recoil	= 1.5
+SWEP.Spread	= 0.025
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
 SWEP.SpreadVel_Iron = 0.9
 SWEP.SpreadAdd = 0.3
 SWEP.SpreadAdd_Iron	= 0.2
 
-SWEP.BasePos = Vector(0,0,0)
-SWEP.BaseAng = Vector(0,0,0)
+SWEP.BasePos = Vector(-1,2,0)
+SWEP.BaseAng = Vector(0,0.6,0)
 
 SWEP.IronsightPos = Vector(-4.059, 0.000, 0.737)
 SWEP.IronsightAng = Vector(0.373, 0.026, 0.000)
@@ -51,8 +51,8 @@ SWEP.SprintAng = Vector(0, 0, 0)
 SWEP.HolsterPos = Vector(0,0,20)
 SWEP.HolsterAng = Vector(0,0,0)
 
-SWEP.NearWallPos = Vector(-0.429, -8.035, -9.005)
-SWEP.NearWallAng = Vector(28.318, 26.918, -14.25)
+SWEP.NearWallPos = Vector(-0.429, -10.035, -6.005)
+SWEP.NearWallAng = Vector(55.318, 6.918, -0.25)
 
 SWEP.PistolSprintSway = false
 

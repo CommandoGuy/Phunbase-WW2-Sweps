@@ -1,20 +1,20 @@
 SWEP.Base = "pb_codww2_base"
 
-SWEP.PrintName = "M1911 Dual"
+SWEP.PrintName = "M1911 Dual Wield"
 SWEP.Category = "PHUNBASE | COD WWII"
 SWEP.Slot = 1
 SWEP.SlotPos = 0
 
-SWEP.ViewModelFOV = 54
+SWEP.ViewModelFOV = 60
 SWEP.AimViewModelFOV = 54
 SWEP.ViewModel = "models/codww2/weapons/codww2_dual_1911.mdl"
 SWEP.WorldModel = "models/weapons/w_pistol.mdl"
 SWEP.UseHands = false
 
-SWEP.HoldType = "revolver"
+SWEP.HoldType = "duel"
 SWEP.SprintHoldType = "normal"
-SWEP.CrouchHoldType = "pistol"
-SWEP.ReloadHoldType = "pistol"
+SWEP.CrouchHoldType = "duel"
+SWEP.ReloadHoldType = "duel"
 
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
@@ -24,24 +24,23 @@ SWEP.Primary.Ammo = "phunbase_45acp"
 SWEP.Primary.ClipSize = 14
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = false
-SWEP.Primary.Damage = 20
-SWEP.Primary.Delay = 0.1
+SWEP.Primary.Damage = 23
+SWEP.Primary.Delay = 0.105
 SWEP.Primary.Force = 5
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 
 // Recoil variables
-SWEP.Recoil	= 0.45
-SWEP.Spread	= 0.02
+SWEP.Recoil	= 2.1
+SWEP.Spread	= 0.05
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
 SWEP.SpreadVel_Iron = 0.9
-SWEP.SpreadAdd = 0.3
+SWEP.SpreadAdd = 0.31
 SWEP.SpreadAdd_Iron	= 0.2
 SWEP.DisableIronsights = true
-SWEP.BasePos = Vector(0,-2,0)
-SWEP.BaseAng = Vector(0,0,0)
-
+SWEP.BasePos = Vector(0.000, 0.000, 0.300)
+SWEP.BaseAng = Vector(-1.000, 0.000, 0.000)
 SWEP.IronsightPos = Vector(0,0,2.25)
 SWEP.IronsightAng = Vector(0,0,0)
 
@@ -51,12 +50,12 @@ SWEP.SprintAng = Vector(0, 0, 0)
 SWEP.HolsterPos = Vector(0,0,20)
 SWEP.HolsterAng = Vector(0,0,0)
 
-SWEP.NearWallPos = Vector(0, -10, 0)
-SWEP.NearWallAng = Vector(0, 0, 0)
+SWEP.NearWallPos = Vector(-0.429, -10.035, -6.005)
+SWEP.NearWallAng = Vector(55.318, 6.918, -0.25)
 
 SWEP.PistolSprintSway = true
 
-SWEP.Chamberable = false
+SWEP.Chamberable = true
 
 -- local function other_gun_think(wep, ent)
 	-- local vm = wep.VM
@@ -158,5 +157,5 @@ SWEP.FireMoveMod_Iron = 1
 
 SWEP.FireSound = "m1911_fire"
 
-SWEP.NormalFlashlight = true
+SWEP.NormalFlashlight = false
 SWEP.CustomFlashlight = false

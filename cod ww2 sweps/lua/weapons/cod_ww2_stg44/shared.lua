@@ -10,10 +10,10 @@ SWEP.AimViewModelFOV = 40
 SWEP.ViewModel = "models/codww2/weapons/stg44.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
-SWEP.HoldType = "smg"
+SWEP.HoldType = "ar2"
 SWEP.SprintHoldType = "passive"
-SWEP.CrouchHoldType = "smg"
-SWEP.ReloadHoldType = "smg"
+SWEP.CrouchHoldType = "ar2"
+SWEP.ReloadHoldType = "ar2"
 SWEP.IdleAfterFire = true
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
@@ -24,9 +24,9 @@ SWEP.Primary.Ammo = "phunbase_792x57"
 SWEP.Primary.ClipSize = 30
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = true
-SWEP.Primary.Damage = 40
+SWEP.Primary.Damage = 39
 SWEP.Primary.Delay = 0.1
-SWEP.Primary.Force = 5
+SWEP.Primary.Force = 15
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 SWEP.EnableCustomization = true
@@ -35,16 +35,16 @@ SWEP.CustomizationMenuAttachmentName = "1"
 
 
 // Recoil variables
-SWEP.Recoil	= 2
-SWEP.Spread	= 0.1
+SWEP.Recoil	= 1.06
+SWEP.Spread	= 0.03
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
 SWEP.SpreadVel_Iron = 0.9
 SWEP.SpreadAdd = 0.3
 SWEP.SpreadAdd_Iron	= 0.2
 
-SWEP.BasePos = Vector(0,0,0)
-SWEP.BaseAng = Vector(0,0,0)
+SWEP.BasePos = Vector(-1.000, 1.000, 0.000)
+SWEP.BaseAng = Vector(0.000, 0.000, 0.000)
 
 SWEP.IronsightPos = Vector(-3.619, -1.093, 0.150)
 SWEP.IronsightAng = Vector(0.558, 0.014, 0.000)
@@ -96,8 +96,6 @@ SWEP.ReloadTimes = {
 }
 SWEP.UsesEmptyReloadTimes = true
 SWEP.FlashlightAttachmentName = "1"
-
-SWEP.ViewModelMovementScale = 2
 
 // shell-related stuff
 SWEP.ShellVelocity = {X = 0, Y = -25, Z = 90}

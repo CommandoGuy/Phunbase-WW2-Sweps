@@ -2,7 +2,7 @@ SWEP.Base = "pb_codww2_base"
 
 SWEP.PrintName = "G43"
 SWEP.Category = "PHUNBASE | COD WWII"
-SWEP.Slot = 2
+SWEP.Slot = 3
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 54
@@ -25,27 +25,26 @@ SWEP.CustomizationMenuAttachmentName = "1"
 SWEP.NoSprintVMMovement = true
 // weapon specific variables
 SWEP.Primary.Ammo = "phunbase_792x57"
-SWEP.Primary.ClipSize = 12
+SWEP.Primary.ClipSize = 10
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = false
-SWEP.Primary.Damage = 40
+SWEP.Primary.Damage = 50
 SWEP.Primary.Delay = 0.122
 SWEP.Primary.Force = 5
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
-SWEP.MouseSensitivityIron = 0.25
 
 // Recoil variables
 SWEP.Recoil	= 2
-SWEP.Spread	= 0.1
+SWEP.Spread	= 0.024
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
 SWEP.SpreadVel_Iron = 0.5
 SWEP.SpreadAdd = 0.3
 SWEP.SpreadAdd_Iron	= 0.1
 
-SWEP.BasePos = Vector(0,0,0)
-SWEP.BaseAng = Vector(0,0,0)
+SWEP.BasePos = Vector(-1.000, 0.000, 0.000)
+SWEP.BaseAng = Vector(0.000, 0.000, 0.000)
 
 SWEP.IronsightPos = Vector(-3.876, -5.000, 1.063)
 SWEP.IronsightAng = Vector(0.000, 0.000, 0.000)
@@ -89,9 +88,9 @@ SWEP.Sequences = {
 
 SWEP.IdleAfterFire = false
 SWEP.UseIronTransitionAnims = false
-SWEP.DeployTime = 0.75
+SWEP.DeployTime = 1.2
 SWEP.DeployTime_First = 1.8
-SWEP.HolsterTime = 0.3
+SWEP.HolsterTime = 0.35
 SWEP.ReloadTime = 3
 SWEP.ReloadTime_Empty = 4
 SWEP.ReloadTimes = {
@@ -120,8 +119,8 @@ SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weap
 SWEP.FireSound = "G43_Single"
 
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
-SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
-SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instant or it has a 0.5 second delay
+SWEP.CustomFlashlight = false // enables a ProjectedTexture flashlight, you should disable the Normal one
+SWEP.InstantFlashlight = false // whether turning the flashlight on/off is instant or it has a 0.5 second delay
 
 local ang0 = Vector()
 
