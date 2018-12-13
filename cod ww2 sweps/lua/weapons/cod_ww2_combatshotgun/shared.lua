@@ -106,10 +106,6 @@ SWEP.Sounds = {
 
 SWEP.DeployTime = 0.45
 SWEP.HolsterTime = 0.5
-SWEP.ReloadTime = 1.5
-SWEP.ReloadTimes = {
-	Base = 1.5,
-}
 
 SWEP.UsesEmptyReloadTimes = false
 
@@ -135,10 +131,14 @@ SWEP.FireSound = "Trench_Fire"
 SWEP.NormalFlashlight = false
 SWEP.CustomFlashlight = false
 
-
 SWEP.ShotgunReload = true
-SWEP.ShotgunReloadTime_Start = 0.4
-SWEP.ShotgunReloadTime_Start_Empty = 0.4
-SWEP.ShotgunReloadTime_Insert = 0.5
-SWEP.ShotgunReloadTime_End = 1.25
-SWEP.ShotgunReloadTime_End_Empty = 1.25
+SWEP.ShotgunReloadTimes = {
+	Start = 0.3,
+	Start_EmptyOneAndOnly = 0.25,
+	Insert = 0.52,
+	End = 1.02,
+	End_Empty = 1.02,
+
+	InsertAmmoWait = 0.35,
+	InsertOnStartEmptyAmmoWait = 2.2,
+}

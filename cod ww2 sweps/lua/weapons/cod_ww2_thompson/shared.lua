@@ -3,11 +3,17 @@ SWEP.PrintName = "Thompson M1A1"
 SWEP.Category = "PHUNBASE | COD WWII"
 SWEP.Slot = 2
 SWEP.SlotPos = 0
+include("thompson_sounds.lua")
 
 SWEP.ViewModelFOV = 60
 SWEP.AimViewModelFOV = 54
 SWEP.ViewModel = "models/codww2/weapons/thompson.mdl"
-SWEP.WorldModel = "models/weapons/w_smg1.mdl"
+SWEP.WorldModel = "w_models/codww2/weapons/thompson.mdl"
+
+SWEP.CustomWorldModel = "models/codww2/weapons/w_thompson.mdl"
+SWEP.CustomWorldModelPos = Vector(1,6,1)
+SWEP.CustomWorldModelAng = Angle(-4.25,-95.75,180)
+
 
 SWEP.HoldType = "ar2"
 SWEP.SprintHoldType = "passive"
