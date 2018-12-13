@@ -8,11 +8,11 @@ include("thompson_sounds.lua")
 SWEP.ViewModelFOV = 60
 SWEP.AimViewModelFOV = 54
 SWEP.ViewModel = "models/codww2/weapons/thompson.mdl"
-SWEP.WorldModel = "w_models/codww2/weapons/thompson.mdl"
+SWEP.WorldModel = "models/codww2/weapons/w_thompson.mdl"
 
 SWEP.CustomWorldModel = "models/codww2/weapons/w_thompson.mdl"
-SWEP.CustomWorldModelPos = Vector(1,6,1)
-SWEP.CustomWorldModelAng = Angle(-4.25,-95.75,180)
+SWEP.CustomWorldModelPos = Vector(7.5,1.2,0.9)
+SWEP.CustomWorldModelAng = Angle(0,-90.75,180)
 
 
 SWEP.HoldType = "ar2"
