@@ -133,8 +133,9 @@ SWEP.CustomFlashlight = false
 
 SWEP.ShotgunReload = true
 SWEP.ShotgunReloadTimes = {
-	Start = 0.3,
-	Start_EmptyOneAndOnly = 0.25,
+	Start = 0.32,
+	Start_Empty = 0.32,
+	Start_EmptyOneAndOnly = 0.3,
 	Insert = 0.52,
 	End = 1.02,
 	End_Empty = 1.02,
