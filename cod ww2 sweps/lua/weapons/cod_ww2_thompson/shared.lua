@@ -1,5 +1,4 @@
 SWEP.Base = "pb_codww2_base"
-include("thompson_sounds.lua")
 SWEP.PrintName = "Thompson M1A1"
 SWEP.Category = "PHUNBASE | COD WWII"
 SWEP.Slot = 2
