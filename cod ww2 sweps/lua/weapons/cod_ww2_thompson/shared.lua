@@ -3,7 +3,6 @@ SWEP.PrintName = "Thompson M1A1"
 SWEP.Category = "PHUNBASE | COD WWII"
 SWEP.Slot = 2
 SWEP.SlotPos = 0
-include("thompson_sounds.lua")
 
 SWEP.ViewModelFOV = 60
 SWEP.AimViewModelFOV = 54
@@ -44,7 +43,7 @@ SWEP.SpreadVel_Iron = 0.9
 SWEP.SpreadAdd = 0.3
 SWEP.SpreadAdd_Iron	= 0.2
 SWEP.IdleAfterFire = false
-SWEP.BasePos = Vector(-0.500, 0.961, -0.162)
+SWEP.BasePos = Vector(-0.500, 0, -0.162)
 SWEP.BaseAng = Vector(0.000, 0.000, 0.000)
 
 SWEP.IronsightPos = Vector(-3.346, 0.000, 0.700)
@@ -103,29 +102,29 @@ SWEP.Sounds = {
 	},
 	draw_first = {
 		{time = 0, sound = "WW2.DrawSMG", callback = function(self) end},
-		{time = 0.65, sound = "Thompson.Bolt"},
+		{time = 0.65, sound = "Thompson_Bolt"},
 	},
 	holster = {
 		{time = 0, sound = "WW2.HolsterSMG", callback = function(self) end}
 	},
 reload = {
-		{time = 0, sound = "WW2.Movement1"},
-		{time = 0.45, sound = "Thompson.Magout"},
-		{time = 1, sound = "WW2.Movement1"},
-		{time = 1.55, sound = "Thompson.Magin"},
-		{time = 2.25, sound = "WW2.Movement2"},
+		{time = 0, sound = "WW2_Movement1"},
+		{time = 0.45, sound = "Thompson_Magout"},
+		{time = 1, sound = "WW2_Movement1"},
+		{time = 1.55, sound = "Thompson_Magin"},
+		{time = 2.25, sound = "WW2_Movement2"},
 	},
 	reload_empty = {
-		{time = 0, sound = "WW2.Movement1"},
-		{time = 0.45, sound = "Thompson.Magout"},
-		{time = 1, sound = "WW2.Movement1"},
-		{time = 1.75, sound = "Thompson.Magin"},
-		{time = 2.25, sound = "Thompson.Maghit"},
-		{time = 2.5, sound = "WW2.Movement2"},
+		{time = 0, sound = "WW2_Movement1"},
+		{time = 0.45, sound = "Thompson_Magout"},
+		{time = 1, sound = "WW2_Movement1"},
+		{time = 1.75, sound = "Thompson_Magin"},
+		{time = 2.25, sound = "Thompson_Maghit"},
+		{time = 2.5, sound = "WW2_Movement2"},
 	},
 }
 
-SWEP.ViewModelMovementScale = 1
+SWEP.ViewModelMovementScale = 0.9
 
 // shell-related stuff
 SWEP.ShellVelocity = {X = 75, Y = 0, Z = 0}
@@ -141,7 +140,7 @@ SWEP.ShellEjectVelocity = 0
 SWEP.MuzzleAttachmentName = "1"
 SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
-SWEP.FireSound = "Thompson.Fire"
+SWEP.FireSound = "Thompson_Fire"
 
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
 SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one

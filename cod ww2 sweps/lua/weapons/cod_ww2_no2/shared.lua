@@ -2,7 +2,7 @@ SWEP.Base = "pb_codww2_base"
 include("enfieldno2_sounds.lua")
 SWEP.PrintName = "Enfield.No2"
 SWEP.Category = "PHUNBASE | COD WWII"
-SWEP.Slot = 2
+SWEP.Slot = 1
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 60
@@ -10,10 +10,10 @@ SWEP.AimViewModelFOV = 70
 SWEP.ViewModel = "models/codww2/weapons/enfieldno2.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
-SWEP.HoldType = "smg"
+SWEP.HoldType = "pistol"
 SWEP.SprintHoldType = "passive"
-SWEP.CrouchHoldType = "smg"
-SWEP.ReloadHoldType = "smg"
+SWEP.CrouchHoldType = "pistol"
+SWEP.ReloadHoldType = "pistol"
 
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
@@ -21,26 +21,27 @@ SWEP.AdminSpawnable = true
 SWEP.NoSprintVMMovement = false
 // weapon specific variables
 SWEP.Primary.Ammo = "phunbase_45acp"
-SWEP.Primary.ClipSize = 7
+SWEP.Primary.ClipSize = 6
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = false
-SWEP.Primary.Damage = 40
-SWEP.Primary.Delay = 0.130
-SWEP.Primary.Force = 5
+SWEP.Primary.Damage = 35
+SWEP.Primary.Delay = 0.18
+SWEP.Primary.Force = 6
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 
 // Recoil variables
 SWEP.Recoil	= 2.5
-SWEP.Spread	= 0.1
+SWEP.Spread	= 0.04
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
 SWEP.SpreadVel_Iron = 0.9
 SWEP.SpreadAdd = 0.3
 SWEP.SpreadAdd_Iron	= 0.2
+SWEP.Chamberable = false // enables room for an extra round in the chamber, should be disabled for revolvers/projectile type weapons
 
-SWEP.BasePos = Vector(0,0,0)
-SWEP.BaseAng = Vector(0,0,0)
+SWEP.BasePos = Vector(-1.500, 0.000, 0.000)
+SWEP.BaseAng = Vector(0.000, 0.000, 0.000)
 
 SWEP.IronsightPos = Vector(-4.711, -5.069, 1.064)
 SWEP.IronsightAng = Vector(1.166, -0.089, 0.000)
@@ -51,8 +52,8 @@ SWEP.SprintAng = Vector(0, 0, 0)
 SWEP.HolsterPos = Vector(0,0,20)
 SWEP.HolsterAng = Vector(0,0,0)
 
-SWEP.NearWallPos = Vector(-0.429, -8.035, -9.005)
-SWEP.NearWallAng = Vector(28.318, 26.918, -14.25)
+SWEP.NearWallPos = Vector(1, -15.495, -10.309)
+SWEP.NearWallAng = Vector(76.289, 0.000, 3.247)
 
 SWEP.PistolSprintSway = true
 
@@ -112,7 +113,7 @@ SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weap
 SWEP.FireSound = "No2.Fire"
 
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
-SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
+SWEP.CustomFlashlight = false // enables a ProjectedTexture flashlight, you should disable the Normal one
 SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instant or it has a 0.5 second delay
 
 SWEP.Sounds = {

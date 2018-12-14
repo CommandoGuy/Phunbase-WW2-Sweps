@@ -67,7 +67,7 @@ SWEP.DisableIronsights = false
 SWEP.Sequences = {
 	idle = "idle",
 	fire = "fire",
-	fire_last = "fire",
+	fire_last = "fire_last",
 	fire_iron = "fire",
 	fire_iron_last = "fire",
 	reload = "reload",
@@ -88,7 +88,7 @@ SWEP.Sequences = {
 
 SWEP.Sounds = {
 	fire = {
-		{time = 0.1, sound = "", callback = function(wep) wep:PlayVMSequence("reload_shell_pump") end},
+		{time = 0.15, sound = "", callback = function(wep) wep:PlayVMSequence("reload_shell_pump") end},
 	},
 	draw = {
 		{time = 0, sound = "WW2.DrawRifle", callback = function(self) end}

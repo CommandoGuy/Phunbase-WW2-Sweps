@@ -58,8 +58,8 @@ SWEP.SprintAng = Vector(0, 0, 0)
 SWEP.HolsterPos = Vector(0,0,20)
 SWEP.HolsterAng = Vector(0,0,0)
 
-SWEP.NearWallPos = Vector(-0.429, -8.035, -9.005)
-SWEP.NearWallAng = Vector(28.318, 26.918, -14.25)
+SWEP.NearWallPos = Vector(3.062, -8.247, -13.309)
+SWEP.NearWallAng = Vector(43.299, 45.361, 0.000)
 
 SWEP.PistolSprintSway = false
 
@@ -115,7 +115,6 @@ SWEP.ShellEjectVelocity = 0
 
 SWEP.MuzzleAttachmentName = "1"
 SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
-
 SWEP.FireSound = "G43_Single"
 
 SWEP.NormalFlashlight = false // enables the HL2 flashlight

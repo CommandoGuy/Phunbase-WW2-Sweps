@@ -1,5 +1,4 @@
 SWEP.Base = "pb_codww2_base"
-include("lewis_sounds.lua")
 SWEP.PrintName = "Lewis Gun"
 SWEP.Category = "PHUNBASE | COD WWII"
 SWEP.Slot = 2
@@ -10,10 +9,10 @@ SWEP.AimViewModelFOV = 45
 SWEP.ViewModel = "models/codww2/weapons/lewis.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
-SWEP.HoldType = "smg"
+SWEP.HoldType = "rpg"
 SWEP.SprintHoldType = "passive"
-SWEP.CrouchHoldType = "smg"
-SWEP.ReloadHoldType = "smg"
+SWEP.CrouchHoldType = "rpg"
+SWEP.ReloadHoldType = "ar2"
 
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
@@ -25,7 +24,7 @@ SWEP.Primary.Ammo = "phunbase_30carbine"
 SWEP.Primary.ClipSize = 47
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = true
-SWEP.Primary.Damage = 30
+SWEP.Primary.Damage = 36
 SWEP.Primary.Delay = 0.1
 SWEP.Primary.Force = 5
 SWEP.Primary.Bullets = 1
@@ -33,16 +32,16 @@ SWEP.Primary.Tracer = 0
 SWEP.FireModes = {"auto", "semi"}
 
 // Recoil variables
-SWEP.Recoil	= 2
-SWEP.Spread	= 0.1
+SWEP.Recoil	= 1.7
+SWEP.Spread	= 0.07
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
 SWEP.SpreadVel_Iron = 0.9
 SWEP.SpreadAdd = 0.3
 SWEP.SpreadAdd_Iron	= 0.2
 
-SWEP.BasePos = Vector(0,0,0)
-SWEP.BaseAng = Vector(0,0,0)
+SWEP.BasePos = Vector(-0.500, 0.000, -0.100)
+SWEP.BaseAng = Vector(1.000, 0.000, 0.000)
 
 SWEP.IronsightPos = Vector(-5.013, -2.290, 1.777)
 SWEP.IronsightAng = Vector(0.123, -0.073, 0.000)
@@ -111,7 +110,7 @@ SWEP.ShellEjectVelocity = 0
 SWEP.MuzzleAttachmentName = "1"
 SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weapon_muzzle_smoke"}
 
-SWEP.FireSound = "Lewis.Fire"
+SWEP.FireSound = "Lewis_Fire"
 
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
 SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
@@ -130,23 +129,25 @@ SWEP.Sounds = {
 	},
 	reload = {
 		{time = 0, sound = "WW2.Movement1"},
-   	{time = 1.2, sound = "Lewis.Fetch"},
-		{time = 2.2, sound = "Lewis.magoutf"},
+   	{time = 1.2, sound = "Lewis_Fetch"},
+	   	{time = 2.15, sound = "Lewis_Fiddlesticks"},
+		{time = 2.2, sound = "Lewis_Magout"},
 		{time = 2.5, sound = "WW2.Movement1"},
 		{time = 3.5, sound = "WW2.Movement1"},
-		{time = 4.8, sound = "Lewis.magin"},
+		{time = 4.8, sound = "Lewis_Magin"},
 		{time = 5.8, sound = "Lewis.maghit"},
 		{time = 1.5, sound = "WW2.Movement2"}
 	},
 		reload_empty = {
 			{time = 0, sound = "WW2.Movement1"},
 	   	{time = 1.2, sound = "Lewis.Fetch"},
-			{time = 2.2, sound = "Lewis.magoutf"},
+			   	{time = 2.15, sound = "Lewis_Fiddlesticks"},
+			{time = 2.2, sound = "Lewis_Magoutf"},
 			{time = 2.5, sound = "WW2.Movement1"},
 			{time = 3.5, sound = "WW2.Movement1"},
-			{time = 4.8, sound = "Lewis.magin"},
-			{time = 5.8, sound = "Lewis.maghit"},
-			{time = 6.75, sound = "Lewis.bolt"},
+			{time = 4.8, sound = "Lewis_Magin"},
+			{time = 5.8, sound = "Lewis_maghit"},
+			{time = 6.75, sound = "Lewis_bolt"},
 			{time = 1.5, sound = "WW2.Movement2"}
 	},
 }

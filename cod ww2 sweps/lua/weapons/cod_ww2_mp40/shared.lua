@@ -106,7 +106,7 @@ SWEP.CustomizationMenuAttachmentName = "1"
 --}
 
 
-SWEP.ViewModelMovementScale = 1
+SWEP.ViewModelMovementScale = 0.9
 
 // shell-related stuff
 SWEP.ShellVelocity = {X = 50, Y = 0, Z = 150}
@@ -125,8 +125,8 @@ SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weap
 SWEP.FireSound = "MP40_Single"
 
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
-SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
-SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instant or it has a 0.5 second delay
+SWEP.CustomFlashlight = false // enables a ProjectedTexture flashlight, you should disable the Normal one
+SWEP.InstantFlashlight = false // whether turning the flashlight on/off is instant or it has a 0.5 second delay
 
 SWEP.Sounds = {
 	draw = {

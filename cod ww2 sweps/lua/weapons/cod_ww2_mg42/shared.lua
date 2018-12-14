@@ -1,8 +1,8 @@
 SWEP.Base = "pb_codww2_base"
 
-SWEP.PrintName = "MG42"
+SWEP.PrintName = "Maschinengewehr 42"
 SWEP.Category = "PHUNBASE | COD WWII"
-SWEP.Slot = 2
+SWEP.Slot = 3
 SWEP.SlotPos = 0
 
 SWEP.ViewModelFOV = 50
@@ -10,10 +10,10 @@ SWEP.AimViewModelFOV = 40
 SWEP.ViewModel = "models/codww2/weapons/mg42.mdl"
 SWEP.WorldModel = "models/weapons/w_smg1.mdl"
 
-SWEP.HoldType = "smg"
+SWEP.HoldType = "rpg"
 SWEP.SprintHoldType = "passive"
-SWEP.CrouchHoldType = "smg"
-SWEP.ReloadHoldType = "smg"
+SWEP.CrouchHoldType = "rpg"
+SWEP.ReloadHoldType = "ar2"
 
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = true
@@ -24,25 +24,25 @@ SWEP.Primary.Ammo = "phunbase_792x57"
 SWEP.Primary.ClipSize = 50
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize
 SWEP.Primary.Automatic = true
-SWEP.Primary.Damage = 40
+SWEP.Primary.Damage = 34
 SWEP.Primary.Delay = 0.05
-SWEP.Primary.Force = 5
+SWEP.Primary.Force = 8
 SWEP.Primary.Bullets = 1
 SWEP.Primary.Tracer = 0
 SWEP.UsesBipod = true
 SWEP.BipodTransitionDelay = 0.5
 
 // Recoil variables
-SWEP.Recoil	= 2
-SWEP.Spread	= 0.1
+SWEP.Recoil	= 1.5
+SWEP.Spread	= 0.09
 SWEP.Spread_Iron = 0.01
 SWEP.SpreadVel = 1.2
 SWEP.SpreadVel_Iron = 0.9
 SWEP.SpreadAdd = 0.3
 SWEP.SpreadAdd_Iron	= 0.2
 
-SWEP.BasePos = Vector(0,0,0)
-SWEP.BaseAng = Vector(0,0,0)
+SWEP.BasePos = Vector(-0.800, 0.000, -0.500)
+SWEP.BaseAng = Vector(0.500, 0.000, 0.000)
 
 SWEP.IronsightPos = Vector(-3.950, 0.000, 0.884)
 SWEP.IronsightAng = Vector(0.200, 0.032, 0.000)
@@ -97,9 +97,8 @@ SWEP.ReloadTimes = {
 Bipod_Empty = 7.25,
 }
 SWEP.UsesEmptyReloadTimes = true
-SWEP.FlashlightAttachmentName = "1"
 SWEP.Chamberable = false
-SWEP.ViewModelMovementScale = 2
+SWEP.ViewModelMovementScale = 0.6
 
 SWEP.Sounds = {
 	draw = {
@@ -140,8 +139,8 @@ SWEP.MuzzleEffect = {"PistolGlow", "btb_vm_small", "muzzle_sparks_pistol", "weap
 SWEP.FireSound = "MG42_Fire"
 
 SWEP.NormalFlashlight = false // enables the HL2 flashlight
-SWEP.CustomFlashlight = true // enables a ProjectedTexture flashlight, you should disable the Normal one
-SWEP.InstantFlashlight = true // whether turning the flashlight on/off is instant or it has a 0.5 second delay
+SWEP.CustomFlashlight = false // enables a ProjectedTexture flashlight, you should disable the Normal one
+SWEP.InstantFlashlight = false // whether turning the flashlight on/off is instant or it has a 0.5 second delay
 
 
 

@@ -43,8 +43,8 @@ SWEP.SpreadVel_Iron = 0.9
 SWEP.SpreadAdd = 0.3
 SWEP.SpreadAdd_Iron	= 0.2
 
-SWEP.BasePos = Vector(-1.000, 1.000, 0.000)
-SWEP.BaseAng = Vector(0.000, 0.000, 0.000)
+SWEP.BasePos = Vector(-1.000, 1.000, -0.300)
+SWEP.BaseAng = Vector(0.300, 0.000, 0.000)
 
 SWEP.IronsightPos = Vector(-3.619, -1.093, 0.150)
 SWEP.IronsightAng = Vector(0.558, 0.014, 0.000)
@@ -84,6 +84,8 @@ SWEP.Sequences = {
 	sprint_idle = "sprint",
 	sprint_end = "sprint_out",
 }
+
+SWEP.ViewModelMovementScale = 0.9
 
 
 SWEP.DeployTime = 0.75

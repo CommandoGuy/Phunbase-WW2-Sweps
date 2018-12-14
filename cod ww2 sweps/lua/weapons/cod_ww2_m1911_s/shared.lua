@@ -51,8 +51,8 @@ SWEP.SprintAng = Vector(0, 0, 0)
 SWEP.HolsterPos = Vector(0,0,20)
 SWEP.HolsterAng = Vector(0,0,0)
 
-SWEP.NearWallPos = Vector(-0.429, -8.035, -9.005)
-SWEP.NearWallAng = Vector(28.318, 26.918, -14.25)
+SWEP.NearWallPos = Vector(1, -15.495, -10.309)
+SWEP.NearWallAng = Vector(76.289, 0.000, 3.247)
 
 SWEP.PistolSprintSway = true
 
